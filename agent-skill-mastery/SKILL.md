@@ -1,6 +1,9 @@
 ---
 name: agent-skill-mastery
 description: The Meta-Skill for auditing, refining, and standardizing all other skills according to AgentSkills.io best practices.
+version: 1.0.0
+author: Sovereign OS Agent
+tags: [meta-skill, standards, governance, quality-gate]
 ---
 
 # 🥋 Agent Skill Mastery
