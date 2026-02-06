@@ -30,7 +30,7 @@ echo -e "\n\033[0;90mTotal Active: $(ls -l ~/.agent/skills | grep "^l" | wc -l)\
 Display the full index of available skills from the central library.
 
 ```bash
-~/.sov-agent/skills/premium-presentation/scripts/view-catalog.sh ~/.sov-agent/skills/SKILL_INDEX.md
+~/.sov-agent/skills/agent-skill-mastery/scripts/view-catalog.sh ~/.sov-agent/skills/SKILL_INDEX.md
 ```
 
 ### 3. Load Skill Profile
