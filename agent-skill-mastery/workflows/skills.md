@@ -10,8 +10,11 @@ This workflow allows you to manage the active skill set (The Agent's capabilitie
 
 - **/skills list**: Show all currently loaded skills.
 - **/skills catalog**: Display the full catalog of available skills from the library.
-- **/skills load [profile]**: Load a specific skill profile (core, arch, eng, frontend, ops, gov, full).
+- **/skills load [profile]**: Load a specific skill profile.
 - **/skills check [skill-name]**: Verify if a specific skill is active.
+- **/skills inspect [skill-name]**: Read the instructions (SKILL.md) of a skill.
+- **/skills sync**: Pull the latest updates from the skill repository.
+- **/skills create [name]**: Scaffold a new skill template.
 
 ## 🛠️ Implementation Details
 
@@ -52,4 +55,28 @@ if [ -L "$HOME/.agent/skills/[SKILL_NAME]" ]; then
 else
     echo "❌ [SKILL_NAME] is NOT active."
 fi
+```
+
+### 5. Inspect Skill
+
+Read the full instructions/manifest of a specific skill.
+
+```bash
+~/.sov-agent/skills/agent-skill-mastery/scripts/inspect-skill.sh [SKILL_NAME]
+```
+
+### 6. Sync Library
+
+Update the local skill library from the remote git repository.
+
+```bash
+~/.sov-agent/skills/agent-skill-mastery/scripts/sync-skills.sh
+```
+
+### 7. Create New Skill
+
+Scaffold a new skill directory with a standard template.
+
+```bash
+~/.sov-agent/skills/agent-skill-mastery/scripts/create-skill.sh [SKILL_NAME]
 ```
