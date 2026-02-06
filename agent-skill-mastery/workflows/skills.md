@@ -23,9 +23,7 @@ This workflow allows you to manage the active skill set (The Agent's capabilitie
 Run this command to see what skills are currently symlinked in `~/.agent/skills`.
 
 ```bash
-echo -e "\n\033[1;34m🧠 Active Sovereign Skills:\033[0m"
-ls -F ~/.agent/skills | grep "@" | sed 's/@//' | sed 's/->.*//' | sort
-echo -e "\n\033[0;90mTotal Active: $(ls -l ~/.agent/skills | grep "^l" | wc -l)\033[0m"
+~/.sov-agent/skills/agent-skill-mastery/scripts/skill-manager.sh active
 ```
 
 ### 2. View Skill Catalog
@@ -42,7 +40,7 @@ Use the operational script to load a predefined set of skills.
 
 ```bash
 # Available Profiles: core, arch, eng, frontend, ops, gov, full
-~/.agent/scripts/skill-loader.sh [profile]
+~/.sov-agent/skills/agent-skill-mastery/scripts/load-profile.sh [profile]
 ```
 
 ### 4. Check Specific Skill
