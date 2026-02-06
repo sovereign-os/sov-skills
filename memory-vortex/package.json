@@ -1,0 +1,26 @@
+{
+    "name": "skill-memory-vortex",
+    "version": "1.0.0",
+    "description": "Driver for Sovereign OS Vortex Memory (Qdrant)",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "ingest": "tsx src/ingest.ts",
+        "query": "tsx src/query.ts"
+    },
+    "dependencies": {
+        "@qdrant/js-client-rest": "^1.7.0",
+        "@xenova/transformers": "^2.14.0",
+        "dotenv": "^16.3.1",
+        "glob": "^10.3.10",
+        "gray-matter": "^4.0.3",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/node": "^20.0.0",
+        "@types/uuid": "^9.0.0",
+        "tsx": "^4.7.0",
+        "typescript": "^5.3.3"
+    }
+}

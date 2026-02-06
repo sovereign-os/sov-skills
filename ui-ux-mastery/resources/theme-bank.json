@@ -1,0 +1,424 @@
+[
+  {
+    "id": "neon-cyberpunk",
+    "name": "Neon Cyberpunk",
+    "description": "High-contrast dark mode with vibrant neon accents, tailored for futuristic dashboard interfaces.",
+    "tokens": {
+      "colors": {
+        "light": {
+          "background": "280 30% 98%",
+          "foreground": "280 50% 10%",
+          "primary": "280 100% 50%",
+          "primary-foreground": "0 0% 100%",
+          "secondary": "280 20% 90%",
+          "secondary-foreground": "280 50% 20%",
+          "muted": "280 20% 94%",
+          "muted-foreground": "280 10% 40%",
+          "accent": "180 100% 40%",
+          "accent-foreground": "0 0% 100%",
+          "destructive": "0 84% 60%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "280 20% 90%",
+          "input": "280 20% 90%",
+          "ring": "280 100% 50%",
+          "card": "280 30% 100%",
+          "card-foreground": "280 50% 10%",
+          "popover": "280 30% 100%",
+          "popover-foreground": "280 50% 10%"
+        },
+        "dark": {
+          "background": "240 10% 3.9%",
+          "foreground": "180 100% 98%",
+          "primary": "180 100% 50%",
+          "primary-foreground": "240 5.9% 10%",
+          "secondary": "240 3.7% 15.9%",
+          "secondary-foreground": "0 0% 98%",
+          "muted": "240 3.7% 15.9%",
+          "muted-foreground": "240 5% 64.9%",
+          "accent": "270 50% 40%",
+          "accent-foreground": "0 0% 98%",
+          "destructive": "0 62.8% 30.6%",
+          "destructive-foreground": "0 0% 98%",
+          "border": "240 3.7% 15.9%",
+          "input": "240 3.7% 15.9%",
+          "ring": "180 100% 50%",
+          "card": "240 10% 5%",
+          "card-foreground": "180 100% 98%",
+          "popover": "240 10% 5%",
+          "popover-foreground": "180 100% 98%"
+        }
+      },
+      "components": {
+        "button": {
+          "primary-hover": "opacity-90 scale-[1.02]",
+          "secondary-hover": "bg-secondary/80",
+          "ghost-hover": "bg-accent/10"
+        },
+        "tabs": {
+          "active-bg": "primary",
+          "inactive-text": "muted-foreground",
+          "indicator": "primary"
+        }
+      },
+      "radius": "0.75rem",
+      "font": {
+        "sans": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      }
+    }
+  },
+  {
+    "id": "corporate-clean",
+    "name": "Corporate Clean",
+    "description": "Professional, trustworthy, and airy design with reliable blue accents and high geometric precision.",
+    "tokens": {
+      "colors": {
+        "light": {
+          "background": "0 0% 100%",
+          "foreground": "222.2 84% 4.9%",
+          "primary": "221.2 83.2% 53.3%",
+          "primary-foreground": "210 40% 98%",
+          "secondary": "210 40% 96.1%",
+          "secondary-foreground": "222.2 47.4% 11.2%",
+          "muted": "210 40% 96.1%",
+          "muted-foreground": "215.4 16.3% 46.9%",
+          "accent": "210 40% 96.1%",
+          "accent-foreground": "222.2 47.4% 11.2%",
+          "destructive": "0 84.2% 60.2%",
+          "destructive-foreground": "210 40% 98%",
+          "border": "214.3 31.8% 91.4%",
+          "input": "214.3 31.8% 91.4%",
+          "ring": "221.2 83.2% 53.3%",
+          "card": "0 0% 100%",
+          "card-foreground": "222.2 84% 4.9%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "222.2 84% 4.9%"
+        },
+        "dark": {
+          "background": "222.2 84% 4.9%",
+          "foreground": "210 40% 98%",
+          "primary": "217.2 91.2% 59.8%",
+          "primary-foreground": "222.2 47.4% 11.2%",
+          "secondary": "217.2 32.6% 17.5%",
+          "secondary-foreground": "210 40% 98%",
+          "muted": "217.2 32.6% 17.5%",
+          "muted-foreground": "215 20.2% 65.1%",
+          "accent": "217.2 32.6% 17.5%",
+          "accent-foreground": "210 40% 98%",
+          "destructive": "0 62.8% 30.6%",
+          "destructive-foreground": "210 40% 98%",
+          "border": "217.2 32.6% 17.5%",
+          "input": "217.2 32.6% 17.5%",
+          "ring": "224.3 76.3% 48%",
+          "card": "222.2 84% 7%",
+          "card-foreground": "210 40% 98%",
+          "popover": "222.2 84% 7%",
+          "popover-foreground": "210 40% 98%"
+        }
+      },
+      "components": {
+        "button": {
+          "primary-hover": "bg-primary/90",
+          "secondary-hover": "bg-secondary/70",
+          "ghost-hover": "bg-muted"
+        },
+        "tabs": {
+          "active-bg": "secondary",
+          "inactive-text": "muted-foreground",
+          "indicator": "primary"
+        }
+      },
+      "radius": "0.5rem",
+      "font": {
+        "sans": "Inter, sans-serif",
+        "mono": "Roboto Mono, monospace"
+      }
+    }
+  },
+  {
+    "id": "obsidian-minimal",
+    "name": "Obsidian Minimal",
+    "description": "True minimalist theme focusing on typography and whitespace, balancing absolute light and deep dark.",
+    "tokens": {
+      "colors": {
+        "light": {
+          "background": "0 0% 100%",
+          "foreground": "0 0% 0%",
+          "primary": "0 0% 0%",
+          "primary-foreground": "0 0% 100%",
+          "secondary": "0 0% 96%",
+          "secondary-foreground": "0 0% 0%",
+          "muted": "0 0% 96%",
+          "muted-foreground": "0 0% 40%",
+          "accent": "0 0% 92%",
+          "accent-foreground": "0 0% 0%",
+          "destructive": "0 84% 60%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 88%",
+          "input": "0 0% 88%",
+          "ring": "0 0% 20%",
+          "card": "0 0% 100%",
+          "card-foreground": "0 0% 0%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "0 0% 0%"
+        },
+        "dark": {
+          "background": "0 0% 0%",
+          "foreground": "0 0% 95%",
+          "primary": "0 0% 100%",
+          "primary-foreground": "0 0% 0%",
+          "secondary": "0 0% 12%",
+          "secondary-foreground": "0 0% 100%",
+          "muted": "0 0% 12%",
+          "muted-foreground": "0 0% 60%",
+          "accent": "0 0% 20%",
+          "accent-foreground": "0 0% 100%",
+          "destructive": "0 70% 50%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 20%",
+          "input": "0 0% 20%",
+          "ring": "0 0% 80%",
+          "card": "0 0% 5%",
+          "card-foreground": "0 0% 95%",
+          "popover": "0 0% 5%",
+          "popover-foreground": "0 0% 95%"
+        }
+      },
+      "components": {
+        "button": {
+          "primary-hover": "invert-[0.1]",
+          "secondary-hover": "bg-secondary/50",
+          "ghost-hover": "underline"
+        },
+        "tabs": {
+          "active-bg": "transparent",
+          "inactive-text": "foreground/40",
+          "indicator": "foreground"
+        }
+      },
+      "radius": "0rem",
+      "font": {
+        "sans": "Geist Sans, sans-serif",
+        "mono": "Geist Mono, monospace"
+      }
+    }
+  },
+  {
+    "id": "tropical-paradise",
+    "name": "Tropical Paradise",
+    "description": "A vibrant, happy, and nature-focused theme inspired by Indonesian islands. High contrast for readability and premium feel.",
+    "tokens": {
+      "colors": {
+        "light": {
+          "background": "75 60% 98%",
+          "foreground": "160 84% 10%",
+          "primary": "160 84% 39%",
+          "primary-foreground": "0 0% 100%",
+          "secondary": "199 89% 48%",
+          "secondary-foreground": "0 0% 100%",
+          "muted": "75 40% 92%",
+          "muted-foreground": "160 20% 40%",
+          "accent": "45 93% 47%",
+          "accent-foreground": "160 84% 10%",
+          "destructive": "0 84.2% 60.2%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "160 30% 90%",
+          "input": "160 30% 90%",
+          "ring": "160 84% 39%",
+          "card": "75 60% 99%",
+          "card-foreground": "160 84% 10%",
+          "popover": "75 60% 100%",
+          "popover-foreground": "160 84% 10%"
+        },
+        "dark": {
+          "background": "160 84% 5%",
+          "foreground": "75 60% 95%",
+          "primary": "160 84% 45%",
+          "primary-foreground": "160 84% 5%",
+          "secondary": "199 89% 60%",
+          "secondary-foreground": "0 0% 100%",
+          "muted": "160 40% 15%",
+          "muted-foreground": "160 20% 60%",
+          "accent": "45 93% 60%",
+          "accent-foreground": "160 84% 5%",
+          "destructive": "0 84% 50%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "160 30% 20%",
+          "input": "160 30% 20%",
+          "ring": "160 84% 45%",
+          "card": "160 84% 8%",
+          "card-foreground": "75 60% 95%",
+          "popover": "160 84% 8%",
+          "popover-foreground": "75 60% 95%"
+        }
+      },
+      "components": {
+        "button": {
+          "primary-hover": "saturate-[1.5] shadow-lg shadow-primary/20",
+          "secondary-hover": "brightness-110",
+          "ghost-hover": "bg-primary/5 text-primary"
+        },
+        "tabs": {
+          "active-bg": "primary/10",
+          "active-text": "primary",
+          "inactive-text": "muted-foreground",
+          "indicator": "primary"
+        }
+      },
+      "radius": "1.25rem",
+      "font": {
+        "sans": "Plus Jakarta Sans, sans-serif",
+        "mono": "Space Mono, monospace"
+      }
+    }
+  },
+  {
+    "id": "zen-minimal",
+    "name": "Zen Minimal",
+    "description": "Calm, focused, minimalist theme based on Japanese Zen philosophy. Emphasizes whitespace, subtle interactions, and tranquility. Perfect for productivity tools, portfolios, and premium B2B SaaS.",
+    "philosophy": {
+      "principles": [
+        "Kanso (簡素) - Simplicity: Remove until you can't remove anymore",
+        "Shizen (自然) - Naturalness: Interactions feel effortless, not forced",
+        "Yugen (幽玄) - Subtle Depth: Meaning revealed through interaction",
+        "Datsuzoku (脱俗) - Freedom: Break conventions when it serves clarity",
+        "Seijaku (静寂) - Tranquility: Calm palette, generous spacing"
+      ],
+      "rules": [
+        "Maximum 3 colors in active use",
+        "2-3x normal spacing/padding",
+        "One primary action per screen",
+        "40%+ viewport is whitespace",
+        "All animations ≥ 400ms",
+        "No aggressive CTAs or dark patterns"
+      ]
+    },
+    "tokens": {
+      "colors": {
+        "light": {
+          "background": "0 0% 98%",
+          "foreground": "0 0% 15%",
+          "primary": "210 15% 45%",
+          "primary-foreground": "0 0% 100%",
+          "secondary": "0 0% 92%",
+          "secondary-foreground": "0 0% 15%",
+          "muted": "0 0% 94%",
+          "muted-foreground": "0 0% 50%",
+          "accent": "210 15% 45%",
+          "accent-foreground": "0 0% 100%",
+          "destructive": "0 50% 50%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 90%",
+          "input": "0 0% 90%",
+          "ring": "210 15% 45%",
+          "card": "0 0% 100%",
+          "card-foreground": "0 0% 15%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "0 0% 15%"
+        },
+        "dark": {
+          "background": "0 0% 8%",
+          "foreground": "0 0% 95%",
+          "primary": "210 20% 65%",
+          "primary-foreground": "0 0% 8%",
+          "secondary": "0 0% 15%",
+          "secondary-foreground": "0 0% 95%",
+          "muted": "0 0% 14%",
+          "muted-foreground": "0 0% 60%",
+          "accent": "210 20% 65%",
+          "accent-foreground": "0 0% 8%",
+          "destructive": "0 60% 55%",
+          "destructive-foreground": "0 0% 100%",
+          "border": "0 0% 18%",
+          "input": "0 0% 18%",
+          "ring": "210 20% 65%",
+          "card": "0 0% 12%",
+          "card-foreground": "0 0% 95%",
+          "popover": "0 0% 12%",
+          "popover-foreground": "0 0% 95%"
+        }
+      },
+      "components": {
+        "button": {
+          "primary-hover": "border-accent text-accent",
+          "secondary-hover": "bg-secondary/70",
+          "ghost-hover": "opacity-70",
+          "active": "scale-[0.98]"
+        },
+        "tabs": {
+          "active-bg": "transparent",
+          "active-text": "foreground",
+          "inactive-text": "muted-foreground",
+          "indicator": "accent"
+        },
+        "card": {
+          "elevation": "shadow-[0_1px_3px_rgba(0,0,0,0.05)]",
+          "hover": "shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
+        }
+      },
+      "spacing": {
+        "xs": "0.75rem",
+        "sm": "1.5rem",
+        "md": "3rem",
+        "lg": "6rem",
+        "xl": "12rem"
+      },
+      "typography": {
+        "scale": "1.125rem",
+        "lineHeight": "1.75",
+        "letterSpacing": "0.01em"
+      },
+      "motion": {
+        "fast": "200ms",
+        "base": "400ms",
+        "slow": "600ms",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "radius": "0rem",
+      "font": {
+        "sans": "Inter, system-ui, sans-serif",
+        "display": "Crimson Pro, Georgia, serif",
+        "mono": "JetBrains Mono, monospace"
+      }
+    },
+    "layouts": {
+      "garden": {
+        "description": "Content-first layout with single focus and breathing room",
+        "structure": "centered, max-width prose, generous vertical spacing"
+      },
+      "stone-garden": {
+        "description": "Dashboard with minimal chrome and one hero metric",
+        "structure": "sidebar with icons only, max 4 cards visible, whitespace dominant"
+      },
+      "tea-ceremony": {
+        "description": "Progressive disclosure forms, one field at a time",
+        "structure": "single-column, step-by-step reveal"
+      }
+    },
+    "microcopy": {
+      "style": "Haiku-like brevity, calm tone",
+      "examples": {
+        "cta": "Begin",
+        "loading": "One moment...",
+        "empty": "Nothing here yet",
+        "error": "Let's try that again"
+      }
+    },
+    "useCases": {
+      "perfect": [
+        "Meditation/wellness apps",
+        "Note-taking/writing tools",
+        "Portfolio/personal sites",
+        "Premium editorial content",
+        "B2B SaaS (trust-building)",
+        "Financial/legal services"
+      ],
+      "avoid": [
+        "E-commerce (needs urgency)",
+        "Gaming (needs energy)",
+        "Social media (needs engagement)",
+        "News/media (needs density)"
+      ]
+    }
+  }
+]

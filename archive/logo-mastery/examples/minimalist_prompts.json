@@ -1,0 +1,108 @@
+[
+    {
+        "name": "Geometric Abstract A",
+        "prompt": "minimalist abstract logo, letter A, negative space, geometric sharp angles, black and white, flat vector",
+        "concepts": [
+            "stability",
+            "structure",
+            "architecture"
+        ],
+        "elements": [
+            "triangle",
+            "negative space"
+        ]
+    },
+    {
+        "name": "Fluid Connection",
+        "prompt": "minimalist logo, connected dots, circuit lines, circular motion, smooth curves, tech aesthetic, monochrome",
+        "concepts": [
+            "connectivity",
+            "network",
+            "workflow"
+        ],
+        "elements": [
+            "circles",
+            "curved lines",
+            "nodes"
+        ]
+    },
+    {
+        "name": "Dual Hexagon",
+        "prompt": "minimalist logo, two interlocking hexagons, bold lines, symmetry, solid shape, modern tech, black and white",
+        "concepts": [
+            "partnership",
+            "strength",
+            "blockchain"
+        ],
+        "elements": [
+            "hexagon",
+            "interlock"
+        ]
+    },
+    {
+        "name": "Nature Minimal",
+        "prompt": "minimalist logo, stylized leaf, monoline art, organic curve, continuous line, eco-friendly, simple vector",
+        "concepts": [
+            "growth",
+            "nature",
+            "organic"
+        ],
+        "elements": [
+            "leaf",
+            "curve"
+        ]
+    },
+    {
+        "name": "Monogram R",
+        "prompt": "minimalist logo, letter R, modern typography, geometric construction, bold strokes, sans-serif, high contrast",
+        "concepts": [
+            "identity",
+            "modernity",
+            "boldness"
+        ],
+        "elements": [
+            "typography",
+            "letterform"
+        ]
+    },
+    {
+        "name": "Orbit Shift",
+        "prompt": "minimalist logo, planet with orbital ring, dynamic angle, sharp swoosh, space theme, futuristic, flat icon",
+        "concepts": [
+            "innovation",
+            "space",
+            "movement"
+        ],
+        "elements": [
+            "circle",
+            "swoosh",
+            "ring"
+        ]
+    },
+    {
+        "name": "Box Cube",
+        "prompt": "minimalist logo, 3d isometric cube, flat design, optical illusion, geometric box, impossible shape, clean lines",
+        "concepts": [
+            "dimensional",
+            "logic",
+            "puzzle"
+        ],
+        "elements": [
+            "cube",
+            "isometric"
+        ]
+    },
+    {
+        "name": "Fox Head",
+        "prompt": "minimalist logo, fox head silhouette, geometric polygons, sharp edges, wise, clever, flat vector, orange and white",
+        "concepts": [
+            "intelligence",
+            "agility",
+            "wildlife"
+        ],
+        "elements": [
+            "polygon",
+            "animal"
+        ]
+    }
+]

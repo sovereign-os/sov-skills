@@ -1,0 +1,53 @@
+{
+  "pairings": [
+    {
+      "vibe": "SaaS / Modern Code",
+      "heading": "Geist Sans",
+      "body": "Geist Sans",
+      "mono": "Geist Mono",
+      "source": "Vercel / Google Fonts"
+    },
+    {
+      "vibe": "Premium Corporate",
+      "heading": "Outfit",
+      "body": "Inter",
+      "mono": "JetBrains Mono",
+      "source": "Google Fonts"
+    },
+    {
+      "vibe": "Futuristic / Gaming",
+      "heading": "Orbitron",
+      "body": "Rajdhani",
+      "mono": "Fira Code",
+      "source": "Google Fonts"
+    },
+    {
+      "vibe": "Clean / Minimalist",
+      "heading": "Plus Jakarta Sans",
+      "body": "Plus Jakarta Sans",
+      "mono": "Space Mono",
+      "source": "Google Fonts"
+    },
+    {
+      "vibe": "Authoritative / Editorial",
+      "heading": "Playfair Display",
+      "body": "Lora",
+      "mono": "Courier Prime",
+      "source": "Google Fonts"
+    }
+  ],
+  "scales": {
+    "standard": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "modular-1.25": "Major Third scale"
+  }
+}

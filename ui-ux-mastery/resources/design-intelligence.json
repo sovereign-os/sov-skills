@@ -1,0 +1,1253 @@
+{
+  "palettes": [
+    {
+      "id": "saas-general-",
+      "name": "SaaS (General)",
+      "colors": {
+        "primary": "#2563EB",
+        "secondary": "#3B82F6",
+        "cta": "#F97316",
+        "background": "#F8FAFC",
+        "text": "#1E293B",
+        "border": "#E2E8F0"
+      },
+      "notes": "Trust blue + orange CTA contrast"
+    },
+    {
+      "id": "micro-saas",
+      "name": "Micro SaaS",
+      "colors": {
+        "primary": "#6366F1",
+        "secondary": "#818CF8",
+        "cta": "#10B981",
+        "background": "#F5F3FF",
+        "text": "#1E1B4B",
+        "border": "#E0E7FF"
+      },
+      "notes": "Indigo primary + emerald CTA"
+    },
+    {
+      "id": "e-commerce",
+      "name": "E-commerce",
+      "colors": {
+        "primary": "#059669",
+        "secondary": "#10B981",
+        "cta": "#F97316",
+        "background": "#ECFDF5",
+        "text": "#064E3B",
+        "border": "#A7F3D0"
+      },
+      "notes": "Success green + urgency orange"
+    },
+    {
+      "id": "e-commerce-luxury",
+      "name": "E-commerce Luxury",
+      "colors": {
+        "primary": "#1C1917",
+        "secondary": "#44403C",
+        "cta": "#CA8A04",
+        "background": "#FAFAF9",
+        "text": "#0C0A09",
+        "border": "#D6D3D1"
+      },
+      "notes": "Premium dark + gold accent"
+    },
+    {
+      "id": "service-landing-page",
+      "name": "Service Landing Page",
+      "colors": {
+        "primary": "#0EA5E9",
+        "secondary": "#38BDF8",
+        "cta": "#F97316",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Sky blue trust + warm CTA"
+    },
+    {
+      "id": "b2b-service",
+      "name": "B2B Service",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#334155",
+        "cta": "#0369A1",
+        "background": "#F8FAFC",
+        "text": "#020617",
+        "border": "#E2E8F0"
+      },
+      "notes": "Professional navy + blue CTA"
+    },
+    {
+      "id": "financial-dashboard",
+      "name": "Financial Dashboard",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#1E293B",
+        "cta": "#22C55E",
+        "background": "#020617",
+        "text": "#F8FAFC",
+        "border": "#334155"
+      },
+      "notes": "Dark bg + green positive indicators"
+    },
+    {
+      "id": "analytics-dashboard",
+      "name": "Analytics Dashboard",
+      "colors": {
+        "primary": "#1E40AF",
+        "secondary": "#3B82F6",
+        "cta": "#F59E0B",
+        "background": "#F8FAFC",
+        "text": "#1E3A8A",
+        "border": "#DBEAFE"
+      },
+      "notes": "Blue data + amber highlights"
+    },
+    {
+      "id": "healthcare-app",
+      "name": "Healthcare App",
+      "colors": {
+        "primary": "#0891B2",
+        "secondary": "#22D3EE",
+        "cta": "#059669",
+        "background": "#ECFEFF",
+        "text": "#164E63",
+        "border": "#A5F3FC"
+      },
+      "notes": "Calm cyan + health green"
+    },
+    {
+      "id": "educational-app",
+      "name": "Educational App",
+      "colors": {
+        "primary": "#4F46E5",
+        "secondary": "#818CF8",
+        "cta": "#F97316",
+        "background": "#EEF2FF",
+        "text": "#1E1B4B",
+        "border": "#C7D2FE"
+      },
+      "notes": "Playful indigo + energetic orange"
+    },
+    {
+      "id": "creative-agency",
+      "name": "Creative Agency",
+      "colors": {
+        "primary": "#EC4899",
+        "secondary": "#F472B6",
+        "cta": "#06B6D4",
+        "background": "#FDF2F8",
+        "text": "#831843",
+        "border": "#FBCFE8"
+      },
+      "notes": "Bold pink + cyan accent"
+    },
+    {
+      "id": "portfolio-personal",
+      "name": "Portfolio/Personal",
+      "colors": {
+        "primary": "#18181B",
+        "secondary": "#3F3F46",
+        "cta": "#2563EB",
+        "background": "#FAFAFA",
+        "text": "#09090B",
+        "border": "#E4E4E7"
+      },
+      "notes": "Monochrome + blue accent"
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#F43F5E",
+        "background": "#0F0F23",
+        "text": "#E2E8F0",
+        "border": "#4C1D95"
+      },
+      "notes": "Neon purple + rose action"
+    },
+    {
+      "id": "government-public-service",
+      "name": "Government/Public Service",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#334155",
+        "cta": "#0369A1",
+        "background": "#F8FAFC",
+        "text": "#020617",
+        "border": "#E2E8F0"
+      },
+      "notes": "High contrast navy + blue"
+    },
+    {
+      "id": "fintech-crypto",
+      "name": "Fintech/Crypto",
+      "colors": {
+        "primary": "#F59E0B",
+        "secondary": "#FBBF24",
+        "cta": "#8B5CF6",
+        "background": "#0F172A",
+        "text": "#F8FAFC",
+        "border": "#334155"
+      },
+      "notes": "Gold trust + purple tech"
+    },
+    {
+      "id": "social-media-app",
+      "name": "Social Media App",
+      "colors": {
+        "primary": "#E11D48",
+        "secondary": "#FB7185",
+        "cta": "#2563EB",
+        "background": "#FFF1F2",
+        "text": "#881337",
+        "border": "#FECDD3"
+      },
+      "notes": "Vibrant rose + engagement blue"
+    },
+    {
+      "id": "productivity-tool",
+      "name": "Productivity Tool",
+      "colors": {
+        "primary": "#0D9488",
+        "secondary": "#14B8A6",
+        "cta": "#F97316",
+        "background": "#F0FDFA",
+        "text": "#134E4A",
+        "border": "#99F6E4"
+      },
+      "notes": "Teal focus + action orange"
+    },
+    {
+      "id": "design-system-component-library",
+      "name": "Design System/Component Library",
+      "colors": {
+        "primary": "#4F46E5",
+        "secondary": "#6366F1",
+        "cta": "#F97316",
+        "background": "#EEF2FF",
+        "text": "#312E81",
+        "border": "#C7D2FE"
+      },
+      "notes": "Indigo brand + doc hierarchy"
+    },
+    {
+      "id": "ai-chatbot-platform",
+      "name": "AI/Chatbot Platform",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#06B6D4",
+        "background": "#FAF5FF",
+        "text": "#1E1B4B",
+        "border": "#DDD6FE"
+      },
+      "notes": "AI purple + cyan interactions"
+    },
+    {
+      "id": "nft-web3-platform",
+      "name": "NFT/Web3 Platform",
+      "colors": {
+        "primary": "#8B5CF6",
+        "secondary": "#A78BFA",
+        "cta": "#FBBF24",
+        "background": "#0F0F23",
+        "text": "#F8FAFC",
+        "border": "#4C1D95"
+      },
+      "notes": "Purple tech + gold value"
+    },
+    {
+      "id": "creator-economy-platform",
+      "name": "Creator Economy Platform",
+      "colors": {
+        "primary": "#EC4899",
+        "secondary": "#F472B6",
+        "cta": "#F97316",
+        "background": "#FDF2F8",
+        "text": "#831843",
+        "border": "#FBCFE8"
+      },
+      "notes": "Creator pink + engagement orange"
+    },
+    {
+      "id": "sustainability-esg-platform",
+      "name": "Sustainability/ESG Platform",
+      "colors": {
+        "primary": "#059669",
+        "secondary": "#10B981",
+        "cta": "#0891B2",
+        "background": "#ECFDF5",
+        "text": "#064E3B",
+        "border": "#A7F3D0"
+      },
+      "notes": "Nature green + ocean blue"
+    },
+    {
+      "id": "remote-work-collaboration-tool",
+      "name": "Remote Work/Collaboration Tool",
+      "colors": {
+        "primary": "#6366F1",
+        "secondary": "#818CF8",
+        "cta": "#10B981",
+        "background": "#F5F3FF",
+        "text": "#312E81",
+        "border": "#E0E7FF"
+      },
+      "notes": "Calm indigo + success green"
+    },
+    {
+      "id": "mental-health-app",
+      "name": "Mental Health App",
+      "colors": {
+        "primary": "#8B5CF6",
+        "secondary": "#C4B5FD",
+        "cta": "#10B981",
+        "background": "#FAF5FF",
+        "text": "#4C1D95",
+        "border": "#EDE9FE"
+      },
+      "notes": "Calming lavender + wellness green"
+    },
+    {
+      "id": "pet-tech-app",
+      "name": "Pet Tech App",
+      "colors": {
+        "primary": "#F97316",
+        "secondary": "#FB923C",
+        "cta": "#2563EB",
+        "background": "#FFF7ED",
+        "text": "#9A3412",
+        "border": "#FED7AA"
+      },
+      "notes": "Playful orange + trust blue"
+    },
+    {
+      "id": "smart-home-iot-dashboard",
+      "name": "Smart Home/IoT Dashboard",
+      "colors": {
+        "primary": "#1E293B",
+        "secondary": "#334155",
+        "cta": "#22C55E",
+        "background": "#0F172A",
+        "text": "#F8FAFC",
+        "border": "#475569"
+      },
+      "notes": "Dark tech + status green"
+    },
+    {
+      "id": "ev-charging-ecosystem",
+      "name": "EV/Charging Ecosystem",
+      "colors": {
+        "primary": "#0891B2",
+        "secondary": "#22D3EE",
+        "cta": "#22C55E",
+        "background": "#ECFEFF",
+        "text": "#164E63",
+        "border": "#A5F3FC"
+      },
+      "notes": "Electric cyan + eco green"
+    },
+    {
+      "id": "subscription-box-service",
+      "name": "Subscription Box Service",
+      "colors": {
+        "primary": "#D946EF",
+        "secondary": "#E879F9",
+        "cta": "#F97316",
+        "background": "#FDF4FF",
+        "text": "#86198F",
+        "border": "#F5D0FE"
+      },
+      "notes": "Excitement purple + urgency orange"
+    },
+    {
+      "id": "podcast-platform",
+      "name": "Podcast Platform",
+      "colors": {
+        "primary": "#1E1B4B",
+        "secondary": "#312E81",
+        "cta": "#F97316",
+        "background": "#0F0F23",
+        "text": "#F8FAFC",
+        "border": "#4338CA"
+      },
+      "notes": "Dark audio + warm accent"
+    },
+    {
+      "id": "dating-app",
+      "name": "Dating App",
+      "colors": {
+        "primary": "#E11D48",
+        "secondary": "#FB7185",
+        "cta": "#F97316",
+        "background": "#FFF1F2",
+        "text": "#881337",
+        "border": "#FECDD3"
+      },
+      "notes": "Romantic rose + warm orange"
+    },
+    {
+      "id": "micro-credentials-badges-platform",
+      "name": "Micro-Credentials/Badges Platform",
+      "colors": {
+        "primary": "#0369A1",
+        "secondary": "#0EA5E9",
+        "cta": "#CA8A04",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Trust blue + achievement gold"
+    },
+    {
+      "id": "knowledge-base-documentation",
+      "name": "Knowledge Base/Documentation",
+      "colors": {
+        "primary": "#475569",
+        "secondary": "#64748B",
+        "cta": "#2563EB",
+        "background": "#F8FAFC",
+        "text": "#1E293B",
+        "border": "#E2E8F0"
+      },
+      "notes": "Neutral grey + link blue"
+    },
+    {
+      "id": "hyperlocal-services",
+      "name": "Hyperlocal Services",
+      "colors": {
+        "primary": "#059669",
+        "secondary": "#10B981",
+        "cta": "#F97316",
+        "background": "#ECFDF5",
+        "text": "#064E3B",
+        "border": "#A7F3D0"
+      },
+      "notes": "Location green + action orange"
+    },
+    {
+      "id": "beauty-spa-wellness-service",
+      "name": "Beauty/Spa/Wellness Service",
+      "colors": {
+        "primary": "#EC4899",
+        "secondary": "#F9A8D4",
+        "cta": "#8B5CF6",
+        "background": "#FDF2F8",
+        "text": "#831843",
+        "border": "#FBCFE8"
+      },
+      "notes": "Soft pink + lavender luxury"
+    },
+    {
+      "id": "luxury-premium-brand",
+      "name": "Luxury/Premium Brand",
+      "colors": {
+        "primary": "#1C1917",
+        "secondary": "#44403C",
+        "cta": "#CA8A04",
+        "background": "#FAFAF9",
+        "text": "#0C0A09",
+        "border": "#D6D3D1"
+      },
+      "notes": "Premium black + gold accent"
+    },
+    {
+      "id": "restaurant-food-service",
+      "name": "Restaurant/Food Service",
+      "colors": {
+        "primary": "#DC2626",
+        "secondary": "#F87171",
+        "cta": "#CA8A04",
+        "background": "#FEF2F2",
+        "text": "#450A0A",
+        "border": "#FECACA"
+      },
+      "notes": "Appetizing red + warm gold"
+    },
+    {
+      "id": "fitness-gym-app",
+      "name": "Fitness/Gym App",
+      "colors": {
+        "primary": "#F97316",
+        "secondary": "#FB923C",
+        "cta": "#22C55E",
+        "background": "#1F2937",
+        "text": "#F8FAFC",
+        "border": "#374151"
+      },
+      "notes": "Energy orange + success green"
+    },
+    {
+      "id": "real-estate-property",
+      "name": "Real Estate/Property",
+      "colors": {
+        "primary": "#0F766E",
+        "secondary": "#14B8A6",
+        "cta": "#0369A1",
+        "background": "#F0FDFA",
+        "text": "#134E4A",
+        "border": "#99F6E4"
+      },
+      "notes": "Trust teal + professional blue"
+    },
+    {
+      "id": "travel-tourism-agency",
+      "name": "Travel/Tourism Agency",
+      "colors": {
+        "primary": "#0EA5E9",
+        "secondary": "#38BDF8",
+        "cta": "#F97316",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Sky blue + adventure orange"
+    },
+    {
+      "id": "hotel-hospitality",
+      "name": "Hotel/Hospitality",
+      "colors": {
+        "primary": "#1E3A8A",
+        "secondary": "#3B82F6",
+        "cta": "#CA8A04",
+        "background": "#F8FAFC",
+        "text": "#1E40AF",
+        "border": "#BFDBFE"
+      },
+      "notes": "Luxury navy + gold service"
+    },
+    {
+      "id": "wedding-event-planning",
+      "name": "Wedding/Event Planning",
+      "colors": {
+        "primary": "#DB2777",
+        "secondary": "#F472B6",
+        "cta": "#CA8A04",
+        "background": "#FDF2F8",
+        "text": "#831843",
+        "border": "#FBCFE8"
+      },
+      "notes": "Romantic pink + elegant gold"
+    },
+    {
+      "id": "legal-services",
+      "name": "Legal Services",
+      "colors": {
+        "primary": "#1E3A8A",
+        "secondary": "#1E40AF",
+        "cta": "#B45309",
+        "background": "#F8FAFC",
+        "text": "#0F172A",
+        "border": "#CBD5E1"
+      },
+      "notes": "Authority navy + trust gold"
+    },
+    {
+      "id": "insurance-platform",
+      "name": "Insurance Platform",
+      "colors": {
+        "primary": "#0369A1",
+        "secondary": "#0EA5E9",
+        "cta": "#22C55E",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Security blue + protected green"
+    },
+    {
+      "id": "banking-traditional-finance",
+      "name": "Banking/Traditional Finance",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#1E3A8A",
+        "cta": "#CA8A04",
+        "background": "#F8FAFC",
+        "text": "#020617",
+        "border": "#E2E8F0"
+      },
+      "notes": "Trust navy + premium gold"
+    },
+    {
+      "id": "online-course-e-learning",
+      "name": "Online Course/E-learning",
+      "colors": {
+        "primary": "#0D9488",
+        "secondary": "#2DD4BF",
+        "cta": "#F97316",
+        "background": "#F0FDFA",
+        "text": "#134E4A",
+        "border": "#5EEAD4"
+      },
+      "notes": "Progress teal + achievement orange"
+    },
+    {
+      "id": "non-profit-charity",
+      "name": "Non-profit/Charity",
+      "colors": {
+        "primary": "#0891B2",
+        "secondary": "#22D3EE",
+        "cta": "#F97316",
+        "background": "#ECFEFF",
+        "text": "#164E63",
+        "border": "#A5F3FC"
+      },
+      "notes": "Compassion blue + action orange"
+    },
+    {
+      "id": "music-streaming",
+      "name": "Music Streaming",
+      "colors": {
+        "primary": "#1E1B4B",
+        "secondary": "#4338CA",
+        "cta": "#22C55E",
+        "background": "#0F0F23",
+        "text": "#F8FAFC",
+        "border": "#312E81"
+      },
+      "notes": "Dark audio + play green"
+    },
+    {
+      "id": "video-streaming-ott",
+      "name": "Video Streaming/OTT",
+      "colors": {
+        "primary": "#0F0F23",
+        "secondary": "#1E1B4B",
+        "cta": "#E11D48",
+        "background": "#000000",
+        "text": "#F8FAFC",
+        "border": "#312E81"
+      },
+      "notes": "Cinema dark + play red"
+    },
+    {
+      "id": "job-board-recruitment",
+      "name": "Job Board/Recruitment",
+      "colors": {
+        "primary": "#0369A1",
+        "secondary": "#0EA5E9",
+        "cta": "#22C55E",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Professional blue + success green"
+    },
+    {
+      "id": "marketplace-p2p-",
+      "name": "Marketplace (P2P)",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#22C55E",
+        "background": "#FAF5FF",
+        "text": "#4C1D95",
+        "border": "#DDD6FE"
+      },
+      "notes": "Trust purple + transaction green"
+    },
+    {
+      "id": "logistics-delivery",
+      "name": "Logistics/Delivery",
+      "colors": {
+        "primary": "#2563EB",
+        "secondary": "#3B82F6",
+        "cta": "#F97316",
+        "background": "#EFF6FF",
+        "text": "#1E40AF",
+        "border": "#BFDBFE"
+      },
+      "notes": "Tracking blue + delivery orange"
+    },
+    {
+      "id": "agriculture-farm-tech",
+      "name": "Agriculture/Farm Tech",
+      "colors": {
+        "primary": "#15803D",
+        "secondary": "#22C55E",
+        "cta": "#CA8A04",
+        "background": "#F0FDF4",
+        "text": "#14532D",
+        "border": "#BBF7D0"
+      },
+      "notes": "Earth green + harvest gold"
+    },
+    {
+      "id": "construction-architecture",
+      "name": "Construction/Architecture",
+      "colors": {
+        "primary": "#64748B",
+        "secondary": "#94A3B8",
+        "cta": "#F97316",
+        "background": "#F8FAFC",
+        "text": "#334155",
+        "border": "#E2E8F0"
+      },
+      "notes": "Industrial grey + safety orange"
+    },
+    {
+      "id": "automotive-car-dealership",
+      "name": "Automotive/Car Dealership",
+      "colors": {
+        "primary": "#1E293B",
+        "secondary": "#334155",
+        "cta": "#DC2626",
+        "background": "#F8FAFC",
+        "text": "#0F172A",
+        "border": "#E2E8F0"
+      },
+      "notes": "Premium dark + action red"
+    },
+    {
+      "id": "photography-studio",
+      "name": "Photography Studio",
+      "colors": {
+        "primary": "#18181B",
+        "secondary": "#27272A",
+        "cta": "#F8FAFC",
+        "background": "#000000",
+        "text": "#FAFAFA",
+        "border": "#3F3F46"
+      },
+      "notes": "Pure black + white contrast"
+    },
+    {
+      "id": "coworking-space",
+      "name": "Coworking Space",
+      "colors": {
+        "primary": "#F59E0B",
+        "secondary": "#FBBF24",
+        "cta": "#2563EB",
+        "background": "#FFFBEB",
+        "text": "#78350F",
+        "border": "#FDE68A"
+      },
+      "notes": "Energetic amber + booking blue"
+    },
+    {
+      "id": "cleaning-service",
+      "name": "Cleaning Service",
+      "colors": {
+        "primary": "#0891B2",
+        "secondary": "#22D3EE",
+        "cta": "#22C55E",
+        "background": "#ECFEFF",
+        "text": "#164E63",
+        "border": "#A5F3FC"
+      },
+      "notes": "Fresh cyan + clean green"
+    },
+    {
+      "id": "home-services-plumber-electrician-",
+      "name": "Home Services (Plumber/Electrician)",
+      "colors": {
+        "primary": "#1E40AF",
+        "secondary": "#3B82F6",
+        "cta": "#F97316",
+        "background": "#EFF6FF",
+        "text": "#1E3A8A",
+        "border": "#BFDBFE"
+      },
+      "notes": "Professional blue + urgent orange"
+    },
+    {
+      "id": "childcare-daycare",
+      "name": "Childcare/Daycare",
+      "colors": {
+        "primary": "#F472B6",
+        "secondary": "#FBCFE8",
+        "cta": "#22C55E",
+        "background": "#FDF2F8",
+        "text": "#9D174D",
+        "border": "#FCE7F3"
+      },
+      "notes": "Soft pink + safe green"
+    },
+    {
+      "id": "senior-care-elderly",
+      "name": "Senior Care/Elderly",
+      "colors": {
+        "primary": "#0369A1",
+        "secondary": "#38BDF8",
+        "cta": "#22C55E",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#E0F2FE"
+      },
+      "notes": "Calm blue + reassuring green"
+    },
+    {
+      "id": "medical-clinic",
+      "name": "Medical Clinic",
+      "colors": {
+        "primary": "#0891B2",
+        "secondary": "#22D3EE",
+        "cta": "#22C55E",
+        "background": "#F0FDFA",
+        "text": "#134E4A",
+        "border": "#CCFBF1"
+      },
+      "notes": "Medical teal + health green"
+    },
+    {
+      "id": "pharmacy-drug-store",
+      "name": "Pharmacy/Drug Store",
+      "colors": {
+        "primary": "#15803D",
+        "secondary": "#22C55E",
+        "cta": "#0369A1",
+        "background": "#F0FDF4",
+        "text": "#14532D",
+        "border": "#BBF7D0"
+      },
+      "notes": "Pharmacy green + trust blue"
+    },
+    {
+      "id": "dental-practice",
+      "name": "Dental Practice",
+      "colors": {
+        "primary": "#0EA5E9",
+        "secondary": "#38BDF8",
+        "cta": "#FBBF24",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Fresh blue + smile yellow"
+    },
+    {
+      "id": "veterinary-clinic",
+      "name": "Veterinary Clinic",
+      "colors": {
+        "primary": "#0D9488",
+        "secondary": "#14B8A6",
+        "cta": "#F97316",
+        "background": "#F0FDFA",
+        "text": "#134E4A",
+        "border": "#99F6E4"
+      },
+      "notes": "Caring teal + warm orange"
+    },
+    {
+      "id": "florist-plant-shop",
+      "name": "Florist/Plant Shop",
+      "colors": {
+        "primary": "#15803D",
+        "secondary": "#22C55E",
+        "cta": "#EC4899",
+        "background": "#F0FDF4",
+        "text": "#14532D",
+        "border": "#BBF7D0"
+      },
+      "notes": "Natural green + floral pink"
+    },
+    {
+      "id": "bakery-cafe",
+      "name": "Bakery/Cafe",
+      "colors": {
+        "primary": "#92400E",
+        "secondary": "#B45309",
+        "cta": "#F8FAFC",
+        "background": "#FEF3C7",
+        "text": "#78350F",
+        "border": "#FDE68A"
+      },
+      "notes": "Warm brown + cream white"
+    },
+    {
+      "id": "coffee-shop",
+      "name": "Coffee Shop",
+      "colors": {
+        "primary": "#78350F",
+        "secondary": "#92400E",
+        "cta": "#FBBF24",
+        "background": "#FEF3C7",
+        "text": "#451A03",
+        "border": "#FDE68A"
+      },
+      "notes": "Coffee brown + warm gold"
+    },
+    {
+      "id": "brewery-winery",
+      "name": "Brewery/Winery",
+      "colors": {
+        "primary": "#7C2D12",
+        "secondary": "#B91C1C",
+        "cta": "#CA8A04",
+        "background": "#FEF2F2",
+        "text": "#450A0A",
+        "border": "#FECACA"
+      },
+      "notes": "Deep burgundy + craft gold"
+    },
+    {
+      "id": "airline",
+      "name": "Airline",
+      "colors": {
+        "primary": "#1E3A8A",
+        "secondary": "#3B82F6",
+        "cta": "#F97316",
+        "background": "#EFF6FF",
+        "text": "#1E40AF",
+        "border": "#BFDBFE"
+      },
+      "notes": "Sky blue + booking orange"
+    },
+    {
+      "id": "news-media-platform",
+      "name": "News/Media Platform",
+      "colors": {
+        "primary": "#DC2626",
+        "secondary": "#EF4444",
+        "cta": "#1E40AF",
+        "background": "#FEF2F2",
+        "text": "#450A0A",
+        "border": "#FECACA"
+      },
+      "notes": "Breaking red + link blue"
+    },
+    {
+      "id": "magazine-blog",
+      "name": "Magazine/Blog",
+      "colors": {
+        "primary": "#18181B",
+        "secondary": "#3F3F46",
+        "cta": "#EC4899",
+        "background": "#FAFAFA",
+        "text": "#09090B",
+        "border": "#E4E4E7"
+      },
+      "notes": "Editorial black + accent pink"
+    },
+    {
+      "id": "freelancer-platform",
+      "name": "Freelancer Platform",
+      "colors": {
+        "primary": "#6366F1",
+        "secondary": "#818CF8",
+        "cta": "#22C55E",
+        "background": "#EEF2FF",
+        "text": "#312E81",
+        "border": "#C7D2FE"
+      },
+      "notes": "Creative indigo + hire green"
+    },
+    {
+      "id": "consulting-firm",
+      "name": "Consulting Firm",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#334155",
+        "cta": "#CA8A04",
+        "background": "#F8FAFC",
+        "text": "#020617",
+        "border": "#E2E8F0"
+      },
+      "notes": "Authority navy + premium gold"
+    },
+    {
+      "id": "marketing-agency",
+      "name": "Marketing Agency",
+      "colors": {
+        "primary": "#EC4899",
+        "secondary": "#F472B6",
+        "cta": "#06B6D4",
+        "background": "#FDF2F8",
+        "text": "#831843",
+        "border": "#FBCFE8"
+      },
+      "notes": "Bold pink + creative cyan"
+    },
+    {
+      "id": "event-management",
+      "name": "Event Management",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#F97316",
+        "background": "#FAF5FF",
+        "text": "#4C1D95",
+        "border": "#DDD6FE"
+      },
+      "notes": "Excitement purple + action orange"
+    },
+    {
+      "id": "conference-webinar-platform",
+      "name": "Conference/Webinar Platform",
+      "colors": {
+        "primary": "#1E40AF",
+        "secondary": "#3B82F6",
+        "cta": "#22C55E",
+        "background": "#EFF6FF",
+        "text": "#1E3A8A",
+        "border": "#BFDBFE"
+      },
+      "notes": "Professional blue + join green"
+    },
+    {
+      "id": "membership-community",
+      "name": "Membership/Community",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#22C55E",
+        "background": "#FAF5FF",
+        "text": "#4C1D95",
+        "border": "#DDD6FE"
+      },
+      "notes": "Community purple + join green"
+    },
+    {
+      "id": "newsletter-platform",
+      "name": "Newsletter Platform",
+      "colors": {
+        "primary": "#0369A1",
+        "secondary": "#0EA5E9",
+        "cta": "#F97316",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "Trust blue + subscribe orange"
+    },
+    {
+      "id": "digital-products-downloads",
+      "name": "Digital Products/Downloads",
+      "colors": {
+        "primary": "#6366F1",
+        "secondary": "#818CF8",
+        "cta": "#22C55E",
+        "background": "#EEF2FF",
+        "text": "#312E81",
+        "border": "#C7D2FE"
+      },
+      "notes": "Digital indigo + buy green"
+    },
+    {
+      "id": "church-religious-organization",
+      "name": "Church/Religious Organization",
+      "colors": {
+        "primary": "#7C3AED",
+        "secondary": "#A78BFA",
+        "cta": "#CA8A04",
+        "background": "#FAF5FF",
+        "text": "#4C1D95",
+        "border": "#DDD6FE"
+      },
+      "notes": "Spiritual purple + warm gold"
+    },
+    {
+      "id": "sports-team-club",
+      "name": "Sports Team/Club",
+      "colors": {
+        "primary": "#DC2626",
+        "secondary": "#EF4444",
+        "cta": "#FBBF24",
+        "background": "#FEF2F2",
+        "text": "#7F1D1D",
+        "border": "#FECACA"
+      },
+      "notes": "Team red + championship gold"
+    },
+    {
+      "id": "museum-gallery",
+      "name": "Museum/Gallery",
+      "colors": {
+        "primary": "#18181B",
+        "secondary": "#27272A",
+        "cta": "#F8FAFC",
+        "background": "#FAFAFA",
+        "text": "#09090B",
+        "border": "#E4E4E7"
+      },
+      "notes": "Gallery black + white space"
+    },
+    {
+      "id": "theater-cinema",
+      "name": "Theater/Cinema",
+      "colors": {
+        "primary": "#1E1B4B",
+        "secondary": "#312E81",
+        "cta": "#CA8A04",
+        "background": "#0F0F23",
+        "text": "#F8FAFC",
+        "border": "#4338CA"
+      },
+      "notes": "Dramatic dark + spotlight gold"
+    },
+    {
+      "id": "language-learning-app",
+      "name": "Language Learning App",
+      "colors": {
+        "primary": "#4F46E5",
+        "secondary": "#818CF8",
+        "cta": "#22C55E",
+        "background": "#EEF2FF",
+        "text": "#312E81",
+        "border": "#C7D2FE"
+      },
+      "notes": "Learning indigo + progress green"
+    },
+    {
+      "id": "coding-bootcamp",
+      "name": "Coding Bootcamp",
+      "colors": {
+        "primary": "#0F172A",
+        "secondary": "#1E293B",
+        "cta": "#22C55E",
+        "background": "#020617",
+        "text": "#F8FAFC",
+        "border": "#334155"
+      },
+      "notes": "Terminal dark + success green"
+    },
+    {
+      "id": "cybersecurity-platform",
+      "name": "Cybersecurity Platform",
+      "colors": {
+        "primary": "#00FF41",
+        "secondary": "#0D0D0D",
+        "cta": "#FF3333",
+        "background": "#000000",
+        "text": "#E0E0E0",
+        "border": "#1F1F1F"
+      },
+      "notes": "Matrix green + alert red"
+    },
+    {
+      "id": "developer-tool-ide",
+      "name": "Developer Tool / IDE",
+      "colors": {
+        "primary": "#1E293B",
+        "secondary": "#334155",
+        "cta": "#22C55E",
+        "background": "#0F172A",
+        "text": "#F8FAFC",
+        "border": "#475569"
+      },
+      "notes": "Code dark + run green"
+    },
+    {
+      "id": "biotech-life-sciences",
+      "name": "Biotech / Life Sciences",
+      "colors": {
+        "primary": "#0EA5E9",
+        "secondary": "#0284C7",
+        "cta": "#10B981",
+        "background": "#F0F9FF",
+        "text": "#0C4A6E",
+        "border": "#BAE6FD"
+      },
+      "notes": "DNA blue + life green"
+    },
+    {
+      "id": "space-tech-aerospace",
+      "name": "Space Tech / Aerospace",
+      "colors": {
+        "primary": "#F8FAFC",
+        "secondary": "#94A3B8",
+        "cta": "#3B82F6",
+        "background": "#0B0B10",
+        "text": "#F8FAFC",
+        "border": "#1E293B"
+      },
+      "notes": "Star white + launch blue"
+    },
+    {
+      "id": "architecture-interior",
+      "name": "Architecture / Interior",
+      "colors": {
+        "primary": "#171717",
+        "secondary": "#404040",
+        "cta": "#D4AF37",
+        "background": "#FFFFFF",
+        "text": "#171717",
+        "border": "#E5E5E5"
+      },
+      "notes": "Minimal black + accent gold"
+    },
+    {
+      "id": "quantum-computing",
+      "name": "Quantum Computing",
+      "colors": {
+        "primary": "#00FFFF",
+        "secondary": "#7B61FF",
+        "cta": "#FF00FF",
+        "background": "#050510",
+        "text": "#E0E0FF",
+        "border": "#333344"
+      },
+      "notes": "Quantum cyan + interference purple"
+    },
+    {
+      "id": "biohacking-longevity",
+      "name": "Biohacking / Longevity",
+      "colors": {
+        "primary": "#FF4D4D",
+        "secondary": "#4D94FF",
+        "cta": "#00E676",
+        "background": "#F5F5F7",
+        "text": "#1C1C1E",
+        "border": "#E5E5EA"
+      },
+      "notes": "Bio red/blue + vitality green"
+    },
+    {
+      "id": "autonomous-systems",
+      "name": "Autonomous Systems",
+      "colors": {
+        "primary": "#00FF41",
+        "secondary": "#008F11",
+        "cta": "#FF3333",
+        "background": "#0D1117",
+        "text": "#E6EDF3",
+        "border": "#30363D"
+      },
+      "notes": "Terminal green + alert red"
+    },
+    {
+      "id": "generative-ai-art",
+      "name": "Generative AI Art",
+      "colors": {
+        "primary": "#18181B",
+        "secondary": "#3F3F46",
+        "cta": "#EC4899",
+        "background": "#FAFAFA",
+        "text": "#09090B",
+        "border": "#E4E4E7"
+      },
+      "notes": "Canvas neutral + creative pink"
+    },
+    {
+      "id": "spatial-vision-os",
+      "name": "Spatial / Vision OS",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#E5E5E5",
+        "cta": "#007AFF",
+        "background": "#888888",
+        "text": "#000000",
+        "border": "#CCCCCC"
+      },
+      "notes": "Glass white + system blue"
+    },
+    {
+      "id": "climate-tech",
+      "name": "Climate Tech",
+      "colors": {
+        "primary": "#059669",
+        "secondary": "#10B981",
+        "cta": "#FBBF24",
+        "background": "#ECFDF5",
+        "text": "#064E3B",
+        "border": "#A7F3D0"
+      },
+      "notes": "Nature green + solar gold"
+    }
+  ],
+  "fonts": []
+}

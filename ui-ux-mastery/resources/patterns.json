@@ -1,0 +1,176 @@
+{
+    "patterns": [
+        {
+            "category": "Getting Input",
+            "patterns": [
+                {
+                    "name": "Good Defaults",
+                    "description": "Always pre-fill forms with the most likely values to reduce friction."
+                },
+                {
+                    "name": "Input Feedback",
+                    "description": "Provide real-time validation (Success/Error/Warning) as the user types."
+                },
+                {
+                    "name": "Inplace Editor",
+                    "description": "Allow users to edit content directly where it appears (Click-to-Edit)."
+                },
+                {
+                    "name": "Password Strength Meter",
+                    "description": "Visual indicator of password security to encourage stronger credentials."
+                },
+                {
+                    "name": "Structured Format",
+                    "description": "Auto-format inputs (e.g., Phone numbers, Credit Cards) to prevent errors."
+                },
+                {
+                    "name": "Forgiving Format",
+                    "description": "Accept various input formats (e.g., '1/2/2024' or 'Jan 2 2024') and normalize them."
+                },
+                {
+                    "name": "Autosave",
+                    "description": "Prevent data loss by saving draft content automatically."
+                },
+                {
+                    "name": "Undo",
+                    "description": "Allow users to reverse actions (e.g., 'Deleted', 'Archived') immediately."
+                }
+            ]
+        },
+        {
+            "category": "Navigation & Wayfinding",
+            "patterns": [
+                {
+                    "name": "Breadcrumbs",
+                    "description": "Show the trail of pages leading to the current location. Essential for deep hierarchies."
+                },
+                {
+                    "name": "Fat Footer",
+                    "description": "Use the footer for secondary navigation, sitemaps, and resource links."
+                },
+                {
+                    "name": "Tabs",
+                    "description": "Group related content into alternate views within the same context."
+                },
+                {
+                    "name": "Accordion Menu",
+                    "description": "Vertically stacked list of headers that can be expanded/collapsed."
+                },
+                {
+                    "name": "Shortcut Dropdown",
+                    "description": "Quick access menu for frequently used actions (e.g., User Profile menu)."
+                },
+                {
+                    "name": "Home Link",
+                    "description": "The logo must always link back to the dashboard or home page."
+                }
+            ]
+        },
+        {
+            "category": "Explaining the Process",
+            "patterns": [
+                {
+                    "name": "Wizard",
+                    "description": "Break complex tasks into a sequence of bite-sized steps."
+                },
+                {
+                    "name": "Completeness Meter",
+                    "description": "Show a progress bar to gamify completion."
+                },
+                {
+                    "name": "Steps Left",
+                    "description": "Clearly indicate how many steps remain in a Wizard process."
+                },
+                {
+                    "name": "Inline Help Box",
+                    "description": "Specific contextual help (Tooltips or Info Icons) next to complex fields."
+                }
+            ]
+        },
+        {
+            "category": "Structured Content",
+            "patterns": [
+                {
+                    "name": "Cards",
+                    "description": "Container for actionable content. Must include: Image/Icon, Title, Summary, and Action."
+                },
+                {
+                    "name": "Pagination",
+                    "description": "Divide large datasets into discrete pages for control."
+                },
+                {
+                    "name": "Continuous Scrolling",
+                    "description": "Auto-load content as the user scrolls down (Best for feeds)."
+                },
+                {
+                    "name": "Adaptable View",
+                    "description": "Allow users to toggle between List View (Density) and Grid View (Visuals)."
+                },
+                {
+                    "name": "Empty States",
+                    "description": "Never show a blank page. Display illustration + 'Create New' CTA."
+                }
+            ]
+        },
+        {
+            "category": "Community & Social",
+            "patterns": [
+                {
+                    "name": "Vote To Promote",
+                    "description": "Allow community curation of content quality."
+                },
+                {
+                    "name": "Flagging/Reporting",
+                    "description": "Mechanism for users to police bad content."
+                },
+                {
+                    "name": "Rate Content",
+                    "description": "5-star or Thumbs up/down systems."
+                }
+            ]
+        },
+        {
+            "category": "Admin & Dashboards",
+            "patterns": [
+                {
+                    "name": "Advanced Filter Bar",
+                    "description": "Collapsible or persistent bar with multi-select, date ranges, and boolean toggles for narrowing datasets."
+                },
+                {
+                    "name": "Bulk Operations",
+                    "description": "Allow users to select multiple items and perform actions (Delete, Archive, Edit) in one click."
+                },
+                {
+                    "name": "Audit Logging",
+                    "description": "Visual timeline of system/user events for security and transparency."
+                },
+                {
+                    "name": "Permissions Simulator",
+                    "description": "Allow admins to preview the interface 'as' a specific role to verify access control."
+                },
+                {
+                    "name": "Active Metric Cards",
+                    "description": "Summary boxes with Sparklines (line charts) and comparison indicators (e.g. +12% since last month)."
+                },
+                {
+                    "name": "Empty Contextual States",
+                    "description": "First-run experiences for specific modules like 'No API Keys' or 'No Logs Found'."
+                }
+            ]
+        }
+    ],
+    "anti_patterns": [
+        {
+            "name": "Mystery Meat Navigation",
+            "description": "Links/Buttons that don't look clickable until hovered."
+        },
+        {
+            "name": "Scroll Hijacking",
+            "description": "Altering the native scroll behavior of the browser."
+        },
+        {
+            "name": "Pop-up Overload",
+            "description": "Using Modals for everything. Use 'Inline Editing' or 'Slide-overs' instead."
+        }
+    ]
+}

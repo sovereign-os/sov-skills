@@ -1,10 +1,10 @@
 ---
-name: iso-standard-mastery
+name: swe-standard-mastery
 description: "High-fidelity governance for Software Engineering documentation based on the latest ISO/IEC/IEEE international standards."
 version: 1.0.0
 ---
 
-# 📚 ISO/IEC/IEEE Standard Mastery
+# 📚 Software Engineering Standards Mastery
 
 This skill establishes software engineering documentation governance compliant with the latest international standards. This skill must be used as the primary reference when creating UCS, TSD, and Verification Reports.
 

@@ -1,0 +1,33 @@
+{
+  "easings": {
+    "standard": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "decelerate": "cubic-bezier(0, 0, 0.2, 1)",
+    "accelerate": "cubic-bezier(0.4, 0, 1, 1)",
+    "sharp": "cubic-bezier(0.4, 0, 0.6, 1)",
+    "premium-spring": "spring(1, 100, 10, 0)",
+    "soft-bounce": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+  },
+  "durations": {
+    "instant": "50ms",
+    "fast": "150ms",
+    "normal": "300ms",
+    "slow": "500ms",
+    "immersive": "800ms"
+  },
+  "patterns": {
+    "fade-in-up": {
+      "initial": { "opacity": 0, "y": 20 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.4, "ease": "easeOut" }
+    },
+    "hover-lift": {
+      "whileHover": { "y": -4, "transition": { "duration": 0.2 } }
+    },
+    "tap-press": {
+      "whileTap": { "scale": 0.95 }
+    },
+    "stagger-children": {
+      "transition": { "staggerChildren": 0.1 }
+    }
+  }
+}

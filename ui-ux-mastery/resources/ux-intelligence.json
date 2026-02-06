@@ -1,0 +1,1389 @@
+{
+  "heroStructures": [
+    {
+      "id": "saas-split",
+      "name": "The SaaS Split (50/50)",
+      "description": "The gold standard for B2B. Left column for rigorous value prop & CTA, Right column for high-fidelity visual proof (app screenshot or interactive graphic).",
+      "structure": [
+        "Container: Flex Row (Mobile: Col)",
+        "Left: Badge -> H1 (Left Align) -> Subtext -> Dual CTA",
+        "Right: Floating Mockup / 3D Element (Tilt -6deg)"
+      ],
+      "metrics": { "h1_size": "4-5rem", "visual_width": "50-60%" }
+    },
+    {
+      "id": "visual-anchor",
+      "name": "The Visual Anchor (Center + Depth)",
+      "description": "High impact for 'Platform' plays. Centered typography that anchors a massive, tilted 3D dashboard preview underneath. Creates a sense of scale and depth.",
+      "structure": [
+        "Container: Flex Col (Center)",
+        "Top: Pill -> H1 (Center, Balanced) -> Subtext -> CTA",
+        "Bottom: Massive 3D Container (Perspective 2000px) -> App Screenshot (RotateX 15deg)"
+      ],
+      "metrics": { "h1_size": "5-7rem", "visual_width": "90%" }
+    },
+    {
+      "id": "bento-grid",
+      "name": "The Bento Hero",
+      "description": "Modern & Feature-Rich. Headline on top-left, followed instantly by a Bento Grid of key features. Eliminates the 'fold'.",
+      "structure": [
+        "Grid: 12 Cols",
+        "Col 1-7: Headline + CTA",
+        "Col 8-12: Feature Card 1 (Visual)",
+        "Row 2: Feature Card 2 + Feature Card 3"
+      ],
+      "metrics": { "h1_size": "3.5-4.5rem", "grid_gap": "24px" }
+    }
+  ],
+  "landingPageFlows": [
+    {
+      "id": "saas-conversion-prime",
+      "name": "SaaS Conversion Prime (The Standard)",
+      "flow": [
+        "1. Navbar (Sticky: Logo + Login + CTA)",
+        "2. Hero (The Hook: Value Prop + Social Proof)",
+        "3. Logo Cloud (The Trust: 'Trusted by...')",
+        "4. Problem/Agitation (The Why: 'Stop doing this...')",
+        "5. Solution/Benefits (The What: 3-Col Grid)",
+        "6. How it Works (The How: Zig-Zag Steps)",
+        "7. Social Proof (The Validation: Testimonials)",
+        "8. Pricing (The Offer: Tiered Cards)",
+        "9. FAQ (Objection Handling)",
+        "10. Final CTA (The Close: Simple & Direct)",
+        "11. Footer (The Map)"
+      ],
+      "principles": ["AIDA Model", "Rule of 3", "Visual Hierarchy"]
+    },
+    {
+      "id": "mobile-app-launch",
+      "name": "Mobile App Launch",
+      "flow": [
+        "1. Hero (App Store Badges + Phone Mockup)",
+        "2. Features (Swipeable Carousel)",
+        "3. Social Proof (App Store Ratings)",
+        "4. 'Download Now' Sticky Banner"
+      ]
+    }
+  ],
+  "footerStructures": [
+    {
+      "id": "mega-sitemap",
+      "name": "The Mega Sitemap (Enterprise)",
+      "description": "For platforms with profound depth. Organizes content into clear silos.",
+      "structure": [
+        "Top: Newsletter Signup (Left) + Socials (Right)",
+        "Middle: 5-6 Columns (Product, Resources, Company, Legal, Developers, Support)",
+        "Bottom: Copyright + Status Indicator + Theme Toggle"
+      ]
+    },
+    {
+      "id": "minimalist-brand",
+      "name": "The Minimalist Brand",
+      "description": "For focused tools or personal portfolios. prioritizing aesthetics.",
+      "structure": [
+        "Centered Layout",
+        "Big Logo / Wordmark",
+        "Single Row of Links (About, Blog, Contact)",
+        "Subtle Copyright"
+      ]
+    },
+    {
+      "id": "newsletter-first",
+      "name": "Newsletter First",
+      "description": "For content-heavy or community-driven sites.",
+      "structure": [
+        "Left: Huge 'Subscribe' Input + Value Prop",
+        "Right: Condensed Links (2 Cols)"
+      ]
+    }
+  ],
+  "guidelines": [
+    {
+      "category": "Navigation",
+      "issue": "Smooth Scroll",
+      "do": "Use scroll-behavior: smooth on html element",
+      "severity": "High"
+    },
+    {
+      "category": "Navigation",
+      "issue": "Sticky Navigation",
+      "do": "Add padding-top to body equal to nav height",
+      "severity": "Medium"
+    },
+    {
+      "category": "Navigation",
+      "issue": "Active State",
+      "do": "Highlight active nav item with color/underline",
+      "severity": "Medium"
+    },
+    {
+      "category": "Navigation",
+      "issue": "Back Button",
+      "do": "Preserve navigation history properly",
+      "severity": "High"
+    },
+    {
+      "category": "Navigation",
+      "issue": "Deep Linking",
+      "do": "Update URL on state/view changes",
+      "severity": "Medium"
+    },
+    {
+      "category": "Navigation",
+      "issue": "Breadcrumbs",
+      "do": "Use for sites with 3+ levels of depth",
+      "severity": "Low"
+    },
+    {
+      "category": "Animation",
+      "issue": "Excessive Motion",
+      "do": "Animate 1-2 key elements per view maximum",
+      "severity": "High"
+    },
+    {
+      "category": "Animation",
+      "issue": "Duration Timing",
+      "do": "Use 150-300ms for micro-interactions",
+      "severity": "Medium"
+    },
+    {
+      "category": "Animation",
+      "issue": "Reduced Motion",
+      "do": "Check prefers-reduced-motion media query",
+      "severity": "High"
+    },
+    {
+      "category": "Animation",
+      "issue": "Loading States",
+      "do": "Use skeleton screens or spinners",
+      "severity": "High"
+    },
+    {
+      "category": "Animation",
+      "issue": "Hover vs Tap",
+      "do": "Use click/tap for primary interactions",
+      "severity": "High"
+    },
+    {
+      "category": "Animation",
+      "issue": "Continuous Animation",
+      "do": "Use for loading indicators only",
+      "severity": "Medium"
+    },
+    {
+      "category": "Animation",
+      "issue": "Transform Performance",
+      "do": "Use transform and opacity for animations",
+      "severity": "Medium"
+    },
+    {
+      "category": "Animation",
+      "issue": "Easing Functions",
+      "do": "Use ease-out for entering ease-in for exiting",
+      "severity": "Low"
+    },
+    {
+      "category": "Layout",
+      "issue": "Z-Index Management",
+      "do": "Define z-index scale system (10 20 30 50)",
+      "severity": "High"
+    },
+    {
+      "category": "Layout",
+      "issue": "Overflow Hidden",
+      "do": "Test all content fits within containers",
+      "severity": "Medium"
+    },
+    {
+      "category": "Layout",
+      "issue": "Fixed Positioning",
+      "do": "Account for safe areas and other fixed elements",
+      "severity": "Medium"
+    },
+    {
+      "category": "Layout",
+      "issue": "Stacking Context",
+      "do": "Understand what creates new stacking context",
+      "severity": "Medium"
+    },
+    {
+      "category": "Layout",
+      "issue": "Content Jumping",
+      "do": "Reserve space for async content",
+      "severity": "High"
+    },
+    {
+      "category": "Layout",
+      "issue": "Viewport Units",
+      "do": "Use dvh or account for mobile browser chrome",
+      "severity": "Medium"
+    },
+    {
+      "category": "Layout",
+      "issue": "Container Width",
+      "do": "Limit max-width for text content (65-75ch)",
+      "severity": "Medium"
+    },
+    {
+      "category": "Touch",
+      "issue": "Touch Target Size",
+      "do": "Minimum 44x44px touch targets",
+      "severity": "High"
+    },
+    {
+      "category": "Touch",
+      "issue": "Touch Spacing",
+      "do": "Minimum 8px gap between touch targets",
+      "severity": "Medium"
+    },
+    {
+      "category": "Touch",
+      "issue": "Gesture Conflicts",
+      "do": "Avoid horizontal swipe on main content",
+      "severity": "Medium"
+    },
+    {
+      "category": "Touch",
+      "issue": "Tap Delay",
+      "do": "Use touch-action CSS or fastclick",
+      "severity": "Medium"
+    },
+    {
+      "category": "Touch",
+      "issue": "Pull to Refresh",
+      "do": "Disable where not needed",
+      "severity": "Low"
+    },
+    {
+      "category": "Touch",
+      "issue": "Haptic Feedback",
+      "do": "Use for confirmations and important actions",
+      "severity": "Low"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Focus States",
+      "do": "Use visible focus rings on interactive elements",
+      "severity": "High"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Hover States",
+      "do": "Change cursor and add subtle visual change",
+      "severity": "Medium"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Active States",
+      "do": "Add pressed/active state visual change",
+      "severity": "Medium"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Disabled States",
+      "do": "Reduce opacity and change cursor",
+      "severity": "Medium"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Loading Buttons",
+      "do": "Disable button and show loading state",
+      "severity": "High"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Error Feedback",
+      "do": "Show clear error messages near problem",
+      "severity": "High"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Success Feedback",
+      "do": "Show success message or visual change",
+      "severity": "Medium"
+    },
+    {
+      "category": "Interaction",
+      "issue": "Confirmation Dialogs",
+      "do": "Confirm before delete/irreversible actions",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Color Contrast",
+      "do": "Minimum 4.5:1 ratio for normal text",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Color Only",
+      "do": "Use icons/text in addition to color",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Alt Text",
+      "do": "Descriptive alt text for meaningful images",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Heading Hierarchy",
+      "do": "Use sequential heading levels h1-h6",
+      "severity": "Medium"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "ARIA Labels",
+      "do": "Add aria-label for icon-only buttons",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Keyboard Navigation",
+      "do": "Tab order matches visual order",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Screen Reader",
+      "do": "Use semantic HTML and ARIA properly",
+      "severity": "Medium"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Form Labels",
+      "do": "Use label with for attribute or wrap input",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Error Messages",
+      "do": "Use aria-live or role=alert for errors",
+      "severity": "High"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Skip Links",
+      "do": "Provide skip to main content link",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Image Optimization",
+      "do": "Use appropriate size and format (WebP)",
+      "severity": "High"
+    },
+    {
+      "category": "Performance",
+      "issue": "Lazy Loading",
+      "do": "Lazy load below-fold images and content",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Code Splitting",
+      "do": "Split code by route/feature",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Caching",
+      "do": "Set appropriate cache headers",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Font Loading",
+      "do": "Use font-display swap or optional",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Third Party Scripts",
+      "do": "Load non-critical scripts async/defer",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Bundle Size",
+      "do": "Monitor and minimize bundle size",
+      "severity": "Medium"
+    },
+    {
+      "category": "Performance",
+      "issue": "Render Blocking",
+      "do": "Inline critical CSS defer non-critical",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Input Labels",
+      "do": "Always show label above or beside input",
+      "severity": "High"
+    },
+    {
+      "category": "Forms",
+      "issue": "Error Placement",
+      "do": "Show error below related input",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Inline Validation",
+      "do": "Validate on blur for most fields",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Input Types",
+      "do": "Use email tel number url etc",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Autofill Support",
+      "do": "Use autocomplete attribute properly",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Required Indicators",
+      "do": "Use asterisk or (required) text",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Password Visibility",
+      "do": "Toggle to show/hide password",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Submit Feedback",
+      "do": "Show loading then success/error state",
+      "severity": "High"
+    },
+    {
+      "category": "Forms",
+      "issue": "Input Affordance",
+      "do": "Use distinct input styling",
+      "severity": "Medium"
+    },
+    {
+      "category": "Forms",
+      "issue": "Mobile Keyboards",
+      "do": "Use inputmode attribute",
+      "severity": "Medium"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Mobile First",
+      "do": "Start with mobile styles then add breakpoints",
+      "severity": "Medium"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Breakpoint Testing",
+      "do": "Test at 320 375 414 768 1024 1440",
+      "severity": "Medium"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Touch Friendly",
+      "do": "Increase touch targets on mobile",
+      "severity": "High"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Readable Font Size",
+      "do": "Minimum 16px body text on mobile",
+      "severity": "High"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Viewport Meta",
+      "do": "Use width=device-width initial-scale=1",
+      "severity": "High"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Horizontal Scroll",
+      "do": "Ensure content fits viewport width",
+      "severity": "High"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Image Scaling",
+      "do": "Use max-width: 100% on images",
+      "severity": "Medium"
+    },
+    {
+      "category": "Responsive",
+      "issue": "Table Handling",
+      "do": "Use horizontal scroll or card layout",
+      "severity": "Medium"
+    },
+    {
+      "category": "Typography",
+      "issue": "Line Height",
+      "do": "Use 1.5-1.75 for body text",
+      "severity": "Medium"
+    },
+    {
+      "category": "Typography",
+      "issue": "Line Length",
+      "do": "Limit to 65-75 characters per line",
+      "severity": "Medium"
+    },
+    {
+      "category": "Typography",
+      "issue": "Font Size Scale",
+      "do": "Use consistent modular scale",
+      "severity": "Medium"
+    },
+    {
+      "category": "Typography",
+      "issue": "Font Loading",
+      "do": "Reserve space with fallback font",
+      "severity": "Medium"
+    },
+    {
+      "category": "Typography",
+      "issue": "Contrast Readability",
+      "do": "Use darker text on light backgrounds",
+      "severity": "High"
+    },
+    {
+      "category": "Typography",
+      "issue": "Heading Clarity",
+      "do": "Clear size/weight difference",
+      "severity": "Medium"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Loading Indicators",
+      "do": "Show spinner/skeleton for operations > 300ms",
+      "severity": "High"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Empty States",
+      "do": "Show helpful message and action",
+      "severity": "Medium"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Error Recovery",
+      "do": "Provide clear next steps",
+      "severity": "Medium"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Progress Indicators",
+      "do": "Step indicators or progress bar",
+      "severity": "Medium"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Toast Notifications",
+      "do": "Auto-dismiss after 3-5 seconds",
+      "severity": "Medium"
+    },
+    {
+      "category": "Feedback",
+      "issue": "Confirmation Messages",
+      "do": "Brief success message",
+      "severity": "Medium"
+    },
+    {
+      "category": "Content",
+      "issue": "Truncation",
+      "do": "Truncate with ellipsis and expand option",
+      "severity": "Medium"
+    },
+    {
+      "category": "Content",
+      "issue": "Date Formatting",
+      "do": "Use relative or locale-aware dates",
+      "severity": "Low"
+    },
+    {
+      "category": "Content",
+      "issue": "Number Formatting",
+      "do": "Use thousand separators or abbreviations",
+      "severity": "Low"
+    },
+    {
+      "category": "Content",
+      "issue": "Placeholder Content",
+      "do": "Use realistic sample data",
+      "severity": "Low"
+    },
+    {
+      "category": "Onboarding",
+      "issue": "User Freedom",
+      "do": "Provide Skip and Back buttons",
+      "severity": "Medium"
+    },
+    {
+      "category": "Search",
+      "issue": "Autocomplete",
+      "do": "Show predictions as user types",
+      "severity": "Medium"
+    },
+    {
+      "category": "Search",
+      "issue": "No Results",
+      "do": "Show 'No results' with suggestions",
+      "severity": "Medium"
+    },
+    {
+      "category": "Data Entry",
+      "issue": "Bulk Actions",
+      "do": "Allow multi-select and bulk edit",
+      "severity": "Low"
+    },
+    {
+      "category": "AI Interaction",
+      "issue": "Disclaimer",
+      "do": "Clearly label AI generated content",
+      "severity": "High"
+    },
+    {
+      "category": "AI Interaction",
+      "issue": "Streaming",
+      "do": "Stream text response token by token",
+      "severity": "Medium"
+    },
+    {
+      "category": "Spatial UI",
+      "issue": "Gaze Hover",
+      "do": "Scale/highlight element on look",
+      "severity": "High"
+    },
+    {
+      "category": "Spatial UI",
+      "issue": "Depth Layering",
+      "do": "Use glass material and z-offset",
+      "severity": "Medium"
+    },
+    {
+      "category": "Sustainability",
+      "issue": "Auto-Play Video",
+      "do": "Click-to-play or pause when off-screen",
+      "severity": "Medium"
+    },
+    {
+      "category": "Sustainability",
+      "issue": "Asset Weight",
+      "do": "Compress and lazy load 3D models",
+      "severity": "Medium"
+    },
+    {
+      "category": "AI Interaction",
+      "issue": "Feedback Loop",
+      "do": "Thumps up/down or 'Regenerate'",
+      "severity": "Low"
+    },
+    {
+      "category": "Accessibility",
+      "issue": "Motion Sensitivity",
+      "do": "Respect prefers-reduced-motion",
+      "severity": "High"
+    }
+  ],
+  "dashboardLayouts": [
+    {
+      "id": "enterprise-classic",
+      "name": "The Enterprise Classic (Sidebar + Main)",
+      "description": "Standard for high-productivity SaaS. Persistent navigation on the left, top-bar for breadcrumbs/search/profile, and a multi-column content area.",
+      "structure": [
+        "Sidebar: Brand -> Nav Groups -> Footer Menu (Collapse toggle)",
+        "TopBar: Breadcrumbs / Search -> Activity/Notifications -> User Profile",
+        "Main: Header (Title + Actions) -> Metric Row -> Tabbed Content / Data Grid"
+      ]
+    },
+    {
+      "id": "command-center",
+      "name": "The Command Center (Metric Heavy)",
+      "description": "Used for monitoring and operations. Focus on high-density information display and real-time updates.",
+      "structure": [
+        "Grid: Custom Layout Builder",
+        "Row 1: 4-6 Small Metric Cards (Pulse indicators)",
+        "Row 2: Large Trend Chart (70%) + Quick Actions Feed (30%)",
+        "Row 3: Detailed Status Table / Logs"
+      ]
+    },
+    {
+      "id": "spatial-feed",
+      "name": "The Spatial Feed",
+      "description": "Modern, mobile-inspired dashboard. Centered feed of 'Cards' or 'Tasks', with floating auxiliary panels.",
+      "structure": [
+        "Background: Dynamic gradient or glass floor",
+        "Center: Feed of actionable cards (staggered entrance)",
+        "Floating: Navigation bar on bottom or side (glassmorphism)"
+      ]
+    }
+  ],
+  "adminModules": [
+    {
+      "id": "user-management",
+      "name": "User & Role Management",
+      "description": "High-fidelity interface for managing platform participants and their access levels.",
+      "structure": [
+        "Searchable Data Table with Multi-select",
+        "Filters: Role, Status, Tenant/Org, Activity Date",
+        "Quick Action: 'Impersonate', 'Reset Password', 'Edit Permissions'",
+        "Slide-over: User Detail with Activity Log"
+      ]
+    },
+    {
+      "id": "audit-sentinel",
+      "name": "The Audit Sentinel (Logs)",
+      "description": "Transparency and security tracking. Focus on readability of large temporal datasets.",
+      "structure": [
+        "Timeline View: Relative time indicators",
+        "Color Coding: Info (Blue), Warn (Orange), Critical (Red)",
+        "JSON Inspector: Expandable rows for deep metadata audit",
+        "Export Protocol: CSV/PDF/Webhook triggers"
+      ]
+    },
+    {
+      "id": "configurations-vault",
+      "name": "Configuration Vault",
+      "description": "Centralized engine for feature flags, environment variables, and system settings.",
+      "structure": [
+        "Siloed Categories: Core, AI, Integrations, Storage",
+        "Validation: Type-checked inputs (Enum, JSON, Range)",
+        "Propagation: 'Apply Changes' with diff verification"
+      ]
+    }
+  ],
+  "saasPatterns": [
+    {
+      "id": "multi-tenant-switcher",
+      "name": "Multi-tenant Switcher",
+      "description": "Seamless transition between organizations or environments.",
+      "structure": [
+        "Searchable Popover in Sidebar",
+        "Team/Tenant Cards: Logo + Name + Usage Metric",
+        "Action: 'Create New Organization'"
+      ]
+    },
+    {
+      "id": "billing-lifecycle",
+      "name": "Billing & Subscription Lifecycle",
+      "description": "Managing the financial relationship with customers.",
+      "structure": [
+        "Tier Cards: Current Plan highlight",
+        "Usage Meters: API calls, Storage, Seats (Color coded by proximity to limit)",
+        "Payment Bridge: Card management + Invoice history"
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "No": "1",
+      "DataType": "Trend Over Time",
+      "Keywords": "trend, time-series, line, growth, timeline, progress",
+      "BestChartType": "Line Chart",
+      "SecondaryOptions": "Area Chart, Smooth Area",
+      "ColorGuidance": "Primary: #0080FF. Multiple series: use distinct colors. Fill: 20% opacity",
+      "PerformanceImpact": "⚡ Excellent (optimized)",
+      "AccessibilityNotes": "✓ Clear line patterns for colorblind users. Add pattern overlays.",
+      "LibraryRecommendation": "Chart.js, Recharts, ApexCharts",
+      "InteractiveLevel": "Hover + Zoom"
+    },
+    {
+      "No": "2",
+      "DataType": "Compare Categories",
+      "Keywords": "compare, categories, bar, comparison, ranking",
+      "BestChartType": "Bar Chart (Horizontal or Vertical)",
+      "SecondaryOptions": "Column Chart, Grouped Bar",
+      "ColorGuidance": "Each bar: distinct color. Category: grouped same color. Sorted: descending order",
+      "PerformanceImpact": "⚡ Excellent",
+      "AccessibilityNotes": "✓ Easy to compare. Add value labels on bars for clarity.",
+      "LibraryRecommendation": "Chart.js, Recharts, D3.js",
+      "InteractiveLevel": "Hover + Sort"
+    },
+    {
+      "No": "3",
+      "DataType": "Part-to-Whole",
+      "Keywords": "part-to-whole, pie, donut, percentage, proportion, share",
+      "BestChartType": "Pie Chart or Donut",
+      "SecondaryOptions": "Stacked Bar, Treemap",
+      "ColorGuidance": "Colors: 5-6 max. Contrasting palette. Large slices first. Use labels.",
+      "PerformanceImpact": "⚡ Good (limit 6 slices)",
+      "AccessibilityNotes": "⚠ Hard for accessibility. Better: Stacked bar with legend. Avoid pie if >5 items.",
+      "LibraryRecommendation": "Chart.js, Recharts, D3.js",
+      "InteractiveLevel": "Hover + Drill"
+    },
+    {
+      "No": "4",
+      "DataType": "Correlation/Distribution",
+      "Keywords": "correlation, distribution, scatter, relationship, pattern",
+      "BestChartType": "Scatter Plot or Bubble Chart",
+      "SecondaryOptions": "Heat Map, Matrix",
+      "ColorGuidance": "Color axis: gradient (blue-red). Size: relative. Opacity: 0.6-0.8 to show density",
+      "PerformanceImpact": "⚠ Moderate (many points)",
+      "AccessibilityNotes": "⚠ Provide data table alternative. Use pattern + color distinction.",
+      "LibraryRecommendation": "D3.js, Plotly, Recharts",
+      "InteractiveLevel": "Hover + Brush"
+    },
+    {
+      "No": "5",
+      "DataType": "Heatmap/Intensity",
+      "Keywords": "heatmap, heat-map, intensity, density, matrix",
+      "BestChartType": "Heat Map or Choropleth",
+      "SecondaryOptions": "Grid Heat Map, Bubble Heat",
+      "ColorGuidance": "Gradient: Cool (blue) to Hot (red). Scale: clear legend. Divergent for ±data",
+      "PerformanceImpact": "⚡ Excellent (color CSS)",
+      "AccessibilityNotes": "⚠ Colorblind: Use pattern overlay. Provide numerical legend.",
+      "LibraryRecommendation": "D3.js, Plotly, ApexCharts",
+      "InteractiveLevel": "Hover + Zoom"
+    },
+    {
+      "No": "6",
+      "DataType": "Geographic Data",
+      "Keywords": "geographic, map, location, region, geo, spatial",
+      "BestChartType": "Choropleth Map, Bubble Map",
+      "SecondaryOptions": "Geographic Heat Map",
+      "ColorGuidance": "Regional: single color gradient or categorized colors. Legend: clear scale",
+      "PerformanceImpact": "⚠ Moderate (rendering)",
+      "AccessibilityNotes": "⚠ Include text labels for regions. Provide data table alternative.",
+      "LibraryRecommendation": "D3.js, Mapbox, Leaflet",
+      "InteractiveLevel": "Pan + Zoom + Drill"
+    },
+    {
+      "No": "7",
+      "DataType": "Funnel/Flow",
+      "Keywords": "funnel/flow",
+      "BestChartType": "Funnel Chart, Sankey",
+      "SecondaryOptions": "Waterfall (for flows)",
+      "ColorGuidance": "Stages: gradient (starting color → ending color). Show conversion %",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Clear stage labels + percentages. Good for accessibility if labeled.",
+      "LibraryRecommendation": "D3.js, Recharts, Custom SVG",
+      "InteractiveLevel": "Hover + Drill"
+    },
+    {
+      "No": "8",
+      "DataType": "Performance vs Target",
+      "Keywords": "performance-vs-target",
+      "BestChartType": "Gauge Chart or Bullet Chart",
+      "SecondaryOptions": "Dial, Thermometer",
+      "ColorGuidance": "Performance: Red→Yellow→Green gradient. Target: marker line. Threshold colors",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Add numerical value + percentage label beside gauge.",
+      "LibraryRecommendation": "D3.js, ApexCharts, Custom SVG",
+      "InteractiveLevel": "Hover"
+    },
+    {
+      "No": "9",
+      "DataType": "Time-Series Forecast",
+      "Keywords": "time-series-forecast",
+      "BestChartType": "Line with Confidence Band",
+      "SecondaryOptions": "Ribbon Chart",
+      "ColorGuidance": "Actual: solid line #0080FF. Forecast: dashed #FF9500. Band: light shading",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Clearly distinguish actual vs forecast. Add legend.",
+      "LibraryRecommendation": "Chart.js, ApexCharts, Plotly",
+      "InteractiveLevel": "Hover + Toggle"
+    },
+    {
+      "No": "10",
+      "DataType": "Anomaly Detection",
+      "Keywords": "anomaly-detection",
+      "BestChartType": "Line Chart with Highlights",
+      "SecondaryOptions": "Scatter with Alert",
+      "ColorGuidance": "Normal: blue #0080FF. Anomaly: red #FF0000 circle/square marker + alert",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Circle/marker for anomalies. Add text alert annotation.",
+      "LibraryRecommendation": "D3.js, Plotly, ApexCharts",
+      "InteractiveLevel": "Hover + Alert"
+    },
+    {
+      "No": "11",
+      "DataType": "Hierarchical/Nested Data",
+      "Keywords": "hierarchical/nested-data",
+      "BestChartType": "Treemap",
+      "SecondaryOptions": "Sunburst, Nested Donut, Icicle",
+      "ColorGuidance": "Parent: distinct hues. Children: lighter shades. White borders 2-3px.",
+      "PerformanceImpact": "⚠ Moderate",
+      "AccessibilityNotes": "⚠ Poor - provide table alternative. Label large areas.",
+      "LibraryRecommendation": "D3.js, Recharts, ApexCharts",
+      "InteractiveLevel": "Hover + Drilldown"
+    },
+    {
+      "No": "12",
+      "DataType": "Flow/Process Data",
+      "Keywords": "flow/process-data",
+      "BestChartType": "Sankey Diagram",
+      "SecondaryOptions": "Alluvial, Chord Diagram",
+      "ColorGuidance": "Gradient from source to target. Opacity 0.4-0.6 for flows.",
+      "PerformanceImpact": "⚠ Moderate",
+      "AccessibilityNotes": "⚠ Poor - provide flow table alternative.",
+      "LibraryRecommendation": "D3.js (d3-sankey), Plotly",
+      "InteractiveLevel": "Hover + Drilldown"
+    },
+    {
+      "No": "13",
+      "DataType": "Cumulative Changes",
+      "Keywords": "cumulative-changes",
+      "BestChartType": "Waterfall Chart",
+      "SecondaryOptions": "Stacked Bar, Cascade",
+      "ColorGuidance": "Increases: #4CAF50. Decreases: #F44336. Start: #2196F3. End: #0D47A1.",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Good - clear directional colors with labels.",
+      "LibraryRecommendation": "ApexCharts, Highcharts, Plotly",
+      "InteractiveLevel": "Hover"
+    },
+    {
+      "No": "14",
+      "DataType": "Multi-Variable Comparison",
+      "Keywords": "multi-variable-comparison",
+      "BestChartType": "Radar/Spider Chart",
+      "SecondaryOptions": "Parallel Coordinates, Grouped Bar",
+      "ColorGuidance": "Single: #0080FF 20% fill. Multiple: distinct colors per dataset.",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "⚠ Moderate - limit 5-8 axes. Add data table.",
+      "LibraryRecommendation": "Chart.js, Recharts, ApexCharts",
+      "InteractiveLevel": "Hover + Toggle"
+    },
+    {
+      "No": "15",
+      "DataType": "Stock/Trading OHLC",
+      "Keywords": "stock/trading-ohlc",
+      "BestChartType": "Candlestick Chart",
+      "SecondaryOptions": "OHLC Bar, Heikin-Ashi",
+      "ColorGuidance": "Bullish: #26A69A. Bearish: #EF5350. Volume: 40% opacity below.",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "⚠ Moderate - provide OHLC data table.",
+      "LibraryRecommendation": "Lightweight Charts (TradingView), ApexCharts",
+      "InteractiveLevel": "Real-time + Hover + Zoom"
+    },
+    {
+      "No": "16",
+      "DataType": "Relationship/Connection Data",
+      "Keywords": "relationship/connection-data",
+      "BestChartType": "Network Graph",
+      "SecondaryOptions": "Hierarchical Tree, Adjacency Matrix",
+      "ColorGuidance": "Node types: categorical colors. Edges: #90A4AE 60% opacity.",
+      "PerformanceImpact": "❌ Poor (500+ nodes struggles)",
+      "AccessibilityNotes": "❌ Very Poor - provide adjacency list alternative.",
+      "LibraryRecommendation": "D3.js (d3-force), Vis.js, Cytoscape.js",
+      "InteractiveLevel": "Drilldown + Hover + Drag"
+    },
+    {
+      "No": "17",
+      "DataType": "Distribution/Statistical",
+      "Keywords": "distribution/statistical",
+      "BestChartType": "Box Plot",
+      "SecondaryOptions": "Violin Plot, Beeswarm",
+      "ColorGuidance": "Box: #BBDEFB. Border: #1976D2. Median: #D32F2F. Outliers: #F44336.",
+      "PerformanceImpact": "⚡ Excellent",
+      "AccessibilityNotes": "✓ Good - include stats table (min, Q1, median, Q3, max).",
+      "LibraryRecommendation": "Plotly, D3.js, Chart.js (plugin)",
+      "InteractiveLevel": "Hover"
+    },
+    {
+      "No": "18",
+      "DataType": "Performance vs Target (Compact)",
+      "Keywords": "performance-vs-target-(compact)",
+      "BestChartType": "Bullet Chart",
+      "SecondaryOptions": "Gauge, Progress Bar",
+      "ColorGuidance": "Ranges: #FFCDD2, #FFF9C4, #C8E6C9. Performance: #1976D2. Target: black 3px.",
+      "PerformanceImpact": "⚡ Excellent",
+      "AccessibilityNotes": "✓ Excellent - compact with clear values.",
+      "LibraryRecommendation": "D3.js, Plotly, Custom SVG",
+      "InteractiveLevel": "Hover"
+    },
+    {
+      "No": "19",
+      "DataType": "Proportional/Percentage",
+      "Keywords": "proportional/percentage",
+      "BestChartType": "Waffle Chart",
+      "SecondaryOptions": "Pictogram, Stacked Bar 100%",
+      "ColorGuidance": "10x10 grid. 3-5 categories max. 2-3px spacing between squares.",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "✓ Good - better than pie for accessibility.",
+      "LibraryRecommendation": "D3.js, React-Waffle, Custom CSS Grid",
+      "InteractiveLevel": "Hover"
+    },
+    {
+      "No": "20",
+      "DataType": "Hierarchical Proportional",
+      "Keywords": "hierarchical-proportional",
+      "BestChartType": "Sunburst Chart",
+      "SecondaryOptions": "Treemap, Icicle, Circle Packing",
+      "ColorGuidance": "Center to outer: darker to lighter. 15-20% lighter per level.",
+      "PerformanceImpact": "⚠ Moderate",
+      "AccessibilityNotes": "⚠ Poor - provide hierarchy table alternative.",
+      "LibraryRecommendation": "D3.js (d3-hierarchy), Recharts, ApexCharts",
+      "InteractiveLevel": "Drilldown + Hover"
+    },
+    {
+      "No": "21",
+      "DataType": "Root Cause Analysis",
+      "Keywords": "root cause, decomposition, tree, hierarchy, drill-down, ai-split",
+      "BestChartType": "Decomposition Tree",
+      "SecondaryOptions": "Decision Tree, Flow Chart",
+      "ColorGuidance": "Nodes: #2563EB (Primary) vs #EF4444 (Negative impact). Connectors: Neutral grey.",
+      "PerformanceImpact": "⚠ Moderate (calculation heavy)",
+      "AccessibilityNotes": "✓ clear hierarchy. Allow keyboard navigation for nodes.",
+      "LibraryRecommendation": "Power BI (native), React-Flow, Custom D3.js",
+      "InteractiveLevel": "Drill + Expand"
+    },
+    {
+      "No": "22",
+      "DataType": "3D Spatial Data",
+      "Keywords": "3d, spatial, immersive, terrain, molecular, volumetric",
+      "BestChartType": "3D Scatter/Surface Plot",
+      "SecondaryOptions": "Volumetric Rendering, Point Cloud",
+      "ColorGuidance": "Depth cues: lighting/shading. Z-axis: color gradient (cool to warm).",
+      "PerformanceImpact": "❌ Heavy (WebGL required)",
+      "AccessibilityNotes": "❌ Poor - requires alternative 2D view or data table.",
+      "LibraryRecommendation": "Three.js, Deck.gl, Plotly 3D",
+      "InteractiveLevel": "Rotate + Zoom + VR"
+    },
+    {
+      "No": "23",
+      "DataType": "Real-Time Streaming",
+      "Keywords": "streaming, real-time, ticker, live, velocity, pulse",
+      "BestChartType": "Streaming Area Chart",
+      "SecondaryOptions": "Ticker Tape, Moving Gauge",
+      "ColorGuidance": "Current: Bright Pulse (#00FF00). History: Fading opacity. Grid: Dark.",
+      "PerformanceImpact": "⚡ Optimized (canvas/webgl)",
+      "AccessibilityNotes": "⚠ Flashing elements - provide pause button. High contrast.",
+      "LibraryRecommendation": "Smoothed D3.js",
+      "InteractiveLevel": "CanvasJS"
+    },
+    {
+      "No": "24",
+      "DataType": "Sentiment/Emotion",
+      "Keywords": "sentiment, emotion, nlp, opinion, feeling",
+      "BestChartType": "Word Cloud with Sentiment",
+      "SecondaryOptions": "Sentiment Arc, Radar Chart",
+      "ColorGuidance": "Positive: #22C55E. Negative: #EF4444. Neutral: #94A3B8. Size = Frequency.",
+      "PerformanceImpact": "⚡ Good",
+      "AccessibilityNotes": "⚠ Word clouds poor for screen readers. Use list view.",
+      "LibraryRecommendation": "D3-cloud, Highcharts, Nivo",
+      "InteractiveLevel": "Hover + Filter"
+    },
+    {
+      "No": "25",
+      "DataType": "Process Mining",
+      "Keywords": "process, mining, variants, path, bottleneck, log",
+      "BestChartType": "Process Map / Graph",
+      "SecondaryOptions": "Directed Acyclic Graph (DAG), Petri Net",
+      "ColorGuidance": "Happy path: #10B981 (Thick). Deviations: #F59E0B (Thin). Bottlenecks: #EF4444.",
+      "PerformanceImpact": "⚠ Moderate to Heavy",
+      "AccessibilityNotes": "⚠ Complex graphs hard to navigate. Provide path summary.",
+      "LibraryRecommendation": "React-Flow, Cytoscape.js, Recharts",
+      "InteractiveLevel": "Drag + Node-Click"
+    }
+  ],
+  "landingPatterns": [
+    {
+      "No": "1",
+      "PatternName": "Hero + Features + CTA",
+      "Keywords": "hero, hero-centric, features, feature-rich, cta, call-to-action",
+      "SectionOrder": "1. Hero with headline/image, 2. Value prop, 3. Key features (3-5), 4. CTA section, 5. Footer",
+      "PrimaryCTAPlacement": "Hero (sticky) + Bottom",
+      "ColorStrategy": "Hero: Brand primary or vibrant. Features: Card bg #FAFAFA. CTA: Contrasting accent color",
+      "RecommendedEffects": "Hero parallax, feature card hover lift, CTA glow on hover",
+      "ConversionOptimization": "Deep CTA placement. Use contrasting color (at least 7:1 contrast ratio). Sticky navbar CTA."
+    },
+    {
+      "No": "2",
+      "PatternName": "Hero + Testimonials + CTA",
+      "Keywords": "hero, testimonials, social-proof, trust, reviews, cta",
+      "SectionOrder": "1. Hero, 2. Problem statement, 3. Solution overview, 4. Testimonials carousel, 5. CTA",
+      "PrimaryCTAPlacement": "Hero (sticky) + Post-testimonials",
+      "ColorStrategy": "Hero: Brand color. Testimonials: Light bg #F5F5F5. Quotes: Italic, muted color #666. CTA: Vibrant",
+      "RecommendedEffects": "Testimonial carousel slide animations, quote marks animations, avatar fade-in",
+      "ConversionOptimization": "Social proof before CTA. Use 3-5 testimonials. Include photo + name + role. CTA after social proof."
+    },
+    {
+      "No": "3",
+      "PatternName": "Product Demo + Features",
+      "Keywords": "demo, product-demo, features, showcase, interactive",
+      "SectionOrder": "1. Hero, 2. Product video/mockup (center), 3. Feature breakdown per section, 4. Comparison (optional), 5. CTA",
+      "PrimaryCTAPlacement": "Video center + CTA right/bottom",
+      "ColorStrategy": "Video surround: Brand color overlay. Features: Icon color #0080FF. Text: Dark #222",
+      "RecommendedEffects": "Video play button pulse, feature scroll reveals, demo interaction highlights",
+      "ConversionOptimization": "Embedded product demo increases engagement. Use interactive mockup if possible. Auto-play video muted."
+    },
+    {
+      "No": "4",
+      "PatternName": "Minimal Single Column",
+      "Keywords": "minimal, simple, direct, single-column, clean",
+      "SectionOrder": "1. Hero headline, 2. Short description, 3. Benefit bullets (3 max), 4. CTA, 5. Footer",
+      "PrimaryCTAPlacement": "Center, large CTA button",
+      "ColorStrategy": "Minimalist: Brand + white #FFFFFF + accent. Buttons: High contrast 7:1+. Text: Black/Dark grey",
+      "RecommendedEffects": "Minimal hover effects. Smooth scroll. CTA scale on hover (subtle)",
+      "ConversionOptimization": "Single CTA focus. Large typography. Lots of whitespace. No nav clutter. Mobile-first."
+    },
+    {
+      "No": "5",
+      "PatternName": "Funnel (3-Step Conversion)",
+      "Keywords": "funnel, conversion, steps, wizard, onboarding",
+      "SectionOrder": "1. Hero, 2. Step 1 (problem), 3. Step 2 (solution), 4. Step 3 (action), 5. CTA progression",
+      "PrimaryCTAPlacement": "Each step: mini-CTA. Final: main CTA",
+      "ColorStrategy": "Step colors: 1 (Red/Problem), 2 (Orange/Process), 3 (Green/Solution). CTA: Brand color",
+      "RecommendedEffects": "Step number animations, progress bar fill, step transitions smooth scroll",
+      "ConversionOptimization": "Progressive disclosure. Show only essential info per step. Use progress indicators. Multiple CTAs."
+    },
+    {
+      "No": "6",
+      "PatternName": "Comparison Table + CTA",
+      "Keywords": "comparison, table, compare, versus, cta",
+      "SectionOrder": "1. Hero, 2. Problem intro, 3. Comparison table (product vs competitors), 4. Pricing (optional), 5. CTA",
+      "PrimaryCTAPlacement": "Table: Right column. CTA: Below table",
+      "ColorStrategy": "Table: Alternating rows (white/light grey). Your product: Highlight #FFFACD (light yellow) or green. Text: Dark",
+      "RecommendedEffects": "Table row hover highlight, price toggle animations, feature checkmark animations",
+      "ConversionOptimization": "Use comparison to show unique value. Highlight your product row. Include 'free trial' in pricing row."
+    },
+    {
+      "No": "7",
+      "PatternName": "Lead Magnet + Form",
+      "Keywords": "lead, form, signup, capture, email, magnet",
+      "SectionOrder": "1. Hero (benefit headline), 2. Lead magnet preview (ebook cover, checklist, etc), 3. Form (minimal fields), 4. CTA submit",
+      "PrimaryCTAPlacement": "Form CTA: Submit button",
+      "ColorStrategy": "Lead magnet: Professional design. Form: Clean white bg. Inputs: Light border #CCCCCC. CTA: Brand color",
+      "RecommendedEffects": "Form focus state animations, input validation animations, success confirmation animation",
+      "ConversionOptimization": "Form fields ≤ 3 for best conversion. Offer valuable lead magnet preview. Show form submission progress."
+    },
+    {
+      "No": "8",
+      "PatternName": "Pricing Page + CTA",
+      "Keywords": "pricing, plans, tiers, comparison, cta",
+      "SectionOrder": "1. Hero (pricing headline), 2. Price comparison cards, 3. Feature comparison table, 4. FAQ section, 5. Final CTA",
+      "PrimaryCTAPlacement": "Each card: CTA button. Sticky CTA in nav",
+      "ColorStrategy": "Free: Grey, Starter: Blue, Pro: Green/Gold, Enterprise: Dark. Cards: 1px border, shadow",
+      "RecommendedEffects": "Price toggle animation (monthly/yearly), card comparison highlight, FAQ accordion open/close",
+      "ConversionOptimization": "Recommend starter plan (pre-select/highlight). Show annual discount (20-30%). Use FAQs to address concerns."
+    },
+    {
+      "No": "9",
+      "PatternName": "Video-First Hero",
+      "Keywords": "video, hero, media, visual, engaging",
+      "SectionOrder": "1. Hero with video background, 2. Key features overlay, 3. Benefits section, 4. CTA",
+      "PrimaryCTAPlacement": "Overlay on video (center/bottom) + Bottom section",
+      "ColorStrategy": "Dark overlay 60% on video. Brand accent for CTA. White text on dark.",
+      "RecommendedEffects": "Video autoplay muted, parallax scroll, text fade-in on scroll",
+      "ConversionOptimization": "86% higher engagement with video. Add captions for accessibility. Compress video for performance."
+    },
+    {
+      "No": "10",
+      "PatternName": "Scroll-Triggered Storytelling",
+      "Keywords": "storytelling, scroll, narrative, story, immersive",
+      "SectionOrder": "1. Intro hook, 2. Chapter 1 (problem), 3. Chapter 2 (journey), 4. Chapter 3 (solution), 5. Climax CTA",
+      "PrimaryCTAPlacement": "End of each chapter (mini) + Final climax CTA",
+      "ColorStrategy": "Progressive reveal. Each chapter has distinct color. Building intensity.",
+      "RecommendedEffects": "ScrollTrigger animations, parallax layers, progressive disclosure, chapter transitions",
+      "ConversionOptimization": "Narrative increases time-on-page 3x. Use progress indicator. Mobile: simplify animations."
+    },
+    {
+      "No": "11",
+      "PatternName": "AI Personalization Landing",
+      "Keywords": "ai, personalization, smart, recommendation, dynamic",
+      "SectionOrder": "1. Dynamic hero (personalized), 2. Relevant features, 3. Tailored testimonials, 4. Smart CTA",
+      "PrimaryCTAPlacement": "Context-aware placement based on user segment",
+      "ColorStrategy": "Adaptive based on user data. A/B test color variations per segment.",
+      "RecommendedEffects": "Dynamic content swap, fade transitions, personalized product recommendations",
+      "ConversionOptimization": "20%+ conversion with personalization. Requires analytics integration. Fallback for new users."
+    },
+    {
+      "No": "12",
+      "PatternName": "Waitlist/Coming Soon",
+      "Keywords": "waitlist, coming-soon, launch, early-access, notify",
+      "SectionOrder": "1. Hero with countdown, 2. Product teaser/preview, 3. Email capture form, 4. Social proof (waitlist count)",
+      "PrimaryCTAPlacement": "Email form prominent (above fold) + Sticky form on scroll",
+      "ColorStrategy": "Anticipation: Dark + accent highlights. Countdown in brand color. Urgency indicators.",
+      "RecommendedEffects": "Countdown timer animation, email validation feedback, success confetti, social share buttons",
+      "ConversionOptimization": "Scarcity + exclusivity. Show waitlist count. Early access benefits. Referral program."
+    },
+    {
+      "No": "13",
+      "PatternName": "Comparison Table Focus",
+      "Keywords": "comparison, table, versus, compare, features",
+      "SectionOrder": "1. Hero (problem statement), 2. Comparison matrix (you vs competitors), 3. Feature deep-dive, 4. Winner CTA",
+      "PrimaryCTAPlacement": "After comparison table (highlighted row) + Bottom",
+      "ColorStrategy": "Your product column highlighted (accent bg or green). Competitors neutral. Checkmarks green.",
+      "RecommendedEffects": "Table row hover highlight, feature checkmark animations, sticky comparison header",
+      "ConversionOptimization": "Show value vs competitors. 35% higher conversion. Be factual. Include pricing if favorable."
+    },
+    {
+      "No": "14",
+      "PatternName": "Pricing-Focused Landing",
+      "Keywords": "pricing, price, cost, plans, subscription",
+      "SectionOrder": "1. Hero (value proposition), 2. Pricing cards (3 tiers), 3. Feature comparison, 4. FAQ, 5. Final CTA",
+      "PrimaryCTAPlacement": "Each pricing card + Sticky CTA in nav + Bottom",
+      "ColorStrategy": "Popular plan highlighted (brand color border/bg). Free: grey. Enterprise: dark/premium.",
+      "RecommendedEffects": "Price toggle monthly/annual animation, card hover lift, FAQ accordion smooth open",
+      "ConversionOptimization": "Annual discount 20-30%. Recommend mid-tier (most popular badge). Address objections in FAQ."
+    },
+    {
+      "No": "15",
+      "PatternName": "App Store Style Landing",
+      "Keywords": "app, mobile, download, store, install",
+      "SectionOrder": "1. Hero with device mockup, 2. Screenshots carousel, 3. Features with icons, 4. Reviews/ratings, 5. Download CTAs",
+      "PrimaryCTAPlacement": "Download buttons prominent (App Store + Play Store) throughout",
+      "ColorStrategy": "Dark/light matching app store feel. Star ratings in gold. Screenshots with device frames.",
+      "RecommendedEffects": "Device mockup rotations, screenshot slider, star rating animations, download button pulse",
+      "ConversionOptimization": "Show real screenshots. Include ratings (4.5+ stars). QR code for mobile. Platform-specific CTAs."
+    },
+    {
+      "No": "16",
+      "PatternName": "FAQ/Documentation Landing",
+      "Keywords": "faq, documentation, help, support, questions",
+      "SectionOrder": "1. Hero with search bar, 2. Popular categories, 3. FAQ accordion, 4. Contact/support CTA",
+      "PrimaryCTAPlacement": "Search bar prominent + Contact CTA for unresolved questions",
+      "ColorStrategy": "Clean, high readability. Minimal color. Category icons in brand color. Success green for resolved.",
+      "RecommendedEffects": "Search autocomplete, smooth accordion open/close, category hover, helpful feedback buttons",
+      "ConversionOptimization": "Reduce support tickets. Track search analytics. Show related articles. Contact escalation path."
+    },
+    {
+      "No": "17",
+      "PatternName": "Immersive/Interactive Experience",
+      "Keywords": "immersive, interactive, experience, 3d, animation",
+      "SectionOrder": "1. Full-screen interactive element, 2. Guided product tour, 3. Key benefits revealed, 4. CTA after completion",
+      "PrimaryCTAPlacement": "After interaction complete + Skip option for impatient users",
+      "ColorStrategy": "Immersive experience colors. Dark background for focus. Highlight interactive elements.",
+      "RecommendedEffects": "WebGL, 3D interactions, gamification elements, progress indicators, reward animations",
+      "ConversionOptimization": "40% higher engagement. Performance trade-off. Provide skip option. Mobile fallback essential."
+    },
+    {
+      "No": "18",
+      "PatternName": "Event/Conference Landing",
+      "Keywords": "event, conference, meetup, registration, schedule",
+      "SectionOrder": "1. Hero (date/location/countdown), 2. Speakers grid, 3. Agenda/schedule, 4. Sponsors, 5. Register CTA",
+      "PrimaryCTAPlacement": "Register CTA sticky + After speakers + Bottom",
+      "ColorStrategy": "Urgency colors (countdown). Event branding. Speaker cards professional. Sponsor logos neutral.",
+      "RecommendedEffects": "Countdown timer, speaker hover cards with bio, agenda tabs, early bird countdown",
+      "ConversionOptimization": "Early bird pricing with deadline. Social proof (past attendees). Speaker credibility. Multi-ticket discounts."
+    },
+    {
+      "No": "19",
+      "PatternName": "Product Review/Ratings Focused",
+      "Keywords": "reviews, ratings, testimonials, social-proof, stars",
+      "SectionOrder": "1. Hero (product + aggregate rating), 2. Rating breakdown, 3. Individual reviews, 4. Buy/CTA",
+      "PrimaryCTAPlacement": "After reviews summary + Buy button alongside reviews",
+      "ColorStrategy": "Trust colors. Star ratings gold. Verified badge green. Review sentiment colors.",
+      "RecommendedEffects": "Star fill animations, review filtering, helpful vote interactions, photo lightbox",
+      "ConversionOptimization": "User-generated content builds trust. Show verified purchases. Filter by rating. Respond to negative reviews."
+    },
+    {
+      "No": "20",
+      "PatternName": "Community/Forum Landing",
+      "Keywords": "community, forum, social, members, discussion",
+      "SectionOrder": "1. Hero (community value prop), 2. Popular topics/categories, 3. Active members showcase, 4. Join CTA",
+      "PrimaryCTAPlacement": "Join button prominent + After member showcase",
+      "ColorStrategy": "Warm, welcoming. Member photos add humanity. Topic badges in brand colors. Activity indicators green.",
+      "RecommendedEffects": "Member avatars animation, activity feed live updates, topic hover previews, join success celebration",
+      "ConversionOptimization": "Show active community (member count, posts today). Highlight benefits. Preview content. Easy onboarding."
+    },
+    {
+      "No": "21",
+      "PatternName": "Before-After Transformation",
+      "Keywords": "before-after, transformation, results, comparison",
+      "SectionOrder": "1. Hero (problem state), 2. Transformation slider/comparison, 3. How it works, 4. Results CTA",
+      "PrimaryCTAPlacement": "After transformation reveal + Bottom",
+      "ColorStrategy": "Contrast: muted/grey (before) vs vibrant/colorful (after). Success green for results.",
+      "RecommendedEffects": "Slider comparison interaction, before/after reveal animations, result counters, testimonial videos",
+      "ConversionOptimization": "Visual proof of value. 45% higher conversion. Real results. Specific metrics. Guarantee offer."
+    },
+    {
+      "No": "22",
+      "PatternName": "Marketplace / Directory",
+      "Keywords": "marketplace, directory, search, listing",
+      "SectionOrder": "1. Hero (Search focused), 2. Categories, 3. Featured Listings, 4. Trust/Safety, 5. CTA (Become a host/seller)",
+      "PrimaryCTAPlacement": "Hero Search Bar + Navbar 'List your item'",
+      "ColorStrategy": "Search: High contrast. Categories: Visual icons. Trust: Blue/Green.",
+      "RecommendedEffects": "Search autocomplete animation",
+      "ConversionOptimization": "map hover pins,  card carousel, Search bar is the CTA. Reduce friction to search. Popular searches suggestions."
+    },
+    {
+      "No": "23",
+      "PatternName": "Newsletter / Content First",
+      "Keywords": "newsletter, content, writer, blog, subscribe",
+      "SectionOrder": "1. Hero (Value Prop + Form), 2. Recent Issues/Archives, 3. Social Proof (Subscriber count), 4. About Author",
+      "PrimaryCTAPlacement": "Hero inline form + Sticky header form",
+      "ColorStrategy": "Minimalist. Paper-like background. Text focus. Accent color for Subscribe.",
+      "RecommendedEffects": "Text highlight animations",
+      "ConversionOptimization": "typewriter effect,  subtle fade-in, Single field form (Email only). Show 'Join X, 000 readers'. Read sample link."
+    },
+    {
+      "No": "24",
+      "PatternName": "Webinar Registration",
+      "Keywords": "webinar, registration, event, training, live",
+      "SectionOrder": "1. Hero (Topic + Timer + Form), 2. What you'll learn, 3. Speaker Bio, 4. Urgency/Bonuses, 5. Form (again)",
+      "PrimaryCTAPlacement": "Hero (Right side form) + Bottom anchor",
+      "ColorStrategy": "Urgency: Red/Orange. Professional: Blue/Navy. Form: High contrast white.",
+      "RecommendedEffects": "Countdown timer",
+      "ConversionOptimization": "speaker avatar float,  urgent ticker, Limited seats logic. 'Live' indicator. Auto-fill timezone."
+    },
+    {
+      "No": "25",
+      "PatternName": "Enterprise Gateway",
+      "Keywords": "enterprise, corporate, gateway, solutions, portal",
+      "SectionOrder": "1. Hero (Video/Mission), 2. Solutions by Industry, 3. Solutions by Role, 4. Client Logos, 5. Contact Sales",
+      "PrimaryCTAPlacement": "Contact Sales (Primary) + Login (Secondary)",
+      "ColorStrategy": "Corporate: Navy/Grey. High integrity. Conservative accents.",
+      "RecommendedEffects": "Slow video background",
+      "ConversionOptimization": "logo carousel,  tab switching for industries, Path selection (I am a...). Mega menu navigation. Trust signals prominent."
+    },
+    {
+      "No": "26",
+      "PatternName": "Portfolio Grid",
+      "Keywords": "portfolio, grid, showcase, gallery, masonry",
+      "SectionOrder": "1. Hero (Name/Role), 2. Project Grid (Masonry), 3. About/Philosophy, 4. Contact",
+      "PrimaryCTAPlacement": "Project Card Hover + Footer Contact",
+      "ColorStrategy": "Neutral background (let work shine). Text: Black/White. Accent: Minimal.",
+      "RecommendedEffects": "Image lazy load reveal",
+      "ConversionOptimization": "hover overlay info,  lightbox view, Visuals first. Filter by category. Fast loading essential."
+    },
+    {
+      "No": "27",
+      "PatternName": "Horizontal Scroll Journey",
+      "Keywords": "horizontal, scroll, journey, gallery, storytelling, panoramic",
+      "SectionOrder": "1. Intro (Vertical), 2. The Journey (Horizontal Track), 3. Detail Reveal, 4. Vertical Footer",
+      "PrimaryCTAPlacement": "Floating Sticky CTA or End of Horizontal Track",
+      "ColorStrategy": "Continuous palette transition. Chapter colors. Progress bar #000000.",
+      "RecommendedEffects": "Scroll-jacking (careful), parallax layers, horizontal slide, progress indicator",
+      "ConversionOptimization": "Immersive product discovery. High engagement. Keep navigation visible."
+    },
+    {
+      "No": "28",
+      "PatternName": "Bento Grid Showcase",
+      "Keywords": "bento",
+      "SectionOrder": "grid",
+      "PrimaryCTAPlacement": "features",
+      "ColorStrategy": "modular",
+      "RecommendedEffects": "apple-style",
+      "ConversionOptimization": "showcase"
+    },
+    {
+      "No": "29",
+      "PatternName": "Interactive 3D Configurator",
+      "Keywords": "3d",
+      "SectionOrder": "configurator",
+      "PrimaryCTAPlacement": "customizer",
+      "ColorStrategy": "interactive",
+      "RecommendedEffects": "product",
+      "ConversionOptimization": "1. Hero (Configurator)"
+    },
+    {
+      "No": "30",
+      "PatternName": "AI-Driven Dynamic Landing",
+      "Keywords": "ai",
+      "SectionOrder": "dynamic",
+      "PrimaryCTAPlacement": "personalized",
+      "ColorStrategy": "adaptive",
+      "RecommendedEffects": "generative",
+      "ConversionOptimization": "1. Prompt/Input Hero"
+    }
+  ]
+}

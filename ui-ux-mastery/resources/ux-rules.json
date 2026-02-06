@@ -1,0 +1,41 @@
+[
+  {
+    "component": "button",
+    "rules": [
+      "Must have :hover, :active, and :focus-visible states.",
+      "Primary button uses 'bg-primary text-primary-foreground'.",
+      "Loading state must replace icon/text with a spinner (Loader2) and be disabled.",
+      "Touch target size must be at least 44x44px (min-h-[44px])."
+    ],
+    "patterns": [
+      "<Button variant='default' size='lg' disabled={isLoading}>{isLoading ? <Loader2 className='animate-spin' /> : 'Action'}</Button>"
+    ]
+  },
+  {
+    "component": "input",
+    "rules": [
+      "Must always be wrapped in a <Label>.",
+      "Error state must change border color to 'destructive' and show inline error message.",
+      "Focus ring must be visiible (ring-2 ring-ring)."
+    ],
+    "patterns": [
+      "<div className='grid gap-2'><Label htmlFor='email'>Email</Label><Input id='email' className={cn(error && 'border-destructive')} /><span className='text-xs text-destructive'>{error}</span></div>"
+    ]
+  },
+  {
+    "component": "card",
+    "rules": [
+      "Use 'bg-card text-card-foreground'.",
+      "Border should be subtle (border-border).",
+      "Padding (p-6) is standard for body content."
+    ]
+  },
+  {
+    "component": "modal",
+    "rules": [
+      "Must support closing via ESC key.",
+      "Must trap focus within the modal.",
+      "Backdrop must be blurred (backdrop-blur-sm) and dim (bg-background/80)."
+    ]
+  }
+]
