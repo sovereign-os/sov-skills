@@ -9,57 +9,115 @@ if [ ! -f "$MD_FILE" ]; then
     exit 1
 fi
 
-# Colors
-BLUE="\033[1;34m"
-CYAN="\033[0;36m"
-GREEN="\033[1;32m"
-YELLOW="\033[1;33m"
-RESET="\033[0m"
-BOLD="\033[1m"
-GRAY="\033[0;90m"
+# Use awk for robust parsing and formatting
+awk '
+BEGIN {
+    # Define Colors
+    BLUE = "\033[1;34m"
+    CYAN = "\033[0;36m"
+    GREEN = "\033[1;32m"
+    YELLOW = "\033[1;33m"
+    GRAY = "\033[0;90m"
+    BOLD = "\033[1m"
+    RESET = "\033[0m"
 
-echo -e "\n${BLUE}════════════════════════════════════════════════════════${RESET}"
-echo -e "${BOLD} 🗂️  SOVEREIGN SKILL CATALOG (LIBRARY INDEX)${RESET}"
-echo -e "${BLUE}════════════════════════════════════════════════════════${RESET}\n"
-
-# Header
-printf "${GRAY}%-20s %-35s %-10s${RESET}\n" "CATEGORY" "SKILL ID" "STATUS"
-echo -e "${GRAY}-------------------- ----------------------------------- ----------${RESET}"
-
-# Parse and Format
-current_category=""
-
-while IFS= read -r line; do
-    # Skip non-table lines
-    if [[ ! "$line" =~ ^\| ]]; then continue; fi
-    # Skip separator lines
-    if [[ "$line" =~ ^\|[\ \-]+\| ]]; then continue; fi
-    # Skip header line
-    if [[ "$line" =~ "Category" ]]; then continue; fi
-
-    # Extract columns (using awk for reliability)
-    cat_raw=$(echo "$line" | awk -F'|' '{print $2}' | xargs)
-    skill_raw=$(echo "$line" | awk -F'|' '{print $3}' | sed 's/`//g' | xargs)
-    status_raw=$(echo "$line" | awk -F'|' '{print $4}' | xargs)
-
-    # Handle merged cells (empty category means continuation)
-    if [ -n "$cat_raw" ]; then
-        current_category="$cat_raw"
-        display_cat="${YELLOW}$current_category${RESET}"
-    else
-        display_cat=""
-    fi
+    print ""
+    print BLUE "════════════════════════════════════════════════════════" RESET
+    print BOLD " 🗂️  SOVEREIGN SKILL CATALOG (LIBRARY INDEX)" RESET
+    print BLUE "════════════════════════════════════════════════════════" RESET
+    print ""
     
-    # Status Icon
-    if [[ "$status_raw" == "Active" ]]; then
-        status_icon="${GREEN}● Active${RESET}"
-    else
-        status_icon="${GRAY}○ $status_raw${RESET}"
-    fi
+    # Print Header
+    printf "%-35s %-40s %-15s\n", GRAY "CATEGORY", "SKILL ID", "STATUS" RESET
+    print GRAY "----------------------------------- ---------------------------------------- ----------" RESET
+    
+    current_cat = ""
+}
 
-    printf "%-30s %-35s %-20s\n" "$display_cat" "${CYAN}$skill_raw${RESET}" "$status_icon"
+# Skip process for lines that dont start with |
+!/^\|/ { next }
 
-done < "$MD_FILE"
+# Skip separator lines (containing dashes/colons)
+/^\|[ \t]*[:\-] / { next }
 
-echo -e "\n${BLUE}════════════════════════════════════════════════════════${RESET}"
-echo -e "${GRAY}Use '/skills load [profile]' to activate a specific set.${RESET}\n"
+# Skip Header line
+/Category.*Skill ID/ { next }
+
+{
+    # Extract fields (pipe delimited)
+    # $1 is empty (before first pipe), $2 is Category, $3 is Skill, $4 is Status
+    
+    split($0, fields, "|")
+    
+    # Clean whitespace and markdown ticks
+    cat = fields[2]
+    sub(/^[ \t]+/, "", cat); sub(/[ \t]+$/, "", cat);
+    # Remove ** bold markers if present
+    gsub(/\*\*/, "", cat);
+    
+    skill = fields[3]
+    sub(/^[ \t]+/, "", skill); sub(/[ \t]+$/, "", skill); 
+    gsub(/`/, "", skill); # Remove backticks
+    
+    status = fields[4]
+    sub(/^[ \t]+/, "", status); sub(/[ \t]+$/, "", status);
+
+    # Category Logic (Merged Cells)
+    if (cat != "") {
+        current_cat = cat
+        display_cat = YELLOW current_cat RESET
+    } else {
+        display_cat = "" 
+    }
+    
+    # Status Logic
+    if (status == "Active") {
+        disp_status = GREEN "● Active" RESET
+    } else {
+        disp_status = GRAY "○ " status RESET
+    }
+    
+    # Print formatted row
+    # Use length checks to ensure alignment if color codes mess it up? 
+    # printf counts color codes in length, so we print color separate from padding if needed.
+    # But for simplicity, direct printf usually works ok if width is generous.
+    
+    # To fix alignment with colors, we print key without color code to determine padding, but that is complex in awk.
+    # simpler approach: Just print consistent structure.
+    
+    if (cat != "") {
+        # Print a spacer before new categories (except the first one)
+        # if (NR > 10) print "" 
+    }
+
+    # Print
+    # We construct the visual string.
+    # Note: awk printf width includes invisible chars. 
+    # Workaround: Print the columns with manual spacing or use a focused approach.
+    
+    # Approach: 
+    # Cat: 35 chars
+    # Skill: 40 chars
+    # Status: rest
+    
+    # We will output raw text via printf to handle alignment, then inject color.
+    # Actually, simpler:
+    
+    if (cat != "") {
+         printf "%s%-35s%s", YELLOW, current_cat, RESET
+    } else {
+         printf "%-35s", ""
+    }
+    
+    printf "%s%-40s%s", CYAN, skill, RESET
+    printf "%s\n", disp_status
+
+}
+
+END {
+    print ""
+    print BLUE "════════════════════════════════════════════════════════" RESET
+    print GRAY "Use " BOLD "/skills load [profile]" RESET GRAY " to activate a specific set." RESET
+    print ""
+}
+' "$MD_FILE"
