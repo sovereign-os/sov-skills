@@ -48,7 +48,3 @@ Generated: Sun Feb 01 08:59:00 AM WIB 2026
 |                    | `resource-tuner`                 | Active |
 |                    | `onboarding-concierge`           | Active |
 |                    | `ide-sync`                       | Active |
-
----
-
-_Other legacy or specialized skills have been moved to `skills/archive/` to optimize Agent context window._
