@@ -25,14 +25,15 @@ Every skill MUST adhere to this directory structure and file format.
 [AGENT_ROOT]/skills/
   └── my-new-skill/           # Kebab-case name
       ├── SKILL.md            # The Manifesto (REQUIRED)
-      ├── resources/          # Knowledge Base (Recommended)
-      │   ├── intelligence.json # Structured Brain (Colors, Rules, Palettes)
+      ├── resources/          # Knowledge Base | Intelligence
+      │   ├── intelligence.json
       │   └── templates.json
       ├── scripts/            # Executable helpers (Optional)
       │   ├── audit.sh
+      │   ├── deploy.sh
       │   └── fix.py
-      ├── templates/          # Boilerplate code (Optional)
-      └── examples/           # Usage demonstrations (Optional)
+      └── workflows/          # Associated Workflows (Recommended)
+          └── my-workflow.md
 ```
 
 ### 1.2 SKILL.md Format (Strict YAML Frontmatter)
@@ -102,19 +103,25 @@ When running an audit on a skill (`agent-skill-mastery audit <skill-name>`), che
 To prevent "Passive Knowledge" syndrome (where skills exist but aren't used), the Agent MUST follow this protocol for EVERY task:
 
 ### 5.1 Mandatory Skill Identification
+
 1. **Analyze**: Before writing any code, identify [Primary] and [Secondary] skills required (e.g., `design-system-mastery` for UI, `security-mastery` for APIs).
 2. **Read**: Call `view_file` on the `SKILL.md` of the primary skills if they haven't been read in the current session.
 
 ### 5.2 The "Definition of Done" Audit
+
 Before reporting a task as "Selesai" or "Pushing", the Agent MUST run a mental audit:
+
 - "Does this follow `ui-ux-mastery` for both Light and Dark mode?"
 - "Is the git history clean according to `git-sentinel`?"
 - "Is the API contract standard according to `api-mastery`?"
 
 ### 5.3 The "Skill Signature" (Mandatory)
+
 Every final report to the User MUST include a **Verified Skills** block:
+
 ```markdown
 ### ✅ Verification Audit
+
 - [x] **Skill Name**: specific rule verified (e.g., [x] **UI-UX Mastery**: Checked Dark Mode contrast).
 - [x] **Skill Name**: ...
 ```
