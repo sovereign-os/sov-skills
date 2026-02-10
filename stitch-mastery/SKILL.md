@@ -10,16 +10,22 @@ tags: [ui-design, stitch, mcp, design-system, prototyping]
 
 This skill serves as the **coordination layer** between Sovereign OS and Google's Stitch platform. It does NOT re-implement Stitch capabilities, but rather **orchestrates** and **extends** the official `stitch-skills` library.
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Stitch is Google's AI-powered UI design platform. Instead of duplicating their excellent work, we:
 
 - **Reference** official skills from `google-labs-code/stitch-skills`
 - **Coordinate** Stitch workflows within Sovereign OS context
 - **Extend** with Sovereign-specific integrations (e.g., design system sync)
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Orchestrator for Google Stitch MCP server and official stitch-skills library integration..
+- Detected when the user's intent matches the semantic domain of 🎨 Stitch Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Upstream First
 
 - **ALWAYS** use official `stitch-skills` when available
@@ -38,8 +44,7 @@ Stitch is Google's AI-powered UI design platform. Instead of duplicating their e
 - Sync Stitch `DESIGN.md` with Sovereign design tokens
 - Ensure consistency between Stitch prototypes and production code
 
-## 3. Official Stitch Skills Reference
-
+### Official Stitch Skills Reference
 The following skills are maintained by Google and should be installed via `npx skills`:
 
 ### 🎨 **design-md**
@@ -90,8 +95,7 @@ Expert guidance for shadcn/ui component integration.
 npx skills add google-labs-code/stitch-skills --skill shadcn-ui --global
 ```
 
-## 4. Sovereign OS Integration Workflows
-
+### Sovereign OS Integration Workflows
 ### Workflow 1: Create Stitch Project
 
 ```markdown
@@ -117,8 +121,7 @@ npx skills add google-labs-code/stitch-skills --skill shadcn-ui --global
 3. Integrate into monorepo structure
 ```
 
-## 5. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Creating a New Design
 
 ```typescript
@@ -149,8 +152,7 @@ const screenDetails = await mcp_stitch_get_screen({
 4. Verify design token consistency
 ```
 
-## 6. Resources
-
+### Resources
 ### Official Documentation
 
 - **Stitch Skills Repo**: https://github.com/google-labs-code/stitch-skills
@@ -162,8 +164,7 @@ const screenDetails = await mcp_stitch_get_screen({
 - `resources/design-system-sync.md` - How to sync Stitch with Sovereign design tokens
 - `resources/stitch-to-react-pipeline.md` - Production integration workflow
 
-## 7. Maintenance
-
+## 4. Maintenance
 ### When to Update
 
 - When Google releases new official skills

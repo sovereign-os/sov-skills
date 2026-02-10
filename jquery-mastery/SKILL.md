@@ -8,11 +8,18 @@ tags: [frontend, jquery, legacy, ajax, dom]
 
 # 🛸 jQuery Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 In legacy systems like FS, jQuery is the backbone. We treat it with respect, optimizing for performance (DOM caching) and security (XSS prevention) while maintaining compatibility with ancient plugins.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced expertise in jQuery (v1.x/v3.x), focusing on legacy DOM manipulation, AJAX orchestration, and secure event handling..
+- Detected when the user's intent matches the semantic domain of 🛸 jQuery Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: DOM Efficiency
 - **Cache Selectors**: `const $btn = $('#save');` (Don't query repeatedly).
 - **ID Over Class**: IDs are faster. Use them for specific elements.
@@ -26,8 +33,7 @@ In legacy systems like FS, jQuery is the backbone. We treat it with respect, opt
 - **Sanitization**: Prefer `.text()` over `.html()`.
 - **Injection**: Verify content before `.append()`.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### AJAX Pattern
 ```javascript
 $.ajax({

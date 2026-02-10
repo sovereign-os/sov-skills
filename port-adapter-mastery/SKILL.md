@@ -8,14 +8,23 @@ tags: [ports, adapters, hexagonal, decoupling]
 
 # 🔌 Ports & Adapters Mastery
 
-## 1. Definition
+
+## 2. When to use this skill
+This skill is activated when the task requires Hexagonal Architecture implementation through defined interfaces..
+- Detected when the user's intent matches the semantic domain of 🔌 Ports & Adapters Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### Definition
 A system creates a "Boundary" between the application code and external services.
 
-## 2. Ports (Interfaces)
+### Ports
 Owned by the Core. Defines **what** the system needs.
 
-## 3. Adapters (Implementations)
+### Adapters
 Owned by the Infrastructure. Defines **how** to talk to a specific technology.
 
-## 4. Benefit
+### Benefit
 Total decoupling. We can swap a Database or a Third-party API without changing a line of Business Logic.
+

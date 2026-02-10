@@ -8,11 +8,18 @@ tags: [architecture, design-patterns, oop, refactoring]
 
 # 🏗️ Design Pattern Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Don't reinvent the wheel. Patterns are proven solutions to common problems. They optimize for maintainability, not just functionality. However, **Don't Force It**—complexity without need is a bug.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Catalog of essential Design Patterns with use-cases and implementation guides..
+- Detected when the user's intent matches the semantic domain of 🏗️ Design Pattern Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Creational
 1.  **Factory**: Encapsulates creation logic. (`StorageFactory::create('s3')`).
 2.  **Singleton**: One instance globally. (Warning: Prefer Dependency Injection).
@@ -29,8 +36,7 @@ Don't reinvent the wheel. Patterns are proven solutions to common problems. They
 9.  **Command**: Encapsulates action as object. (Jobs, Queue).
 10. **Template**: Skeleton algorithm in base, steps in child. (`DataImport`).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Selection Process
 1.  **Analyze**: What changes? (Algorithms? Objects? Interfaces?)
 2.  **Match**: Find the pattern that encapsulates that change.

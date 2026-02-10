@@ -8,11 +8,18 @@ tags: [quality, linting, testing, ci, pre-push]
 
 # 🛡️ Quality Gatekeeper
 
+
 ## 1. Core Philosophy (The "Why")
 Green Build Local = Green Build Remote. The Agent MUST NOT push code that fails local checks. This prevents CI/CD spam and broken builds.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Enforce local quality standards (Linting & Testing) BEFORE any push attempt. Agnostic to language stack..
+- Detected when the user's intent matches the semantic domain of 🛡️ Quality Gatekeeper.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Stack Detection
 - **PHP**: `composer.json` exists.
 - **Node**: `package.json` exists.
@@ -27,8 +34,7 @@ Green Build Local = Green Build Remote. The Agent MUST NOT push code that fails 
 - **Attempt**: Run auto-fixers first (`phpcbf`, `eslint --fix`).
 - **Report**: If still failing, show errors and ask user to fix.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Pre-Push Hook
 ```bash
 #!/bin/bash

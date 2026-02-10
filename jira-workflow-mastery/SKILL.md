@@ -8,11 +8,18 @@ tags: [jira, workflow, synchronization, integrity, task-management]
 
 # 🔄 Jira Workflow Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 This skill consolidates all Jira operations: Integrity checks, synchronization with local tasks, and dual-sync protocols. One skill to rule all Jira interactions.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Unified Jira workflow management (Integrity, Sync, Dual-Sync)..
+- Detected when the user's intent matches the semantic domain of 🔄 Jira Workflow Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Integrity Guard (Zero Hallucination)
 - **Verification**: Always call `getJiraIssue(ID)` before working.
 - **Forbidden**: Guessing IDs from memory or branch names.
@@ -25,8 +32,7 @@ This skill consolidates all Jira operations: Integrity checks, synchronization w
 - **Atomic Update**: Every Jira update triggers local log update.
 - **Consistency**: Weekly audit for drift.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Starting a Task
 1.  **Verify**: `getJiraIssue('ASD-1234')`.
 2.  **Lock**: Update `current-context.json`.

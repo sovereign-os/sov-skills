@@ -8,6 +8,7 @@ tags: [api, rest, openapi, swagger, backend]
 
 # 🚀 API Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 This skill enforces the "Sovereign API Standard". It ensures all services are scalable, discoverable, and strictly typed via **Contract-First Development**. The API is the Product.
 
@@ -17,8 +18,14 @@ This skill enforces the "Sovereign API Standard". It ensures all services are sc
 3.  **Idempotency**: Safe retry mechanisms.
 4.  **Discoverability**: Self-documenting (Swagger/HATEOAS).
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced standard for building high-performance, contract-first, and industry-standard RESTful APIs using OpenAPI and Swagger..
+- Detected when the user's intent matches the semantic domain of 🚀 API Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Specification Standards
 - **Schema**: Response/Request bodies MUST use strict schemas.
 - **Naming**: URLs in `kebab-case`, JSON properties in `camelCase`.
@@ -47,15 +54,14 @@ Return standardized JSON errors:
 - **Sorting**: `?sort=-created_at`.
 - **Fields**: `?fields=id,name` (Partial Response).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Workflow
 1.  **Design**: Edit `openapi.yaml` first.
 2.  **Mock**: Validate endpoint design.
 3.  **Implement**: Write Controller/Service code.
 4.  **Document**: Update Swagger UI description.
 
-## 4. Maintenance (The Law)
+## 4. Maintenance
 - **No Spec, No Code**: Endpoint logic requires spec first.
 - **Versioning**: Breaking changes require `/v2/`.
 - **Definition of Done**: Swagger UI must work perfectly.

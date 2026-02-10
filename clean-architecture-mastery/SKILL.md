@@ -8,8 +8,8 @@ tags: [architecture, design, clean-code, ddd]
 
 # 🏛️ Clean Architecture Mastery
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Clean Architecture (Uncle Bob) is about creating systems that are independent of frameworks, UI, databases, or any external agency. The goal is to make the business logic (the "Core") the most stable and testable part of the system.
 
 ### The Dependency Rule
@@ -43,8 +43,14 @@ Source code dependencies must point **inwards**. Nothing in an inner circle can 
 
 > **Violation**: If `Application` or `Domain` imports from `Infrastructure`, it's a "Dirty Leak" that breaks the architecture.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Dependency Rule enforcement, Separation of Concerns, and Business-at-the-Center..
+- Detected when the user's intent matches the semantic domain of 🏛️ Clean Architecture Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Core (Entities & Use Cases)
 
 - **Entities**: Business objects (e.g., User, Invoice) that encapsulate enterprise-wide business rules. They must be pure code.
@@ -65,8 +71,7 @@ Source code dependencies must point **inwards**. Nothing in an inner circle can 
 - **Details**: The outermost layer is where the tools live. The Database is a tool. The Web is a tool.
 - **Separation**: Keep these tools separated from the Core.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementation Step-by-Step
 
 1.  **Identify Entities**: Define the core business objects.
@@ -75,8 +80,7 @@ Source code dependencies must point **inwards**. Nothing in an inner circle can 
 4.  **Implement Adapters**: Write the concrete implementations of the ports.
 5.  **Inject Dependencies**: Use a DI container to wire everything together, pointing inwards.
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Strict Separation**: If you find yourself importing a Framework (Laravel/Symfony) class inside an Entity, you have failed.
 - **Testability**: The Core MUST be testable without starting a web server or connecting to a database.
 - **Refactor Early**: If the "details" (outer circles) start influencing the "policy" (inner circles), refactor immediately.

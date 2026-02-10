@@ -8,11 +8,18 @@ tags: [security, rbac, authorization, permissions, roles]
 
 # 🔐 RBAC Logic Design
 
+
 ## 1. Core Philosophy (The "Why")
 Authorization is not Authentication. RBAC (Role-Based Access Control) ensures users can only access resources they're permitted to. It scales better than ACLs (Access Control Lists) for complex systems.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Expertise in building hierarchical Role-Based Access Control..
+- Detected when the user's intent matches the semantic domain of 🔐 RBAC Logic Design.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Hierarchy
 - **User** -> **Role** -> **Permission** -> **Resource**.
 - **Example**: `User: John` -> `Role: Editor` -> `Permission: article.edit` -> `Resource: Article #123`.
@@ -25,8 +32,7 @@ Authorization is not Authentication. RBAC (Role-Based Access Control) ensures us
 - **Hierarchy**: `Admin` inherits all permissions from `Editor`.
 - **Constraint**: Avoid circular inheritance.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementing RBAC (Symfony Voters)
 ```php
 class ArticleVoter extends Voter {

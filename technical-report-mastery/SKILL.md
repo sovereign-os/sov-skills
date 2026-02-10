@@ -8,11 +8,18 @@ tags: [documentation, reporting, owasp, executive-summary, compliance]
 
 # 📝 Technical Report Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Communication is the final stage of engineering. A feature isn't finished until its impact is documented and understood by both engineers (Technical) and stakeholders (Executive).
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced standard for creating elite-level technical reports, security assessments, and executive summaries..
+- Detected when the user's intent matches the semantic domain of 📝 Technical Report Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Unified Standard Mandate (ANTI-NGIDE)
 - **NO DEVIATION**: Every report MUST adhere to the [TECHNICAL_DELIVERY_STANDARD.md](/home/puterakahfi/.agent/memory/global/TECHNICAL_DELIVERY_STANDARD.md).
 - **TEMPLATE LOCK**: Do not "innovate" or change the section titles. Use the standardized headers (Executive Brief, Technical Implementation, etc.).
@@ -28,8 +35,7 @@ Every major delivery MUST have three levels of documentation (as sections in the
 - Use tables for metadata and test results.
 - Use code blocks for evidence (tests/logs).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### 3.1 Generating a Report
 1.  **Read Standard**: Load `/home/puterakahfi/.agent/memory/global/TECHNICAL_DELIVERY_STANDARD.md`.
 2.  **Draft**: Fill the sections with evidence collected during task execution.

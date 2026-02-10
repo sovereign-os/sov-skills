@@ -8,11 +8,18 @@ tags: [versioning, semver, release, git, changelog]
 
 # 🏷️ Versioning Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Semantic Versioning is a contract with users. Breaking it destroys trust. We enforce strict SemVer 2.0.0 to ensure predictable releases.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Strategic governance for Semantic Versioning, Changelog management, and Tagging hygiene..
+- Detected when the user's intent matches the semantic domain of 🏷️ Versioning Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Semantic Versioning (The Law)
 - **Format**: `MAJOR.MINOR.PATCH` (e.g., `2.1.4`).
 - **MAJOR**: Breaking changes.
@@ -28,8 +35,7 @@ Semantic Versioning is a contract with users. Breaking it destroys trust. We enf
 - **Format**: Keep a Changelog (keepachangelog.com).
 - **Sections**: Added, Changed, Deprecated, Removed, Fixed, Security.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Tagging a Release
 ```bash
 git tag -a v2.1.0 -m "Release 2.1.0: New Payment Gateway"

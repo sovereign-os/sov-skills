@@ -8,11 +8,18 @@ tags: [migration, database, zero-downtime, backfill]
 
 # 🔄 Data Migration Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Schema changes in production are risky. We use expand-contract pattern for zero-downtime migrations.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Zero-downtime migrations and backfill strategies..
+- Detected when the user's intent matches the semantic domain of 🔄 Data Migration Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Expand-Contract Pattern
 1. **Expand**: Add new column (nullable).
 2. **Migrate**: Backfill data.
@@ -25,7 +32,7 @@ Schema changes in production are risky. We use expand-contract pattern for zero-
 ### Rule 3: Rollback Plan
 - **Always**: Have a rollback script ready.
 
-## 3. Usage Instructions (The "How")
+### Usage Instructions
 ```sql
 -- Step 1: Expand
 ALTER TABLE users ADD COLUMN email_verified BOOLEAN DEFAULT FALSE;

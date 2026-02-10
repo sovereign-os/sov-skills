@@ -8,11 +8,18 @@ tags: [backend, reliability, idempotency, transactions, payment]
 
 # 💎 Idempotency & Reliability
 
+
 ## 1. Core Philosophy (The "Why")
 In distributed systems, networks fail. Users double-click. Retries happen. This skill guarantees that no matter how many times a request is repeated, the side-effect (payment, booking) happens **Exactly Once**.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Guarantees transaction safety and prevents data duplication (Exactly-Once semantics)..
+- Detected when the user's intent matches the semantic domain of 💎 Idempotency & Reliability.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Idempotency Keys
 - **Definition**: A unique client-generated string (UUID v4) sent in headers (`Idempotency-Key`).
 - **Mechanism**:
@@ -27,8 +34,7 @@ In distributed systems, networks fail. Users double-click. Retries happen. This 
 ### Rule 3: Database Constraints (The Final Defense)
 - **Unique Indexes**: Always enforce uniqueness at the DB level (e.g., `unique(order_id, transaction_type)`). Do not rely solely on code checks.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementing a Payment Endpoint
 1.  **Extract**: Get `Idempotency-Key` from header.
 2.  **Check**: `if ($this->cache->has($key)) return $this->cache->get($key);`

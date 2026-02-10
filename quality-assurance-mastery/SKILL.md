@@ -18,8 +18,15 @@ It is composed of three mandatory pillars:
 
 ---
 
-## 🏗️ Pillar 1: Use Case Specification (The Contract)
 
+## 2. When to use this skill
+This skill is activated when the task requires A comprehensive protocol for ensuring software quality through rigorous Use Case definition, Test Specification mapping, and Evidence-based Verification..
+- Detected when the user's intent matches the semantic domain of 🛡️ Quality Assurance Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### 🏗️ Pillar 1: Use Case Specification
 **When to use:** BEFORE implementing a feature or fixing a complex bug.
 **Goal:** Define Normal, Alternative, and Exception flows to prevent "Happy Path" coding.
 
@@ -69,8 +76,7 @@ It is composed of three mandatory pillars:
 
 ---
 
-## 🧪 Pillar 2: Test Specification Document (The Proof)
-
+### 🧪 Pillar 2: Test Specification Document
 **When to use:** BEFORE testing (can be drafted in parallel with Implementation).
 **Goal:** Translate every Use Case Flow into a verifiable Test Case.
 
@@ -90,12 +96,11 @@ It is composed of three mandatory pillars:
 **Use Case ID**: [ID]
 **Feature**: [Feature Name]
 
-## 1. Test Coverage Strategy
+### Test Coverage Strategy
 *   **Normal Flows Covered**: [List]
 *   **Edge Cases Covered**: [List]
 
-## 2. Test Cases
-
+### Test Cases
 | ID | Type | Scenario | Steps | Expected Result | Pass/Fail |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **TC-01** | POS | Normal Flow Execution | 1. ...<br>2. ... | System updates DB. | [ ] |
@@ -105,8 +110,7 @@ It is composed of three mandatory pillars:
 
 ---
 
-## 📸 Pillar 3: Verification Report (The Evidence)
-
+### 📸 Pillar 3: Verification Report
 **When to use:** AFTER executing tests.
 **Goal:** Capture irrefutable proof that the software behaves as specified.
 
@@ -128,13 +132,12 @@ It is composed of three mandatory pillars:
 **Date**: [YYYY-MM-DD]
 **Environment**: [Staging/Production]
 
-## 📊 Summary
+### 📊 Summary
 *   **Tests Executed**: [N]
 *   **Passed**: [N]
 *   **Failed**: [N]
 
-## 📝 Detailed Evidence
-
+### 📝 Detailed Evidence
 ### 🟢 TC-01: [Scenario Name]
 **Status**: PASSED
 
@@ -149,8 +152,7 @@ It is composed of three mandatory pillars:
 
 ---
 
-## 🚀 Protocol for Agents
-
+### 🚀 Protocol for Agents
 When assigned a Feature or Bug Fix:
 1.  **STOP**. Do not code yet.
 2.  **READ** this skill.
@@ -159,3 +161,4 @@ When assigned a Feature or Bug Fix:
 5.  **IMPLEMENT** the code.
 6.  **CREATE** the TSD and **EXECUTE** verification.
 7.  **GENERATE** the Verification Report (`REPORT.md`).
+

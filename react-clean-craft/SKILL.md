@@ -8,12 +8,18 @@ tags: [react, frontend, clean-code, hooks, components]
 
 # ⚛️ React Clean Craft
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 React makes it easy to write spaghetti code. We fight this with strict component composition and hook separation. A component should describe **what** it looks like, not **how** it behaves.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Standards for clean, composable, and performant React components..
+- Detected when the user's intent matches the semantic domain of ⚛️ React Clean Craft.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Container/Presentation Pattern
 
 - **Container**: Handles Logic, State, Data Fetching. Returns a Presentation component.
@@ -35,8 +41,7 @@ React makes it easy to write spaghetti code. We fight this with strict component
 - **Memoization**: Use `useMemo` for expensive calculations. Use `useCallback` for functions passed as props.
 - **Keys**: Never use `index` as a key for dynamic lists. Use a stable ID.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Component Anatomy
 
 ```tsx
@@ -70,7 +75,6 @@ export const useUser = (id: string) => {
 };
 ```
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Review**: If a component exceeds 100 lines, split it.
 - **Audit**: Check for inline arrow functions in render (causes re-renders).

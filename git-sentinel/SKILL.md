@@ -8,11 +8,18 @@ tags: [git, workflow, safety, auditing]
 
 # 🛡️ Git Sentinel
 
+
 ## 1. Core Philosophy (The "Why")
 This skill acts as the gatekeeper of the codebase. It enforces strict discipline in version control operations to prevent pipeline pollution, maintain clean history, and prevent "broken builds" from reaching shared branches.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Strict governance for branch management, commit purity, and pre-push audits..
+- Detected when the user's intent matches the semantic domain of 🛡️ Git Sentinel.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Pre-Push Audit (Golden Rule)
 **NEVER PUSH code until verified and cross-referenced with Workspace Policy.**
 Before executing `git push`, you MUST verify:
@@ -63,8 +70,7 @@ Before executing `git push`, you MUST verify:
 - **pre-push Hook**: Final check for JIRA ID consistency and quality gates (Lint/DI) before pushing to remote.
 - **Enforcement**: Never use `--no-verify` to bypass these checks unless it's a confirmed emergency.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### General Workflow
 1.  **Start**: Checkout a fresh feature branch from `master`.
 2.  **Work**: Edit code -> `git add` -> `git commit`.
@@ -80,5 +86,6 @@ Before executing `git push`, you MUST verify:
     - Merge `<feature>` into `bridge`.
     - Resolve -> Push.
 
-## 4. Exceptions
+### Exceptions
 - **"Hacker Speed"**: If User says "Just push it", bypass audit (Log as technical debt).
+

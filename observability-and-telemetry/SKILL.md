@@ -8,11 +8,18 @@ tags: [monitoring, logging, observability, production, telemetry]
 
 # 📊 Observability & Telemetry
 
+
 ## 1. Core Philosophy (The "Why")
 You can't fix what you can't see. Observability is the ability to understand system internal state from external outputs (logs, metrics, traces). It's the difference between "it's down" and "it's down because X".
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Monitoring, logging, and tracing for production systems..
+- Detected when the user's intent matches the semantic domain of 📊 Observability & Telemetry.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Three Pillars
 - **Logs**: Discrete events (errors, warnings, info).
 - **Metrics**: Aggregated measurements (request count, latency).
@@ -27,8 +34,7 @@ You can't fix what you can't see. Observability is the ability to understand sys
 - **SLO-Based**: Alert on Service Level Objectives (e.g., "Error Rate > 1%").
 - **Actionable**: Every alert must have a runbook.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Structured Log (Monolog)
 ```php
 $logger->error('Payment failed', [

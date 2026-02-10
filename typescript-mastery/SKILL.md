@@ -8,11 +8,18 @@ tags: [typescript, frontend, type-safety, strict]
 
 # 📘 TypeScript Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 If it's not typed, it doesn't exist. TypeScript is not JavaScript with annotations; it's a contract enforcement system. We prevent "AnyScript" at all costs.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Enforce strict, safe, and optimal TypeScript practices..
+- Detected when the user's intent matches the semantic domain of 📘 TypeScript Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Strict Mode
 - **Mandate**: `tsconfig.json` MUST have `strict: true`.
 - **No Implicit Any**: Every variable has a type.
@@ -27,8 +34,7 @@ If it's not typed, it doesn't exist. TypeScript is not JavaScript with annotatio
 - **Leverage**: `Pick`, `Omit`, `Partial`, `Readonly`.
 - **Example**: `type UpdateUser = Partial<User>;`
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Type Guards
 ```typescript
 function isString(val: unknown): val is string {

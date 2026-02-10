@@ -8,11 +8,18 @@ tags: [css, tailwind, frontend, styling, responsive]
 
 # 💨 Tailwind Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Utility-first prevents "class soup" when done right. Configuration is the source of truth. We optimize for speed and consistency, not cleverness.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires High-velocity styling with Tailwind CSS, strictly enforcing consistency, utility-first principles, and JIT optimization..
+- Detected when the user's intent matches the semantic domain of 💨 Tailwind Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Class Order (Hygiene)
 - **Tool**: Use `prettier-plugin-tailwindcss` for auto-sorting.
 - **Order**: Layout -> Box Model -> Typography -> Decor -> Interaction.
@@ -44,8 +51,7 @@ Utility-first prevents "class soup" when done right. Configuration is the source
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   ```
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Defining Custom Color
 ```javascript
 // tailwind.config.js

@@ -8,12 +8,18 @@ tags: [debugging, tracing, verification, auditing, reliability]
 
 # 🔍 Deep Trace Auditor
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Debugging complex systems requires more than "reading code". It requires **Tracing the Truth**. This skill enforces a "Zero Assumption" policy. We don't believe what the code _should_ do; we verify what it _actually_ does by auditing execution paths and data state at every junction.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires High-precision code tracing and verification to prevent assumption-based errors..
+- Detected when the user's intent matches the semantic domain of 🔍 Deep Trace Auditor.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Zero-Assumption Policy
 
 - **Never guess**: If a value is unknown, log it.
@@ -33,8 +39,7 @@ Debugging complex systems requires more than "reading code". It requires **Traci
 
 - **Check-After-Write**: After a database write, perform a read (if safe) or verify the returned status/ID.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### The Tracing Workflow
 
 1.  **Identify Entry**: Where does the process start? (e.g., `UserController::store`).
@@ -58,8 +63,7 @@ if ($user->hasBalance($amount)) {
 }
 ```
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Safe Probing**: Always remove temporary trace logs before pushing to production.
 - **Log Levels**: Use `debug` for traces, `info` for milestones, `error` for failures.
 - **Audit Reports**: For critical bugs, document the "Trace Path" in the Jira comment.

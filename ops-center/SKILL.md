@@ -8,12 +8,18 @@ tags: [orchestration, planning, monitoring, ops]
 
 # 🛰️ Ops Center
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 This skill transforms the Agent from a "Runner" to a "Commander". Every move is Structured, Monitored, and Predicted. No hidden moves; only calculated execution.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Centralized command and control for task orchestration, progress forecasting, and context anchoring..
+- Detected when the user's intent matches the semantic domain of 🛰️ Ops Center.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Pre-Flight Briefing
 
 - **Trigger**: Starting `IN PROGRESS` task.
@@ -33,8 +39,7 @@ This skill transforms the Agent from a "Runner" to a "Commander". Every move is 
   - Documents: `~/.agent/workspace/[WS]/operations/documents/[Project]/*.md`
 - **Zero Pollution**: Hard-fail if directed to write operational files to project source roots (outside of `.agent` context).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Starting a Task
 
 1.  **Analyze**: Read Jira + Codebase.
@@ -47,5 +52,4 @@ This skill transforms the Agent from a "Runner" to a "Commander". Every move is 
 - **Action**: `STOP-AND-REPORT`. Show dashboard. Realign.
 
 ## 4. Maintenance
-
 - **Review**: Does the plan match reality? Improve estimation logic.

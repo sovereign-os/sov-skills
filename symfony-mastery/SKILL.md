@@ -8,11 +8,18 @@ tags: [symfony, php, backend, dependency-injection, doctrine]
 
 # 🐘 Symfony Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Infrastructure belongs in the Container; Business Logic belongs in the Domain. Symfony is the glue, not the boss. We leverage DI, Events, and Doctrine to build maintainable enterprise apps.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced Symfony architecture, design patterns, and high-performance development practices..
+- Detected when the user's intent matches the semantic domain of 🐘 Symfony Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Dependency Injection Excellence
 - **Autowiring**: Default for all services.
 - **Interface Binding**: Depend on `RepositoryInterface`, not `DoctrineRepository`.
@@ -32,8 +39,7 @@ Infrastructure belongs in the Container; Business Logic belongs in the Domain. S
 - **Declaration**: Every file starts with `declare(strict_types=1);`.
 - **Return Types**: All methods MUST have explicit return types.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Creating a Service
 ```php
 final readonly class UserService {

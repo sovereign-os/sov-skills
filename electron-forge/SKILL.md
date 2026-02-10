@@ -8,11 +8,18 @@ tags: [electron, desktop, ipc, security, node]
 
 # ⚛️ Electron Forge
 
+
 ## 1. Core Philosophy (The "Why")
 Electron bridges Web and Native OS. It is inherently risky (Node in Browser). We prioritize **Isolation** and **Performance**. The Browser is the UI; Node is the Backend. Keep them separated.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Best practices for secure, performant, and cross-platform Electron development..
+- Detected when the user's intent matches the semantic domain of ⚛️ Electron Forge.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: IPC Security
 - **Context Isolation**: `contextIsolation: true` is MANDATORY.
 - **Node Integration**: `nodeIntegration: false` in Renderer.
@@ -28,8 +35,7 @@ Electron bridges Web and Native OS. It is inherently risky (Node in Browser). We
 - **Builder**: Use `electron-builder`.
 - **Signing**: Code signing is mandatory for Prod (Win/Mac).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Secure Communication Channel
 1.  **Main**: `ipcMain.handle('get-user', ...)`
 2.  **Preload**: `contextBridge.exposeInMainWorld('api', { getUser: () => ipcRenderer.invoke('get-user') })`

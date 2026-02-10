@@ -8,11 +8,18 @@ tags: [kpi, performance, audit, metrics, productivity]
 
 # 📊 Performance Audit Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 You can't improve what you don't measure. This skill audits developer performance using objective KPIs to identify: bottlenecks, strengths, and areas for growth. The goal is continuous improvement, not punishment.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires KPI-based performance audit to measure developer velocity, quality, and impact (Low/Average/Excellent)..
+- Detected when the user's intent matches the semantic domain of 📊 Performance Audit Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The 5 KPI Pillars
 
 #### 1. Velocity (Speed)
@@ -55,8 +62,7 @@ You can't improve what you don't measure. This skill audits developer performanc
 - **Git**: Commit frequency, PR merge rate.
 - **Daily Logs**: Time tracking, blockers.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Running an Audit
 1.  **Collect Data**: Scan last 30 days of `daily-scrum.md` files.
 2.  **Calculate KPIs**: Aggregate metrics per pillar.

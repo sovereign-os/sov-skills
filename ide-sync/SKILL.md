@@ -8,11 +8,18 @@ tags: [ide, vscode, editorconfig, git, standard]
 
 # 🖥️ IDE Sync
 
+
 ## 1. Core Philosophy (The "Why")
 Whitespace wars end here. Regardless of Editor (VSCode, PhpStorm) or OS (Win, Mac, Linux), file formatting must be identical. This prevents Git churn and makes code reviews purely about logic.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Enforce global coding standards across different IDEs using .editorconfig and local settings..
+- Detected when the user's intent matches the semantic domain of 🖥️ IDE Sync.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Standard Enforcer (.editorconfig)
 - **Mandate**: Every project root MUST have a `.editorconfig`.
 - **Standards**:
@@ -29,8 +36,7 @@ Whitespace wars end here. Regardless of Editor (VSCode, PhpStorm) or OS (Win, Ma
 - **Global Git**: Enforce `core.autocrlf = input` (on Mac/Linux) or `false` (on Windows).
 - **Goal**: Prevent Windows CRLF pollution.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Initialization
 1.  **Scan**: Check for `.editorconfig` upon project entry.
 2.  **Generate**: If missing, create the Gold Standard config.

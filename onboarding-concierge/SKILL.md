@@ -8,12 +8,18 @@ tags: [onboarding, profile, context, developer-experience]
 
 # 🛎️ Onboarding Concierge
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 A developer shouldn't spend Day 1 fighting configuration. This skill automates the "Hello World" phase. It manages the Developer's Profile (`profile.md`) and ensures their environment keys (`stack.yaml`) are personalized and ready.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Management of developer personal profile and onboarding..
+- Detected when the user's intent matches the semantic domain of 🛎️ Onboarding Concierge.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Profile Record
 
 - **File**: `[AGENT_ROOT]/profile.md` (Symlinked to `workspace/pkahfi/profile.md`).
@@ -33,8 +39,7 @@ A developer shouldn't spend Day 1 fighting configuration. This skill automates t
 - **Trigger**: First run of the Agent.
 - **Action**: Interview the user. "Welcome. What is your name? What project are we focusing on/today?" -> Populate `profile.md`.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### New User Setup
 
 1.  **Check**: Does `profile.md` exist?
@@ -54,7 +59,6 @@ A developer shouldn't spend Day 1 fighting configuration. This skill automates t
 - **Verification**: Check `data/active-workspace.txt` before claiming a workspace is active.
 - **Reporting**: Clearly distinguish which workspace is currently holding the "Lock".
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Update**: If user demonstrates new skills (e.g., writes perfect Python), ask "Shall I add Python to your strengths?".
 - **Privacy**: Never commit `profile.md` to public repos.

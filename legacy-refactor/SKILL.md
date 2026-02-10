@@ -8,11 +8,18 @@ tags: [refactoring, legacy, clean-code, safety]
 
 # 🧬 Legacy Refactor
 
+
 ## 1. Core Philosophy (The "Why")
 Tech Debt is paid in installments, not lump sums. We treat codebases as living organisms. The goal is **Opportunistic Refactoring**: passive improvement without stopping feature delivery.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Passive, safe, and progressive refactoring of legacy code (Boy Scout Rule)..
+- Detected when the user's intent matches the semantic domain of 🧬 Legacy Refactor.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Boy Scout Rule
 - **Trigger**: Opening a file for any reason.
 - **Action**: Fix Low-Risk issues in the *immediate vicinity*.
@@ -31,8 +38,7 @@ Tech Debt is paid in installments, not lump sums. We treat codebases as living o
 - **CRITICAL**: Never mix Refactor commits with Feature commits.
 - **Format**: `refactor(scope): boy scout cleanup` vs `feat(scope): logic`.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Workflow
 1.  **Edit**: Open file for Feature X.
 2.  **Spy**: Notice messy code nearby (e.g., bad variable name).

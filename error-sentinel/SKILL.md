@@ -8,11 +8,18 @@ tags: [debugging, error-handling, circuit-breaker, wisdom]
 
 # 🛑 Error Sentinel
 
+
 ## 1. Core Philosophy (The "Why")
 Insanity is doing the same thing twice and expecting different results. This skill protects resources (Time & Tokens) by enforcing a "Circuit Breaker" on repetitive failures. Stop, Pivot, Document.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Prevents infinite error loops and captures wisdom from failures..
+- Detected when the user's intent matches the semantic domain of 🛑 Error Sentinel.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Loop Detection (Circuit Breaker)
 - **Count**: If an identical error occurs **3 times** consecutively.
 - **Action**: STOP immediately.
@@ -27,8 +34,7 @@ Insanity is doing the same thing twice and expecting different results. This ski
 - **Action**: Log Root Cause & Fix to `[AGENT_ROOT]/data/wisdom.md`.
 - **Prevent**: Scan wisdom before debugging future issues.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Handling Failures
 1.  **Read Error**: Capture the specific message/code.
 2.  **Recall**: Have I seen this in the last 2 turns?

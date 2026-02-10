@@ -1,0 +1,5 @@
+
+> skill-memory-vortex@1.0.0 ingest
+> tsx src/ingest.ts
+
+sh: 1: tsx: not found

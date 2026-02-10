@@ -8,12 +8,18 @@ tags: [branding, logo, premium-design, architecture, minimalism]
 
 # 📐 Logo Design Mastery (Master Class Edition)
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 A premium logo is an architectural feat. It must feel **Inevitable**. It avoids being "basic" by using sophisticated geometric relationships, optical illusions, and mathematical harmony. We reject "simple" in favor of "refined".
 
-## 2. The Sophistication Engine (The "Brain")
+## 2. When to use this skill
+This skill is activated when the task requires High-end Architectural Logo Design System. Focuses on Sophisticated Corporate Modernism, Mathematical Symmetry, and Optical Perfection..
+- Detected when the user's intent matches the semantic domain of 📐 Logo Design Mastery (Master Class Edition).
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### The Sophistication Engine
 The Agent MUST elevate user keywords into a professional design brief.
 
 | Keyword       | Basic (FAIL)                  | Sophisticated (MASTER CLASS)                                                       |
@@ -23,8 +29,7 @@ The Agent MUST elevate user keywords into a professional design brief.
 | **Modern**    | Flat color, sans-serif.       | **Corporate Modernism**: Reference Otl Aicher, Paul Rand. Precision ratios.        |
 | **Sovereign** | Crowns/Gold colors.           | **Authority & Monolith**: Centered weight, bold negative space paradox.            |
 
-## 3. Visual Engineering Rules (The "Law")
-
+### Visual Engineering Rules
 ### 3.1 Optical Perfection & Balance
 
 - **Rule**: Math is the foundation, but the Eye is the judge.
@@ -45,8 +50,7 @@ The Agent MUST elevate user keywords into a professional design brief.
 - **Rule**: Use deliberate visual weight.
 - **Action**: Ensure the symbol and typography share a "Visual DNA" (e.g., if the icon has sharp corners, the font should be grotesque with matching counters).
 
-## 4. Implementation Workflow (The "How")
-
+### Implementation Workflow
 1.  **Deconstruct**: Extract the "Soul" of the brand.
 2.  **Abstract**: Map the soul to an architectural concept (e.g., "The Monolith", "The Bridge", "The Node").
 3.  **Synthesis (The Pro Prompt)**:
@@ -54,3 +58,4 @@ The Agent MUST elevate user keywords into a professional design brief.
     - **Design Language**: "Corporate Modernism style. A sophisticated geometric silhouette formed by negative space paradox."
     - **Technical Spec**: "Mathematical symmetry, optical balance, high-contrast vector, solid black on white."
     - **Constraints**: "No basic 'clipart' shapes. No child-like simplified blocks. Avoid literal drawings."
+

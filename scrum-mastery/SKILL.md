@@ -8,6 +8,7 @@ tags: [scrum, reporting, productivity, agile]
 
 # 🏟️ Scrum Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 This skill enforces the official Scrum framework to ensure transparency, inspection, and adaptation. It transforms chaos into structured Increments.
 
@@ -18,8 +19,14 @@ This skill enforces the official Scrum framework to ensure transparency, inspect
 4.  **Respect**: Acknowledging standards (DOD).
 5.  **Courage**: Speaking up about impediments.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced Scrum governance, artifacts management, and strict Definition of Done (DOD)..
+- Detected when the user's intent matches the semantic domain of 🏟️ Scrum Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Zero Hallucination Policy
 - **Sprint ID**: NEVER guess. Check `[AGENT_ROOT]/data/current-context.json`.
 - **Project Names**: Exact JIRA keys (e.g., `AS-API`, `AS-CORE`).
@@ -40,8 +47,7 @@ Tasks in the report MUST be sorted by logic:
 3.  **Group 3**: ⏸ **HOLD / PAUSED** (Bottom)
 4.  **Group 4**: ✔ **DONE** (Optional/Archived)
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### 3.1 Daily Scrum Report Structure
 When generating/updating `YYYY-MM-DD.md`, follow this EXACT structure:
 

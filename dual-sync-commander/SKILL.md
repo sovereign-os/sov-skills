@@ -8,11 +8,18 @@ tags: [jira, synchronization, task-management, workflow]
 
 # 🔄 Dual Sync Commander
 
+
 ## 1. Core Philosophy (The "Why")
 A Jira comment without a local log is a whisper in the wind. Both systems (Jira & Local) must be identical. Jira is the Stakeholder's view; Local is the Agent's memory.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Enforces mandatory synchronization between Jira tickets and Local Task Management files..
+- Detected when the user's intent matches the semantic domain of 🔄 Dual Sync Commander.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Atomic Update
 - **Trigger**: Any Jira update (comment, status, worklog).
 - **Action**: Update local task file simultaneously.
@@ -22,8 +29,7 @@ A Jira comment without a local log is a whisper in the wind. Both systems (Jira 
 - **Verification**: Before finishing, verify Jira status matches local status.
 - **Source of Truth**: Jira wins conflicts.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Updating Jira
 1.  **Draft**: Write comment in chat.
 2.  **Approve**: User confirms.

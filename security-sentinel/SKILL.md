@@ -8,11 +8,18 @@ tags: [security, secrets, pii, data-protection, audit]
 
 # 🛡️ Security Sentinel
 
+
 ## 1. Core Philosophy (The "Why")
 Zero-tolerance for sensitive data leakage. Credentials, API keys, and PII must NEVER reach the repository or public logs. One leak can destroy trust.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Automated and manual verification systems to prevent sensitive data leakage (credentials, PII, keys) into the codebase or logs..
+- Detected when the user's intent matches the semantic domain of 🛡️ Security Sentinel.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Secret Prevention
 - **Forbidden**: Hardcoded passwords, API keys, tokens.
 - **Mandate**: Use `.env` files (gitignored) or encrypted vaults.
@@ -25,8 +32,7 @@ Zero-tolerance for sensitive data leakage. Credentials, API keys, and PII must N
 - **Audit**: Verify `.env`, `config.ini`, private keys are in `.gitignore`.
 - **Pre-Commit**: Run `git-secrets` or `trufflehog` to scan commits.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Grep Audit
 ```bash
 grep -r "api_key\|password\|SECRET_" src/

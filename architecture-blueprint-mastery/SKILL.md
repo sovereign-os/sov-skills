@@ -8,11 +8,18 @@ tags: [architecture, planning, design, blueprint, technical-analysis]
 
 # 📐 Architecture Blueprint Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 This skill prevents "Impulsive Coding" by enforcing a systematic analysis phase before implementation. It ensures every change is intentional, optimized, and architecturally sound.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires High-fidelity Technical Design & Discovery protocol for structured task planning..
+- Detected when the user's intent matches the semantic domain of 📐 Architecture Blueprint Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Pre-Flight Discovery (The Handshake)
 Before writing any implementation code, you MUST generate a **Blueprint Proposal**.
 - **Vortex Recall [MANDATORY]**: You MUST query the **Memory Vortex** (Qdrant) to retrieve historical patterns or wisdom related to the task. 
@@ -31,8 +38,7 @@ You are NOT allowed to just "fix it". You must "improve it".
 - **Performance Impact**: Will this slow down the application?
 - **Security Implications**: Does this touch sensitive data or authentication?
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### 3.1 The Blueprint Template
 When a new ticket is received, generate a report with this structure:
 

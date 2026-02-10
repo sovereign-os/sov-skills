@@ -8,12 +8,18 @@ tags: [php, legacy, smarty, templating, xss]
 
 # 🎩 Smarty Mastery
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Smarty is the layer between PHP logic and HTML presentation in legacy systems. We treat it as a "Protected View" layer. We aim to keep logic in PHP and presentation in Smarty, ensuring the codebase remains maintainable even if it's 15+ years old.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Expertise in Smarty templating engine (v2.x/v3.x) for legacy PHP applications, focusing on logic decoupling and XSS safety..
+- Detected when the user's intent matches the semantic domain of 🎩 Smarty Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Separation of Concerns
 
 - **Logic**: NEVER perform complex calculations or database queries inside `{php}` tags (Deprecated) or complex Smarty logic.
@@ -34,8 +40,7 @@ Smarty is the layer between PHP logic and HTML presentation in legacy systems. W
 - **Leverage**: Use built-in modifiers like `|default`, `|date_format`, `|truncate`.
 - **Custom**: If a modifier is needed multiple times, create a custom Smarty plugin instead of inline logic.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Basic Pattern
 
 ```smarty
@@ -63,8 +68,7 @@ Smarty is the layer between PHP logic and HTML presentation in legacy systems. W
 </script>
 ```
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **No {php} Tags**: Any usage of `{php}` is a CRITICAL violation. Refactor to a class or helper.
 - **Cache Control**: Be aware of `$smarty->caching`. Clear cache after template modifications in production.
 - **Legacy Compatibility**: Test changes in both PHP 5.6 and PHP 8.x environments if applicable.

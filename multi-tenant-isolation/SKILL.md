@@ -8,12 +8,18 @@ tags: [architecture, saas, multi-tenancy, security, isolation]
 
 # 🏢 Multi-Tenant Isolation
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 In a SaaS, leaking data between tenants is the ultimate sin. It destroys trust instantly. We enforce **Logical Isolation** at the deepest possible layer (Database/ORM), ensuring that developer error cannot accidentally expose Tenant A's data to Tenant B.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Expertise in strict data separation strategies for SaaS..
+- Detected when the user's intent matches the semantic domain of 🏢 Multi-Tenant Isolation.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Tenant ID
 
 - **Mandate**: Every table belonging to a tenant MUST have a `tenant_id` column (UUID/Int).
@@ -30,8 +36,7 @@ In a SaaS, leaking data between tenants is the ultimate sin. It destroys trust i
 - **Resolving**: Identification of the tenant happens at the Middleware layer (via Subdomain `tenant.app.com` or Header `X-Tenant-ID`).
 - **Persistence**: Store the resolved `tenant_id` in a Singleton/Context Service for the request duration.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementation (Laravel Example)
 
 1.  **Trait**: Create `BelongsToTenant` trait.
@@ -52,7 +57,6 @@ In a SaaS, leaking data between tenants is the ultimate sin. It destroys trust i
   4. Try to fetch Object A.
   5. Assert: `404 Not Found` (Not just empty result, but completely invisible).
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Audit**: Scan migrations for missing `tenant_id` columns.
 - **Leak Check**: Periodically attempt cross-tenant access in Staging.

@@ -8,11 +8,18 @@ tags: [jira, synchronization, reporting, workflow]
 
 # 🤖 Jira Sync Orchestrator
 
+
 ## 1. Core Philosophy (The "Why")
 This skill bridges the "Single Source of Truth" between Jira (The Organization) and Local Docs (The Agent). Discrepancies lead to confusion.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Synchronize task status between Atlassian Jira and local agent documentation..
+- Detected when the user's intent matches the semantic domain of 🤖 Jira Sync Orchestrator.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Status Reconciliation
 - **Fetch**: Use `getJiraIssue(ID)`.
 - **Compare**: Check against status in `daily-scrum.md`.
@@ -29,8 +36,7 @@ This skill bridges the "Single Source of Truth" between Jira (The Organization) 
     2. Tests Passed.
     3. `cache:clear` verified.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Drafting Updates
 1.  **Draft**: Write comment in Markdown block.
 2.  **Review**: User approves/edits.

@@ -10,8 +10,15 @@ tags: [tailwind, ui-ux, components, micro-interactions, premium-design]
 
 This skill bridges the gap between basic Tailwind utility usage and High-Fidelity UI engineering.
 
-## 0. The Golden Law: Zero-Hardcoding (MANDATORY)
 
+## 2. When to use this skill
+This skill is activated when the task requires Advanced UI/UX rules for Tailwind CSS. Enforces "Premium Component Laws" for buttons, cards, and interactive states to ensure a "Wow" factor and total theme elasticity..
+- Detected when the user's intent matches the semantic domain of 🎨 Tailwind UX Craft: The "Premium Component Laws".
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### The Golden Law: Zero-Hardcoding
 To ensure High-Fidelity Elasticity (Light/Dark mode safety), you MUST NOT use hardcoded colors.
 
 - **❌ FORBIDDEN**: `bg-white`, `text-black`, `border-gray-200`, `shadow-indigo-500`.
@@ -20,8 +27,7 @@ To ensure High-Fidelity Elasticity (Light/Dark mode safety), you MUST NOT use ha
   - Opacity: `bg-primary/90`, `text-foreground/60`.
   - Borders: `border-border`, `border-primary/20`.
 
-## 1. The Universal Button Laws (Sure Rules)
-
+### The Universal Button Laws
 Every button in a "Wow" interface MUST follow these interaction and structural rules:
 
 ### A. Anatomy of Excellence
@@ -46,8 +52,7 @@ Don't use generic shadows. Use "Themed Glows":
 - **Primary Buttons**: `shadow-xl shadow-primary/20`.
 - **Hover State**: `hover:shadow-2xl hover:shadow-primary/30`.
 
-## 2. Dynamic Contrast Laws
-
+### Dynamic Contrast Laws
 ### A. The Ghost/Outline Trap
 
 On highly vibrant backgrounds (e.g., Mint Green, Electric Blue):
@@ -60,8 +65,7 @@ On highly vibrant backgrounds (e.g., Mint Green, Electric Blue):
 - **Primary Headline**: `text-foreground` or `text-primary-foreground`.
 - **Meta/Caption**: `text-muted-foreground` or `text-foreground/60`.
 
-## 3. Surface & Elevation
-
+### Surface & Elevation
 ### A. The "Card Glass" Protocol
 
 Cards should not be flat.
@@ -70,10 +74,10 @@ Cards should not be flat.
 - **Border**: `border border-border/50`.
 - **Elevation**: Saturated shadow `shadow-2xl shadow-primary/5`.
 
-## 4. Execution Workflow
-
+### Execution Workflow
 1.  **Sync**: Ensure variables (`--primary`, `--background`) are mapped in `globals.css`.
 2.  **Verify**: Audit classes. Searching for `white`, `black`, `gray` or hex codes is a signal of failure.
 3.  **Implement**: Apply the Anatomy (`h-14`, `rounded-full`) using Semantic Variables.
 4.  **Animate**: Apply Transitions (`transition-all`, `hover:scale-105`, `active:scale-95`).
 5.  **Audit**: Switch system between Light/Dark mode. If a component becomes invisible or "funny", the token mapping is wrong.
+

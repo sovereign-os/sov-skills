@@ -8,11 +8,18 @@ tags: [jira, process, verification, safety]
 
 # 🛡️ Jira Integrity Guard (Arbiter Standard)
 
+
 ## 1. Core Philosophy (The "Why")
 A wrong ticket number leads to wrong code, wrong billing, and chaos. This skill, while part of the **Arbiter Workspace Registry**, is a **Global Mandate** for the Sovereign Agent. It prevents "False Task" disasters by enforcing a mandatory API Cross-Verification protocol. Trust but Verify.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Zero-tolerance policy for Jira ID mismatch and task hallucination..
+- Detected when the user's intent matches the semantic domain of 🛡️ Jira Integrity Guard (Arbiter Standard).
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Identification Lock
 - **Trigger**: Before creating a branch or writing code.
 - **Action**: Call `getJiraIssue(ID)` to fetch live metadata.
@@ -24,8 +31,7 @@ A wrong ticket number leads to wrong code, wrong billing, and chaos. This skill,
 - **Forbidden**: Guessing IDs from memory or branch names.
 - **Constraint**: If `ASD-100` is "Fix Bug" in Jira but user called it "New Feature", STOP and ASK.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Starting a Task
 1.  **User**: "Start 1050".
 2.  **Agent**: "Checking Jira..." (Calls `getJiraIssue`).

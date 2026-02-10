@@ -8,8 +8,15 @@ version: 1.0.0
 
 This skill establishes software engineering documentation governance compliant with the latest international standards. This skill must be used as the primary reference when creating UCS, TSD, and Verification Reports.
 
-## 🏛️ Core Standards Reference
 
+## 2. When to use this skill
+This skill is activated when the task requires High-fidelity governance for Software Engineering documentation based on the latest ISO/IEC/IEEE international standards..
+- Detected when the user's intent matches the semantic domain of 📚 Software Engineering Standards Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### 🏛️ Core Standards Reference
 ### 1. ISO/IEC/IEEE 29148:2018 (Requirements Engineering)
 Supersedes IEEE 830. This standard governs how requirements are defined with precision.
 - **UCS Application**: Must define *Pre-conditions*, *Post-conditions*, and atomic *Flow of Events*.
@@ -25,8 +32,7 @@ The current active gold standard for test documentation (Replacing ISO/IEC/IEEE 
 Governs the software life cycle from concept to retirement.
 - **Process Application**: Every code change must pass through a documented technical verification gate.
 
-## 🏛️ Latest & Emerging Standards (2024-2025)
-
+### 🏛️ Latest & Emerging Standards
 ### 4. IEEE 1012-2024 (System, Software, and Hardware Verification and Validation)
 Released in 2024, this standard refines V&V processes across high-integrity systems.
 - **V&V Application**: Critical for verifying *System Integrity* and valid *User Needs* satisfaction.
@@ -35,8 +41,7 @@ Released in 2024, this standard refines V&V processes across high-integrity syst
 New standard (Dec 2024) for modular, keyword-driven test specifications.
 - **Automation Strategy**: Encourages modular test case descriptions for scalable automation frameworks.
 
-## 📋 Document Structure Protocols
-
+### 📋 Document Structure Protocols
 ### A. Use Case Specification (UCS) Protocol
 **Template**: `resources/templates/ISO-29148-UCS.md`
 Every UCS must include:
@@ -84,18 +89,18 @@ Defines the SQA activities, reviews, and audits.
 **Template**: `resources/templates/ISO-26514-USER-DOC.md`
 Standard structure for user manuals and guides.
 
-## 🚀 Integration Rules
+### 🚀 Integration Rules
 - Always include the standard version used at the beginning of the document.
 - Use precise technical language (avoid ambiguous words like "fast", "easy", "some").
 - Every verification result must have a direct link to the original *Requirement ID*.
 
-## 💡 Reference Examples
+### 💡 Reference Examples
 *See `resources/examples/` for full content.*
 - **UCS Example**: `resources/examples/EXAMPLE-UCS-Login.md` (Authentication Flow)
 - **TSD Example**: `resources/examples/EXAMPLE-TSD-Search.md` (Search API Verification)
 - **SVVR Example**: `resources/examples/EXAMPLE-SVVR-Payment.md` (Payment Gateway Report)
 
-## 🛠️ Tools & Automation
+### 🛠️ Tools & Automation
 **RTM Generator Script**:
 - Location: `workspace/arbiter/operations/scripts/generate-rtm.ts`
 - Usage: `npx tsx workspace/arbiter/operations/scripts/generate-rtm.ts <path-to-migration.log>`
@@ -103,3 +108,4 @@ Standard structure for user manuals and guides.
 
 ---
 *Maintained by **Sovereign OS** Integrated Engineering System.*
+

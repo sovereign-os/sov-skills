@@ -8,11 +8,18 @@ tags: [event-sourcing, cqrs, event-store, architecture, audit]
 
 # 📜 Event Sourcing Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 State is derived from events, not stored directly. This enables: complete audit trails, time-travel queries, and event replay for debugging. Essential for financial and compliance-heavy SaaS.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires CQRS, Event Store, and Event Replay for audit trails and temporal queries..
+- Detected when the user's intent matches the semantic domain of 📜 Event Sourcing Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Event Store
 - **Append-Only**: Events are immutable. Never update or delete.
 - **Schema**: `{ event_id, aggregate_id, event_type, payload, timestamp }`.
@@ -25,8 +32,7 @@ State is derived from events, not stored directly. This enables: complete audit 
 - **Rebuild**: Replay all events to reconstruct state.
 - **Use Case**: Debugging, migrating to new schema.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Appending an Event
 ```php
 $event = new OrderPlaced($orderId, $userId, $amount);

@@ -10,16 +10,25 @@ tags: [meta-skill, standards, governance, quality-gate]
 
 This skill defines the **Gold Standard** for creating and maintaining Agent Skills. It acts as the "Quality Gate" for the `.agent/skills/` directory.
 
-## 0. Sovereign OS Protocol (The "Sacred Rule")
 
+## 1. Core Philosophy (The "Why")
+Briefly explain the purpose of this skill. Why does it exist? What problems does it solve?
+
+## 2. When to use this skill
+This skill is activated when the task requires A short, punchy (1-sentence) description of what this skill does..
+- Detected when the user's intent matches the semantic domain of 🥋 Agent Skill Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### Sovereign OS Protocol
 **MANDATORY**: The Agent MUST NEVER manipulate system state (Skills, Context, Memory) via direct file hacks or "ngide" scripts.
 
 - **The Bridge (Neural Bridge)** is the ONLY trusted neural link between the Agent and the Platform.
 - **The Apps (Web, Bridge, Console)** are the official interfaces.
 - **Protocol**: Always communicate via API (Neural Bridge) or Kernel Commands. Direct file manipulation is considered a "Neural Divergence" and is strictly prohibited.
 
-## 1. The Anatomy of a Perfect Skill
-
+### The Anatomy of a Perfect Skill
 Every skill MUST adhere to this directory structure and file format.
 
 ### 1.1 Directory Structure
@@ -54,12 +63,7 @@ tags: [tag1, tag2]
 
 # 🛡️ Skill Name (Title Case & Emoji)
 
-## 1. Core Philosophy (The "Why")
-
-Briefly explain the purpose of this skill. Why does it exist? What problems does it solve?
-
-## 2. Capabilities & Rules (The "What")
-
+### Capabilities & Rules
 List the specific rules, protocols, or capabilities this skill enforces.
 
 - **Rule 1**: Description.
@@ -73,36 +77,19 @@ For skills involving large datasets (UI themes, coding patterns, checklists), DO
 - **Reference**: Point to this JSON in the Usage section.
 - **Format**: Use clean `{ key: value }` JSON objects for instant Agent lookup.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 How should the Agent or User utilize this skill?
 
 1. Step one.
 2. Step two.
 
-## 4. Maintenance & Audit
-
-How do we know if this skill is broken?
-```
-
-## 2. The Audit Protocol
-
-When running an audit on a skill (`agent-skill-mastery audit <skill-name>`), check for:
-
-1.  **Existence**: Does folder and `SKILL.md` exist?
-2.  **Frontmatter**: Is YAML valid? Does it have `name` and `description`?
-3.  **Content**: Does it have clear sections (Philosophy, Rules, Usage)?
-4.  **Formatting**: Is Markdown valid? No broken code blocks?
-
-## 3. Refinement Workflow
-
+### Refinement Workflow
 1.  **Read**: `view_file` the target skill.
 2.  **Analyze**: Compare against the standard above.
 3.  **Refactor**: Use `replace_file_content` to fix structure, frontmatter, or clarity.
 4.  **Verify**: Ensure the skill is readable and actionable.
 
-## 5. The Active Execution Protocol (Auto-Audit)
-
+### The Active Execution Protocol
 To prevent "Passive Knowledge" syndrome (where skills exist but aren't used), the Agent MUST follow this protocol for EVERY task:
 
 ### 5.1 Mandatory Skill Identification
@@ -130,3 +117,7 @@ Every final report to the User MUST include a **Verified Skills** block:
 ```
 
 Failure to provide this signature means the audit was skipped, and the task is NOT considered complete.
+
+## 4. Maintenance
+How do we know if this skill is broken?
+```

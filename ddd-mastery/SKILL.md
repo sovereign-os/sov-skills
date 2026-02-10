@@ -8,12 +8,18 @@ tags: [architecture, ddd, design-patterns, backend, domain]
 
 # 🧠 DDD Mastery
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Software must reflect the business, not the database. We use **Ubiquitous Language** so developers and experts speak the same dialect. The Domain Model is the heart of the application.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Guide to Domain-Driven Design (DDD) tactical patterns and strategic design..
+- Detected when the user's intent matches the semantic domain of 🧠 DDD Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 DDD is composed of two distinct strategies (Pillars):
 
 1.  **Strategic Design (The Macro)**: Defining the boundaries, relationships between teams, and the "Big Picture" architecture.
@@ -55,8 +61,7 @@ DDD is composed of two distinct strategies (Pillars):
 
 > 📂 **STANDARD STRUCTURE**: For the official directory layout, please refer to [STANDARD_MODULE_STRUCTURE.md](./resources/STANDARD_MODULE_STRUCTURE.md).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Modeling Workflow
 
 1.  **Conversation**: Talk to experts. Capture nouns and verbs.
@@ -66,6 +71,5 @@ DDD is composed of two distinct strategies (Pillars):
 5.  **Events**: Publish events for cross-boundary communication.
 
 ## 4. Maintenance
-
 - **Review**: Does the code "scream" the business intent?
 - **Refactor**: If language changes, code must change.

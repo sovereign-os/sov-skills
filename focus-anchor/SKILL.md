@@ -8,11 +8,18 @@ tags: [productivity, focus, deep-work, context-switching]
 
 # ⚓ Focus Anchor
 
+
 ## 1. Core Philosophy (The "Why")
 Multi-tasking is a myth. Context switching destroys productivity. This skill ensures the Agent stays locked on a single Atomic Goal until completion or explicit switch.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Enforce deep work sessions and prevent context leakage or unnecessary task switching..
+- Detected when the user's intent matches the semantic domain of ⚓ Focus Anchor.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Single Source of Truth
 - **Scanning**: Identify the `IN PROGRESS` task from `daily-scrum.md` or `current-context.json`.
 - **Locking**: Declare "⚓ Focus Locked: [Task ID]".
@@ -28,8 +35,7 @@ Multi-tasking is a myth. Context switching destroys productivity. This skill ens
 - **Firewall**: When working on Project A, PROHIBIT references to Project B's variables/paths.
 - **Vaulting**: Keep reports separate (`projects/as-api/` vs `projects/fs-api/`).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Starting a Session
 1.  **Scan**: Read active tasks.
 2.  **Announce**: "Locked on [ASD-1234]. Ready to code."

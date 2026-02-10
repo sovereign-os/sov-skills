@@ -8,11 +8,18 @@ tags: [caching, redis, cdn, performance, scalability]
 
 # ⚡ Caching Strategy Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Caching is the difference between 50ms and 500ms response times. We cache aggressively but invalidate precisely.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Redis, CDN, and Cache Invalidation strategies for high-performance SaaS..
+- Detected when the user's intent matches the semantic domain of ⚡ Caching Strategy Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Cache Layers
 - **L1 (Application)**: In-memory (APCu, OPcache).
 - **L2 (Distributed)**: Redis/Memcached.
@@ -33,7 +40,7 @@ if (!$data) {
 return $data;
 ```
 
-## 3. Usage Instructions (The "How")
+### Usage Instructions
 - **Read-Heavy**: Cache aggressively.
 - **Write-Heavy**: Use write-through or write-behind.
 

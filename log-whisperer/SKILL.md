@@ -8,11 +8,18 @@ tags: [debugging, logs, docker, observability]
 
 # 🔍 Log Whisperer
 
+
 ## 1. Core Philosophy (The "Why")
 Logs are the voice of the machine. Listening accurately is the key to solving 500 Errors. We do not guess; we `grep`.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Efficiently tail and analyze application logs from Docker containers (fpm, nginx, mongodb)..
+- Detected when the user's intent matches the semantic domain of 🔍 Log Whisperer.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Multi-Stream Tail
 - **Command**: Monitor multiple containers simultaneously to correlate events (e.g., Nginx 500 -> PHP Fatal Error).
 - **Target**: `php8.4-fpm`, `nginx`, `mongodb`.
@@ -25,8 +32,7 @@ Logs are the voice of the machine. Listening accurately is the key to solving 50
 - **Connection Refused**: Immediate check of target service (Redis/MySQL) status.
 - **OOM**: Look for "Memory Limit Exceeded" or "Exit Code 137".
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Tailing Logs
 ```bash
 # General Health

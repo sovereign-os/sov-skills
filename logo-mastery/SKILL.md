@@ -8,11 +8,18 @@ tags: [design, branding, logo, aesthetics, svg]
 
 # 🎨 Logo Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 A logo is not just an image; it is the visual anchor of a brand's identity. It must be **Simple**, **Memorable**, **Timeless**, **Versatile**, and **Appropriate**. We reject generic templates in favor of geometrically sound, conceptually deep, and mathematically balanced designs.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced guide for creating professional, scalable, and impactful logos..
+- Detected when the user's intent matches the semantic domain of 🎨 Logo Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Golden Principles
 1.  **Simplicity**: Can it be drawn from memory in 5 seconds? If not, it's too complex.
 2.  **Scalability**: Must look perfect at 16x16px (Favicon) and 10x10 meters (Billboard).
@@ -34,8 +41,7 @@ A logo is not just an image; it is the visual anchor of a brand's identity. It m
 - **Primary**: SVG (Vector) is mandatory.
 - **Code Cleanliness**: SVG code must be optimized (minimized paths, no excess metadata).
 
-## 3. Implementation Workflow (The "How")
-
+### Implementation Workflow
 ### Phase 1: Discovery
 - **Brand Personality**: Is it Playful or Serious? Modern or Classic?
 - **Keywords**: Define 3 core adjectives (e.g., "Fast", "Secure", "Global").
@@ -54,11 +60,7 @@ A logo is not just an image; it is the visual anchor of a brand's identity. It m
 - **Optical Correction**: Adjust alignment based on how it *looks*, not just the math.
 - **Contrast Check**: Ensure distinct visibility on Dark and Light backgrounds.
 
-## 4. Maintenance & Repository
-- **Storage**: Store source SVGs in `.agent/branding/` or `assets/logo/`.
-- **Naming**: `logo-primary.svg`, `logo-monochrome.svg`, `logo-icon.svg`.
-## 5. Advanced Design Theory
-
+### Advanced Design Theory
 ### 5.1 The Laws of Minimalism (Reductionism)
 "Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away."
 - **The Squint Test**: If you squint, does the shape hold up?
@@ -77,5 +79,9 @@ A logo is not just an image; it is the visual anchor of a brand's identity. It m
 - **Figure/Ground**: The relationship between positive (shape) and negative (background) space.
 - **Proximity**: Elements placed close together are perceived as a group.
 
-## 6. Reference & Inspiration
+### Reference & Inspiration
 - **Minimalist Prompt Library**: See `examples/minimalist_prompts.json` for a collection of high-quality prompts derived from premium minimalist design patterns (Geometric, Fluid, Monogram). Use these prompts as a baseline for image generation or vector construction.
+
+## 4. Maintenance
+- **Storage**: Store source SVGs in `.agent/branding/` or `assets/logo/`.
+- **Naming**: `logo-primary.svg`, `logo-monochrome.svg`, `logo-icon.svg`.

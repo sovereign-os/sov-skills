@@ -20,46 +20,18 @@ tags:
 
 # 💎 UI/UX Engineering Mastery (Unified)
 
-## 1. Core Philosophy
 
+## 1. Core Philosophy (The "Why")
 A premium experience is a synergy of **Visual Precision**, **Tactile Feedback**, and **Structural Integrity**. We don't just build interfaces; we engineer digital habitats that are predictable, delightful, and mathematically harmonious.
 
-## 2. Intelligence & Research (The Brain)
+## 2. When to use this skill
+This skill is activated when the task requires Unified State-of-the-Art standard for Professional UI/UX Engineering. Encompasses Design Systems, Motion, Typography, and Structural Modularity..
+- Detected when the user's intent matches the semantic domain of 💎 UI/UX Engineering Mastery (Unified).
+- Triggered by technical requirements or explicit architectural requests.
 
-This skill makes high-fidelity decisions using the compiled intelligence bank in `resources/`.
+## 3. How to use it
 
-### ⚡ MANDATORY Execution Protocol
-
-Before any design or code implementation, you MUST:
-
-1.  **Read Intelligence**: Call `view_file` on:
-    - `ux-intelligence.json`: For high-severity usability guidelines and chart selection.
-    - `design-intelligence.json`: For domain-specific (Fintech, SaaS, etc.) color tokens.
-    - `typography-intelligence.json`: For font-pairings matching the "Vibe".
-    - `motion-tokens.json`: For easing and duration tokens.
-    - `patterns.json`: Dedicated library of UI/UX patterns (Navigation, Search, Forms) to avoid reinventing the wheel.
-
-2.  **Check Theme Bank**: Consult `theme-bank.json` for high-end presets (e.g., `neon-cyberpunk`, `zen-minimal`).
-
-3.  **Zen Theme Selection**: If the project requires a **calm, focused, minimalist** approach, use the `zen-minimal` theme from `theme-bank.json` which includes complete philosophy, tokens, layouts, and microcopy guidelines.
-
-4.  **Synthesis**: Formulate an implementation plan.
-
-5.  **📝 The Design Contract (CRITICAL)**:
-    Before writing code, you MUST output a **Design Contract** table in your thought process or response to prove you have read and selected the correct tokens.
-
-    _Example Contract:_
-    | Component | Selection ID | Source Resource |
-    | :--- | :--- | :--- |
-    | **Palette** | `saas-fintech-dark` | `design-intelligence.json` |
-    | **Structure** | `visual-anchor` | `ux-intelligence.json` |
-    | **Typography** | `outfit-plus-jakarta` | `typography-intelligence.json` |
-    | **Motion** | `premium-spring` | `motion-tokens.json` |
-
-    _If you skip this step, you are violating the Sovereign OS Design Law._
-
-## 3. Revamp & Refactoring Protocols (Data Safety)
-
+### Revamp & Refactoring Protocols
 When revamping, redesigning, or refactoring existing UI:
 
 ### 🛡️ The "Feature Parity" Rule
@@ -71,8 +43,7 @@ When revamping, redesigning, or refactoring existing UI:
 3.  **Content Continuity**: Ensure all text, links, and assets (images, icons) from the old version are migrated to the new design.
 4.  **Component Mapping**: Map old components to their new "Premium" equivalents (e.g., Old Grid -> New Bento Grid).
 
-## 4. Resource Mapping Matrix
-
+### Resource Mapping Matrix
 Use this matrix to know exactly which resource solves your current problem:
 
 | Valid Need                          | Target Resource                | Key to Look For            |
@@ -88,8 +59,7 @@ Use this matrix to know exactly which resource solves your current problem:
 | "I need animation values"           | `motion-tokens.json`           | `easings` / `durations`    |
 | "I need a UI Component (Card, Nav)" | `patterns.json`                | `patterns`                 |
 
-## 5. Design Tokens & System Logic
-
+### Design Tokens & System Logic
 ### 🎨 Holistic Theme Engineering
 
 - **Dual-Mode Semantic Mapping**: Use the `light` and `dark` token sets from `theme-bank.json`. Map these to CSS variables within `@layer base`.
@@ -110,8 +80,7 @@ Use this matrix to know exactly which resource solves your current problem:
 - **Golden Ratio Spacing**: Spacing (margin/padding/gap) must follow a 4px or 8px grid system.
 - **Pairing Vibe**: Match font-pairings from intelligence to the project's industry (e.g., Serif for Editorial, Geometric for Dev-Tools).
 
-## 6. Interaction & Motion Design
-
+### Interaction & Motion Design
 ### 🧤 Tactile Feedback
 
 - **Active States**: EVERY button/link must have a `:active` visual (e.g., `scale-95`).
@@ -123,8 +92,7 @@ Use this matrix to know exactly which resource solves your current problem:
 - **Spring over Tween**: Use spring physics (`stiffness: 400`, `damping: 30`) for a natural, luxury feel.
 - **Spatial Reasoning**: Animations must explain where elements came from (e.g., Sidebar slides from the edge, not fades in place).
 
-## 7. Blueprint Assemblies (Layout Patterns)
-
+### Blueprint Assemblies
 Use `ux-intelligence.json` to select the correct architectural blueprint for high-level sections.
 
 ### 👑 Sovereign Hero Protocol
@@ -154,8 +122,43 @@ Use `ux-intelligence.json` to select the correct architectural blueprint for hig
   - **Brand Echo**: Repeat the logo/wordmark to close the loop.
   - **Legals**: Privacy Policy, Terms, and Copyright are mandatory for trust.
 
-## 8. Conversion Engineering (Psychology)
+### Structural Engineering
+Maintain a strict component hierarchy to ensure scalability:
 
+1.  **Atoms**: Purely presentational HTML primitives (Button, Input).
+2.  **Molecules**: Combinations of atoms (SearchField = Input + Icon).
+3.  **Organisms**: Functional UI sections (Navbar, Sidebar).
+4.  **Templates**: Layout scaffolds (DashboardLayout).
+5.  **Pages**: The "Page" component where logic/data orchestration lives.
+
+### Robust State Architecture
+Do not just build the "Happy Path". Every data-driven component MUST account for:
+
+1.  **Ideal State**: The happy path (fully populated data).
+2.  **Empty State**: First-run experience. Must be educational and actionable (e.g., "No Projects yet" -> with a "Create Project" button). Never use dead-ends like "No data found".
+3.  **Loading State**: Use animated **Skeletons** that match the final layout. Avoid layout shifts (CLS).
+4.  **Error State**: Helpful recovery paths. "Try again" buttons and human-readable context, not red stack traces.
+
+### Voice & Tone
+- **No Lorem Ipsum**: Use realistic mock data from the start to test layout stress.
+- **Human-Centric**: Use "You" and "We". Avoid passive voice.
+- **Action-Oriented**: Buttons should say what they do (e.g., "Create Project" instead of "Submit").
+- **Conciseness**: Cut words by 50% in the second draft.
+
+### Responsive Strategy
+- **Mobile First**: Design for the smallest screen first, then scale up.
+- **Breakpoint Intelligence**: Subtract sidebar/persistent UI widths when calculating grid columns.
+- **No-Clipping Rule**: Content must NEVER touch the edge of the viewport. Minimum 24px (1.5rem) safety zone.
+
+### Quality Audit
+- [ ] **Contrast Audit**: Does it pass WCAG AA (4.5:1)?
+- [ ] **Tactility Check**: Do all interactive elements respond to touch/click?
+- [ ] **Dual-Mode Check**: Does it look "Premium" in both Light and Dark modes?
+- [ ] **Motion Check**: Is `prefers-reduced-motion` respected?
+- [ ] **Token Audit**: Are there any hardcoded Hex/Pixels?
+- [ ] **State Check**: Did you style the Empty and Error states?
+
+## 4. Maintenance
 Design is not just decoration; it is persuasion. Apply these principles to drive action:
 
 ### 🧠 The Value Stack
@@ -177,44 +180,3 @@ A user will not convert if their "Trust Battery" is empty. Charge it with:
 
 - **Performance**: LCP must be < 2.5s. Speed is a feature.
 - **Conversion Rate (CR)**: Target > 2%. If lower, A/B test Headlines first, then CTAs.
-
-## 9. Structural Engineering (Atomic Design)
-
-Maintain a strict component hierarchy to ensure scalability:
-
-1.  **Atoms**: Purely presentational HTML primitives (Button, Input).
-2.  **Molecules**: Combinations of atoms (SearchField = Input + Icon).
-3.  **Organisms**: Functional UI sections (Navbar, Sidebar).
-4.  **Templates**: Layout scaffolds (DashboardLayout).
-5.  **Pages**: The "Page" component where logic/data orchestration lives.
-
-## 10. Robust State Architecture (The 4 Modes)
-
-Do not just build the "Happy Path". Every data-driven component MUST account for:
-
-1.  **Ideal State**: The happy path (fully populated data).
-2.  **Empty State**: First-run experience. Must be educational and actionable (e.g., "No Projects yet" -> with a "Create Project" button). Never use dead-ends like "No data found".
-3.  **Loading State**: Use animated **Skeletons** that match the final layout. Avoid layout shifts (CLS).
-4.  **Error State**: Helpful recovery paths. "Try again" buttons and human-readable context, not red stack traces.
-
-## 11. Voice & Tone (Microcopy)
-
-- **No Lorem Ipsum**: Use realistic mock data from the start to test layout stress.
-- **Human-Centric**: Use "You" and "We". Avoid passive voice.
-- **Action-Oriented**: Buttons should say what they do (e.g., "Create Project" instead of "Submit").
-- **Conciseness**: Cut words by 50% in the second draft.
-
-## 12. Responsive Strategy
-
-- **Mobile First**: Design for the smallest screen first, then scale up.
-- **Breakpoint Intelligence**: Subtract sidebar/persistent UI widths when calculating grid columns.
-- **No-Clipping Rule**: Content must NEVER touch the edge of the viewport. Minimum 24px (1.5rem) safety zone.
-
-## 13. Quality Audit (Definition of Done)
-
-- [ ] **Contrast Audit**: Does it pass WCAG AA (4.5:1)?
-- [ ] **Tactility Check**: Do all interactive elements respond to touch/click?
-- [ ] **Dual-Mode Check**: Does it look "Premium" in both Light and Dark modes?
-- [ ] **Motion Check**: Is `prefers-reduced-motion` respected?
-- [ ] **Token Audit**: Are there any hardcoded Hex/Pixels?
-- [ ] **State Check**: Did you style the Empty and Error states?

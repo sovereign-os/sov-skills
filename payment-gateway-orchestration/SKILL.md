@@ -8,11 +8,18 @@ tags: [payment, stripe, webhooks, backend, financial]
 
 # 💸 Payment Gateway Orchestration
 
+
 ## 1. Core Philosophy (The "Why")
 This skill manages the movement of value. It connects Sovereign OS to the global financial system. Reliability is non-negotiable. Webhooks are the source of truth, not the user's browser.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Expertise in managing external payments (Stripe, Midtrans) with robust webhook handling and idempotency..
+- Detected when the user's intent matches the semantic domain of 💸 Payment Gateway Orchestration.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Webhook Resilience
 - **Source of Truth**: Async payments (Bank Transfer) succeed via Webhook, not return URL.
 - **Verification**: ALWAYS verify webhook signatures (HMAC) to prevent spoofing.
@@ -25,8 +32,7 @@ This skill manages the movement of value. It connects Sovereign OS to the global
 ### Rule 3: Atomic Balance
 - **Transaction**: Payment Success + Product Unlock MUST happen in the same DB Transaction.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementing Webhook Controller
 1.  **Verify**: `$gateway->verifySignature($request)`.
 2.  **Ack**: `return Response(200)` (if queuing) or process fast.

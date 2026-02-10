@@ -11,8 +11,15 @@ memory:
 
 The Agent MUST prioritize reliability by following the TDD protocol, especially for risky tasks like migrations or financial logic. "No code without a failing test first."
 
-## 🔄 The Cycle: Red-Green-Refactor
 
+## 2. When to use this skill
+This skill is activated when the task requires Mastery of Test-Driven Development (TDD) focusing on Red-Green-Refactor cycles, high coverage, and test reliability..
+- Detected when the user's intent matches the semantic domain of 🧪 Test-Driven Development (TDD) Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### 🔄 The Cycle: Red-Green-Refactor
 1.  **🔴 RED (Fail)**:
     - Identify a single unit of logic to implement.
     - Write a test that describes that logic.
@@ -27,8 +34,7 @@ The Agent MUST prioritize reliability by following the TDD protocol, especially 
     - Improve code readability, remove duplication, and ensure SOLID principles.
     - Run tests after every change to ensure they stay green.
 
-## 📜 Procedures
-
+### 📜 Procedures
 ### 1. Requirements Breakdown
 - Breakdown tasks into testable units.
 - Identify edge cases (empty results, connection failures, invalid inputs).
@@ -42,7 +48,8 @@ The Agent MUST prioritize reliability by following the TDD protocol, especially 
 - Aim for 100% logic coverage in complex strategies.
 - Every `if`, `else`, and `catch` block must be reached by at least one test case.
 
-## ⚖️ The Law
+### ⚖️ The Law
 - "A feature is only 'Done' when its tests are merged."
 - "Tests are the ultimate documentation of intent."
 - "If a bug is found, write a test to reproduce it BEFORE fixing it."
+

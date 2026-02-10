@@ -8,11 +8,18 @@ tags: [security, csrf, web, tokens, protection]
 
 # 🛡️ CSRF Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Cross-Site Request Forgery (CSRF) exploits trust. A malicious site tricks the user's browser into executing unwanted actions on a trusted site. We prevent this with token-based verification.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Advanced CSRF protection strategies for legacy and modern web applications..
+- Detected when the user's intent matches the semantic domain of 🛡️ CSRF Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Token Generation
 - **Uniqueness**: Every session gets a unique CSRF token.
 - **Rotation**: Regenerate token on sensitive actions (login, payment).
@@ -27,8 +34,7 @@ Cross-Site Request Forgery (CSRF) exploits trust. A malicious site tricks the us
 - **Modern Defense**: Set `SameSite=Strict` or `Lax` on session cookies.
 - **Fallback**: Use CSRF tokens for browsers that don't support SameSite.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementing CSRF Protection (Symfony)
 ```php
 // Form

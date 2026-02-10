@@ -15,8 +15,15 @@ provides:
 
 This skill provides comprehensive UML modeling capabilities using **PlantUML** syntax (text-based, version-controllable).
 
-## 📐 Core Diagrams
 
+## 2. When to use this skill
+This skill is activated when the task requires Comprehensive UML (Unified Modeling Language) expertise for visualizing system architecture, behavior, and interactions using industry-standard diagrams..
+- Detected when the user's intent matches the semantic domain of 🎨 UML Mastery.
+- Triggered by technical requirements or explicit architectural requests.
+
+## 3. How to use it
+
+### 📐 Core Diagrams
 ### 1️⃣ Use Case Diagram
 **Purpose**: Show actors and their interactions with the system.
 **When to use**: During requirements analysis, to visualize user goals.
@@ -258,8 +265,7 @@ package "Infrastructure Layer" {
 
 ---
 
-## 🔧 Usage Protocol
-
+### 🔧 Usage Protocol
 ### For Agents:
 1. **Identify Diagram Need**: Based on task context (requirements, design, testing).
 2. **Select Template**: Choose appropriate diagram type from above.
@@ -274,8 +280,7 @@ package "Infrastructure Layer" {
 
 ---
 
-## 📦 Output Structure
-
+### 📦 Output Structure
 When creating UML artifacts, save them in:
 ```
 /home/puterakahfi/.agent/workspace/arbiter/artifacts/uml/
@@ -290,10 +295,10 @@ When creating UML artifacts, save them in:
 
 ---
 
-## 🎯 Best Practices
-
+### 🎯 Best Practices
 1. **Keep it Simple**: Don't over-complicate diagrams. Focus on clarity.
 2. **Version Control**: `.puml` files are text, perfect for Git.
 3. **Consistency**: Use same naming conventions across all diagrams.
 4. **Annotations**: Add notes for non-obvious logic or business rules.
 5. **Layering**: Separate concerns (don't mix Use Case with Class diagrams).
+

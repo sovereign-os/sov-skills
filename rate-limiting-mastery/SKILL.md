@@ -8,11 +8,18 @@ tags: [rate-limiting, api, security, throttling, ddos]
 
 # 🚦 Rate Limiting Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Protect resources from abuse. Rate limiting prevents: DDoS, brute force, and resource exhaustion.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires API Throttling and DDoS protection for SaaS platforms..
+- Detected when the user's intent matches the semantic domain of 🚦 Rate Limiting Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Algorithms
 - **Token Bucket**: Smooth bursts (recommended).
 - **Leaky Bucket**: Constant rate.
@@ -27,7 +34,7 @@ Protect resources from abuse. Rate limiting prevents: DDoS, brute force, and res
 - **Status**: 429 Too Many Requests.
 - **Headers**: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `Retry-After`.
 
-## 3. Usage Instructions (The "How")
+### Usage Instructions
 ```php
 if (!$rateLimiter->attempt($userId, 100)) {
     throw new TooManyRequestsException();

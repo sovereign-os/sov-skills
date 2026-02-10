@@ -8,11 +8,18 @@ tags: [memory, context, logging, situational-awareness]
 
 # 📚 Context Archivist
 
+
 ## 1. Core Philosophy (The "Why")
 This skill powers **The Oracle**. It ensures the Agent never suffers from amnesia by automatically rebuilding "Sovereign Context" upon boot, switching, or query. Context is King; assumption is the enemy.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Automatic reconstruction of project memory and situational awareness..
+- Detected when the user's intent matches the semantic domain of 📚 Context Archivist.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Oracle Handshake (Boot-up)
 Upon session start or project switch, MUST scan:
 1.  **Vault**: `[AGENT_ROOT]/data/current-context.json` (Immediate state).
@@ -27,8 +34,7 @@ Provide a "Memory Flash" when context is vague:
 - **Auto-Save**: Updates to `current-context.json` happen on every Task Switch or significant Context Change.
 - **Log**: Daily work is logged in `history/tasks/YYYY/MM/YYYY-MM-DD.md`.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Retrieving Context
 1.  **Read**: `view_file [AGENT_ROOT]/data/current-context.json` to get Active Tasks & Commit Hash.
 2.  **Verify**: Cross-check `lastCommit` with actual `git log`.

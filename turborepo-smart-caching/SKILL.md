@@ -8,12 +8,18 @@ tags: [devops, build, caching, monorepo, performance]
 
 # 🚀 Turborepo Smart Caching
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 "Never compute the same thing twice." In a Monorepo, rebuilding everything is a waste of time and carbon. We trust the Hash. If source + config hasn't changed, the artifact is valid.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Optimization of builds using Turborepo filters and remote caching..
+- Detected when the user's intent matches the semantic domain of 🚀 Turborepo Smart Caching.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: The Pipeline Definition (turbo.json)
 
 - **Inputs**: Define strict inputs for tasks. Exclude `README.md` from triggering a build.
@@ -31,8 +37,7 @@ tags: [devops, build, caching, monorepo, performance]
 - **Shared State**: CI/CD shares cache with Local Devs.
 - **Security**: Don't cache secrets. Use env vars responsibly.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Configuring turbo.json
 
 ```json
@@ -57,7 +62,6 @@ tags: [devops, build, caching, monorepo, performance]
 turbo run build --filter="...[origin/main]"
 ```
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Hash Debugging**: If cache HIT fails unexpectedly, run `turbo run build --dry=json` to inspect inputs.
 - **Prune**: Use `turbo prune --scope=<target>` to generate a Docker-ready slice of the monorepo.

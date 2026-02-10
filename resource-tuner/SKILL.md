@@ -8,12 +8,18 @@ tags: [devops, optimization, resources, monitoring, docker]
 
 # 🔧 Resource Tuner
 
-## 1. Core Philosophy (The "Why")
 
+## 1. Core Philosophy (The "Why")
 Bloated containers and memory leaks slow down development and crash production. We aggressively tune resource limits to match the workload, ensuring efficiency without starvation.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Monitoring and optimizing system resources (CPU, RAM, Disk)..
+- Detected when the user's intent matches the semantic domain of 🔧 Resource Tuner.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Docker Limits
 
 - **Constraint**: Every container in `docker-compose` MUST have `mem_limit`.
@@ -33,8 +39,7 @@ Bloated containers and memory leaks slow down development and crash production. 
 - **Connections**: Limit `max_connections` to prevent OOM.
 - **Buffers**: Tune `innodb_buffer_pool_size` to 60-80% of available RAM (on dedicated DB servers).
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Calculating FPM Workers
 
 Formula: `Total RAM / RAM per Worker = Max Children`
@@ -46,7 +51,6 @@ Example: `2048MB / 64MB = 32 Workers`.
 2.  **Inspect**: `dmesg | grep -i "out of memory"`.
 3.  **Action**: Increase limit OR fix memory leak (use profiler).
 
-## 4. Maintenance (The Law)
-
+## 4. Maintenance
 - **Review**: Check `docker stats` during load tests.
 - **Prune**: Regular `docker system prune` to free disk space.

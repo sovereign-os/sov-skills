@@ -8,11 +8,18 @@ tags: [feature-flags, deployment, ab-testing, rollout]
 
 # 🚩 Feature Flag Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Deploy code != Release features. Feature flags decouple deployment from release, enabling: gradual rollouts, A/B tests, kill switches.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Feature toggles for gradual rollouts and A/B testing..
+- Detected when the user's intent matches the semantic domain of 🚩 Feature Flag Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Types
 - **Release Flags**: Enable/disable features.
 - **Experiment Flags**: A/B testing.
@@ -26,7 +33,7 @@ Deploy code != Release features. Feature flags decouple deployment from release,
 ### Rule 3: Cleanup
 - **Lifecycle**: Remove flags after 100% rollout.
 
-## 3. Usage Instructions (The "How")
+### Usage Instructions
 ```php
 if ($this->flags->isEnabled('payment-v2')) {
     return $this->paymentV2Service->charge();

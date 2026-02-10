@@ -8,11 +8,18 @@ tags: [documentation, reporting, communication, presentation]
 
 # 🎨 Premium Presentation
 
+
 ## 1. Core Philosophy (The "Why")
 First impressions matter. Reports and docs are products. They must WOW the reader with clarity, structure, and visual excellence.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Elevating the quality of reports, documentation, and communication for a "Wow" experience..
+- Detected when the user's intent matches the semantic domain of 🎨 Premium Presentation.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Report Elevation
 - **Emoji Logic**: Use professional emojis (✅, ⚙️, 🔥) for status.
 - **Structure**: Headers, Tables, Bullet Points.
@@ -30,17 +37,19 @@ First impressions matter. Reports and docs are products. They must WOW the reade
 - **Command**: `npm run sov -- document:export /path/to/report.md` (from `~/.agent/app`).
 - **Rationale**: Do not use `pandoc` or other third-party tools. The Sovereign script ensures premium branding and does not require external dependencies like pandoc/wkhtmltopdf to be installed on the user's system.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Creating a README
 ```markdown
 # Project Name
-## Context
+
+### Context
 Brief description.
-## Tech Stack
+
+### Tech Stack
 - PHP 8.4
 - Symfony 7
-## Commands
+
+### Commands
 `composer install`
 ```
 

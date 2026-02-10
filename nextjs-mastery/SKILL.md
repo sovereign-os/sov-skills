@@ -8,11 +8,18 @@ tags: [nextjs, react, ssr, frontend, performance]
 
 # ⚡ Next.js Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 Next.js is React with superpowers: SSR, SSG, ISR, API Routes. We leverage these to build fast, SEO-friendly, scalable web apps. Performance is not optional.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires High-performance Next.js architectures..
+- Detected when the user's intent matches the semantic domain of ⚡ Next.js Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Rendering Strategies
 - **SSG (Static)**: Use for content that rarely changes (Blog, Docs). Build-time generation.
 - **SSR (Server)**: Use for personalized content (Dashboard). Request-time generation.
@@ -29,8 +36,7 @@ Next.js is React with superpowers: SSR, SSG, ISR, API Routes. We leverage these 
 - **Code Splitting**: Automatic per-page. Use `dynamic()` for heavy components.
 - **Fonts**: Use `next/font` to eliminate layout shift.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### SSG Page
 ```typescript
 export async function getStaticProps() {

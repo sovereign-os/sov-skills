@@ -8,11 +8,18 @@ tags: [architecture, oop, solid, design, refactoring]
 
 # 🏛️ SOLID Principles Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 SOLID is the foundation of maintainable OOP. Violations lead to God Classes, tight coupling, and untestable code. We enforce SOLID to ensure scalability and sanity.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Comprehensive guide and enforcement rules for applying SOLID principles in software development..
+- Detected when the user's intent matches the semantic domain of 🏛️ SOLID Principles Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: Single Responsibility (SRP)
 - **Definition**: One class, one reason to change.
 - **Violation**: `UserManager` handles validation, DB, email, logging.
@@ -38,8 +45,7 @@ SOLID is the foundation of maintainable OOP. Violations lead to God Classes, tig
 - **Violation**: `OrderService` instantiates `MySQLConnection`.
 - **Fix**: Inject `DatabaseConnectionInterface`.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Applying DIP
 ```php
 class OrderService {

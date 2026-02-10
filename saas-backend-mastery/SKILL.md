@@ -8,11 +8,18 @@ tags: [saas, backend, api, payment, subscription, multi-tenant]
 
 # 💼 SaaS Backend Mastery
 
+
 ## 1. Core Philosophy (The "Why")
 SaaS backends must handle: API contracts, recurring billing, multi-tenancy, and webhooks. This skill consolidates best practices from API design, payment orchestration, and subscription lifecycle management.
 
-## 2. Capabilities & Rules (The "What")
+## 2. When to use this skill
+This skill is activated when the task requires Comprehensive backend architecture for SaaS platforms (APIs, Payments, Subscriptions, Multi-tenancy)..
+- Detected when the user's intent matches the semantic domain of 💼 SaaS Backend Mastery.
+- Triggered by technical requirements or explicit architectural requests.
 
+## 3. How to use it
+
+### Capabilities & Rules
 ### Rule 1: API Design (Contract-First)
 - **OpenAPI**: Define specs before code.
 - **Versioning**: `/v1/`, `/v2/` for breaking changes.
@@ -27,8 +34,7 @@ SaaS backends must handle: API contracts, recurring billing, multi-tenancy, and 
 - **Isolation**: Tenant data MUST be separated (DB schema, row-level security).
 - **Scalability**: Use tenant sharding for large customers.
 
-## 3. Usage Instructions (The "How")
-
+### Usage Instructions
 ### Implementing Subscription Webhook
 ```php
 public function handleStripeWebhook(Request $request) {
