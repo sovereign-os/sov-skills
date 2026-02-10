@@ -6,57 +6,65 @@ import { v5 as uuidv5 } from 'uuid';
 import { qdrant, ensureCollection, COLLECTION_NAME } from './qdrant';
 import { getEmbeddings } from './embedder';
 
-const NAMESPACE = '1b671a64-40d5-491e-99b0-da01ff1f3341'; // Random constant UUID for namespace
+const NAMESPACE = '1b671a64-40d5-491e-99b0-da01ff1f3341'; // Constant UUID
+
+// Helper to parse arguments
+const args = process.argv.slice(2);
+const dirArg = args.find(a => a.startsWith('--dir='))?.split('=')[1];
+const workspaceArg = args.find(a => a.startsWith('--workspace='))?.split('=')[1] || 'global';
 
 async function main() {
-    const workspaceRoot = process.env.AGENT_ROOT || '/home/puterakahfi/.agent';
-
-    // Paths to scan
-    const historyPath = path.join(workspaceRoot, 'workspace', 'arbiter', 'operations', 'history');
-    const memoryPath = path.join(workspaceRoot, 'memory');
-    const patternsPath = path.join(workspaceRoot, 'knowledge', 'patterns');
-    const decisionsPath = path.join(workspaceRoot, 'knowledge', 'decisions');
+    const workspaceRoot = process.env.AGENT_ROOT || '/home/puterakahfi/sov-agent';
+    const targetDir = dirArg || workspaceRoot;
 
     console.log(`🌀 Vortex Ingestion Started...`);
+    console.log(`📍 Target Directory: ${targetDir}`);
+    console.log(`🏷️  Workspace Tag: ${workspaceArg}`);
+
     await ensureCollection();
 
-    const files = await glob([
-        `${workspaceRoot}/workspace/**/operations/history/**/*.md`,
-        `${workspaceRoot}/workspace/**/operations/tasks/**/*.md`,
-        `${workspaceRoot}/memory/**/*.md`,
-        `${workspaceRoot}/workspace/*/.agent/memory/**/*.md`,
-        `${workspaceRoot}/skills/**/SKILL.md`,
-        `${workspaceRoot}/workflows/*.md`,
-        `${workspaceRoot}/kaizen-log.md`,
-        `${patternsPath}/**/*.md`,
-        `${decisionsPath}/**/*.md`
-    ], { dot: true });
+    // Define globs based on the target directory structure
+    const globs = [
+        `${targetDir}/operations/history/**/*.md`,
+        `${targetDir}/operations/tasks/**/*.md`,
+        `${targetDir}/brain/memory/**/*.md`,
+        `${targetDir}/.agent/rules/**/*.md`,
+        `${targetDir}/.agent/workflows/**/*.md`,
+        `${targetDir}/kaizen-log.md`
+    ];
+
+    // If it's the core AGENT_ROOT, add specific core globs
+    if (!dirArg) {
+        globs.push(`${workspaceRoot}/skills/**/SKILL.md`);
+    }
+
+    const files = await glob(globs, { dot: true });
 
     console.log(`Found ${files.length} documents to ingest.`);
 
     for (const file of files) {
+        if (!fs.existsSync(file)) continue;
         const content = fs.readFileSync(file, 'utf-8');
         const { data, content: body } = matter(content);
 
-        // Skip purely empty files
         if (!body.trim()) continue;
 
-        // Determine metadata
         const relativePath = path.relative(workspaceRoot, file);
-        const type = relativePath.includes('history') ? 'history' :
-            relativePath.includes('tasks') ? 'task' :
-            relativePath.includes('kaizen-log') ? 'kaizen' :
-            relativePath.includes('patterns') ? 'pattern' : 'decision';
 
-        console.log(`Processing: ${relativePath}`);
+        // Determine type
+        let type = 'general';
+        if (relativePath.includes('history')) type = 'history';
+        else if (relativePath.includes('tasks')) type = 'task';
+        else if (relativePath.includes('rules')) type = 'rule';
+        else if (relativePath.includes('workflows')) type = 'workflow';
+        else if (relativePath.includes('memory')) type = 'wisdom';
+        else if (relativePath.includes('kaizen')) type = 'kaizen';
 
-        // Vectorize
+        console.log(`Processing [${type}]: ${relativePath}`);
+
         const vector = await getEmbeddings(body);
-
-        // Deterministic ID based on file path to allow updates
         const id = uuidv5(relativePath, NAMESPACE);
 
-        // Upload to Qdrant
         await qdrant.upsert(COLLECTION_NAME, {
             wait: true,
             points: [
@@ -66,7 +74,8 @@ async function main() {
                     payload: {
                         path: relativePath,
                         type: type,
-                        content: body.substring(0, 5000), // Increased snippet size
+                        workspace: workspaceArg,
+                        content: body.substring(0, 5000),
                         metadata: data
                     }
                 }
@@ -74,7 +83,7 @@ async function main() {
         });
     }
 
-    console.log(`✅ Vortex Ingestion Complete.`);
+    console.log(`✅ Vortex Ingestion Complete for '${workspaceArg}'.`);
 }
 
 main().catch(console.error);

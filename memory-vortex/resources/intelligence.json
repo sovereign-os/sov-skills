@@ -1,0 +1,25 @@
+{
+    "engine": {
+        "name": "Qdrant",
+        "url": "http://localhost:6333",
+        "collection": "sovereign_wisdom"
+    },
+    "embeddings": {
+        "model": "Xenova/all-MiniLM-L6-v2",
+        "dimension": 384
+    },
+    "patterns": [
+        {
+            "type": "history",
+            "path": "operations/history/**/*.md"
+        },
+        {
+            "type": "task",
+            "path": "operations/tasks/**/*.md"
+        },
+        {
+            "type": "wisdom",
+            "path": "brain/memory/**/*.md"
+        }
+    ]
+}
