@@ -32,8 +32,9 @@ This skill is a **Base Skill** and must be active at all times.
 ### Operating Protocols
 
 1.  **Integrity Check**: Always perform a visual integrity check at the start of interaction.
-2.  **Context Loading**: Automatically ingest local rules from `.agent/rules/` when entering a new workspace.
-3.  **Path Hygiene**: Enforce the use of absolute paths for all system operations.
+2.  **Registry-First Discovery**: Before performing any system discovery (scanning directories/ports/containers), the agent MUST consult the project manifest in `registry/projects/` and existing `artifacts/`. Redundant discovery is a failure of intelligence.
+3.  **Context Loading**: Automatically ingest local rules from `.agent/rules/` when entering a new workspace.
+4.  **Path Hygiene**: Enforce the use of absolute paths for all system operations.
 
 ## 4. Maintenance
 
