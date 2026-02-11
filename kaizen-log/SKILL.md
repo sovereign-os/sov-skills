@@ -33,6 +33,8 @@ This skill is activated when the task requires Continuous improvement protocol f
 - **Paths**: Use absolute paths for all `view_file` calls to avoid directory ambiguity.
 - **Registry Over Discovery**: Never run `ls` or `find` to discover infrastructure (Docker containers, paths, ports) if `registry/projects/` contains the manifest. (Added: 2026-02-11).
 - **Workflow**: Always check `package.json` scripts before guessing `npm run` commands.
+- **Infrastructure**: ALWAYS check `registry/infrastructure/` FIRST for Docker/Docker-Compose configs. NEVER search manually for start/stop scripts if documented in Registry. (Mistake: 2026-02-11)
+- **Execution**: STOP MULTITASKING. Jika user minta "start docker", JANGAN lanjut ngerjain task migration atau audit bug dulu. Tunggu instruksi selanjutnya. (Mistake: 2026-02-11)
 
 ### Usage Instructions
 
