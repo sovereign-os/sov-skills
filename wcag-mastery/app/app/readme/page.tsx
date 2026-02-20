@@ -18,6 +18,9 @@ import {
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+
 export default function ReadmePage() {
   const [docs, setDocs] = useState<any>(null);
   const [loading, setLoading] = useState(true);
@@ -70,11 +73,25 @@ export default function ReadmePage() {
                     <p className="font-black text-xs uppercase tracking-widest">Accessing Skill Vault...</p>
                   </div>
                 ) : (
-                  <div className="prose dark:prose-invert max-w-none">
-                    <div className="whitespace-pre-wrap font-sans text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
+                  <article className="prose prose-slate dark:prose-invert max-w-none
+                    prose-headings:font-black prose-headings:tracking-tight
+                    prose-h1:text-2xl prose-h1:border-b prose-h1:border-slate-200 prose-h1:dark:border-slate-700 prose-h1:pb-3
+                    prose-h2:text-xl prose-h2:mt-8
+                    prose-h3:text-lg
+                    prose-p:text-sm prose-p:leading-relaxed prose-p:text-slate-600 prose-p:dark:text-slate-400
+                    prose-li:text-sm prose-li:text-slate-600 prose-li:dark:text-slate-400
+                    prose-strong:text-slate-900 prose-strong:dark:text-slate-100
+                    prose-code:text-xs prose-code:bg-slate-100 prose-code:dark:bg-slate-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-bold
+                    prose-a:text-blue-600 prose-a:dark:text-blue-400 prose-a:no-underline hover:prose-a:underline
+                    prose-table:text-sm
+                    prose-th:bg-slate-50 prose-th:dark:bg-slate-800 prose-th:font-bold prose-th:text-left prose-th:px-4 prose-th:py-2
+                    prose-td:px-4 prose-td:py-2 prose-td:border-b prose-td:border-slate-100 prose-td:dark:border-slate-800
+                    prose-hr:border-slate-200 prose-hr:dark:border-slate-700
+                  ">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
                       {docs?.skillContent || 'Documentation not found in Skill Vault.'}
-                    </div>
-                  </div>
+                    </ReactMarkdown>
+                  </article>
                 )}
               </CardContent>
             </Card>

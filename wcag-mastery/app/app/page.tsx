@@ -12,7 +12,7 @@ import { MetricCards } from '@/components/dashboard/metric-cards';
 import { FindingsTable } from '@/components/dashboard/findings-table';
 
 /**
- * WCAG Master Dashboard
+ * WCAG Mastery Dashboard
  * Follows SOLID principles by decomposing UI into specialized, reusable components.
  */
 export default function Home() {
@@ -118,7 +118,7 @@ export default function Home() {
                 </div>
               </div>
               <h1 className='text-4xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 dark:from-white dark:via-slate-300 dark:to-white'>
-                WCAG Master
+                WCAG Mastery
               </h1>
             </div>
           </div>
