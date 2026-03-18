@@ -177,3 +177,12 @@ const screenDetails = await mcp_stitch_get_screen({
 - [ ] Is MCP integration working?
 - [ ] Are design tokens synced?
 - [ ] Is React export pipeline functional?
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

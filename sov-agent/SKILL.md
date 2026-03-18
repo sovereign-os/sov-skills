@@ -39,3 +39,12 @@ This skill is a **Base Skill** and must be active at all times.
 ## 4. Maintenance
 
 Update the core workflows and rules only via the official `/refactor-sweep` or manual Constitutional amendments approved by the Commander.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

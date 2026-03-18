@@ -49,3 +49,12 @@ curl -s https://staging.example.com | grep "_CSRF_INDEX"
 ## 4. Maintenance
 - **Coverage**: Aim for >70% on critical paths (Payment, Auth).
 - **Speed**: Unit tests should run <5s total.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

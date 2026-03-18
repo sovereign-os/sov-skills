@@ -1,0 +1,22 @@
+{
+  "id": "resource-tuner",
+  "version": "1.0.0",
+  "description": "Agent-agnostic execution contract for resource-tuner.",
+  "inputs": {
+    "task": "string",
+    "context": "string",
+    "targets": "string[]"
+  },
+  "outputs": {
+    "decision_summary": "string",
+    "applied_resources": "string[]",
+    "quality_checks": "string[]",
+    "next_actions": "string[]"
+  },
+  "entrypoint": "scripts/run.sh",
+  "maintainer": "Sovereign OS Agent",
+  "fallbacks": [
+    "If adapter is unavailable, execute scripts/run.sh directly.",
+    "If structured output parsing fails, use plain text summary block."
+  ]
+}

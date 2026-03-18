@@ -72,3 +72,12 @@ This skill is activated when the task requires Expertise in Smarty templating en
 - **No {php} Tags**: Any usage of `{php}` is a CRITICAL violation. Refactor to a class or helper.
 - **Cache Control**: Be aware of `$smarty->caching`. Clear cache after template modifications in production.
 - **Legacy Compatibility**: Test changes in both PHP 5.6 and PHP 8.x environments if applicable.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

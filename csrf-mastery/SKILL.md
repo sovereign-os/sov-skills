@@ -51,3 +51,12 @@ fetch('/api', {
 ## 4. Maintenance
 - **Audit**: Verify all state-changing endpoints validate CSRF.
 - **Test**: Attempt CSRF attack in staging to verify protection.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

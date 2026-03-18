@@ -45,3 +45,12 @@ This skill is activated when the task requires Catalog of essential Design Patte
 ## 4. Maintenance
 - **Review**: Does the pattern name match the implementation?
 - **Anti-Pattern**: Using Singleton for stateful objects (Global State hell).
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

@@ -31,3 +31,12 @@ This skill is activated when the task requires Architecture guide for building M
 ### Scaling Path
 - If a module's CPU/Memory usage spikes consistently, it is "ready" to be extracted into a separate service without rewrite.
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

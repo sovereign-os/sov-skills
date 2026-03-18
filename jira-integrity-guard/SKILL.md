@@ -42,3 +42,12 @@ This skill is activated when the task requires Zero-tolerance policy for Jira ID
 
 ## 4. Maintenance
 - **Sync**: If Jira is down, fallback to `[AGENT_ROOT]/data/current-context.json`, but flag as `[OFFLINE]`.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

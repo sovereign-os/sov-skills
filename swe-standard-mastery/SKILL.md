@@ -41,56 +41,82 @@ Released in 2024, this standard refines V&V processes across high-integrity syst
 New standard (Dec 2024) for modular, keyword-driven test specifications.
 - **Automation Strategy**: Encourages modular test case descriptions for scalable automation frameworks.
 
+### 6. ISO/IEC/IEEE 14764:2014 (Software Maintenance)
+Specifically details the **Maintenance Process** defined in **ISO/IEC/IEEE 12207**.
+- **IAR Application**: Critical for analyzing the impact of infrastructure, library, or version upgrades before execution to ensure lifecycle continuity.
+
 ### 📋 Document Structure Protocols
+
+All technical documentation MUST follow the **Date-Prefix** naming convention: `[YYYY-MM-DD]_[TASK_ID]_[DocType].md`.
+
 ### A. Use Case Specification (UCS) Protocol
-**Template**: `resources/templates/ISO-29148-UCS.md`
+**Template**: `resources/templates/ISO-29148-UCS.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_UCS.md`
 Every UCS must include:
 1. **Identification**: Unique ID and Verb-Noun based naming.
 2. **Context**: Clear Pre/Post Conditions.
 3. **Operational Flows**: Detailed Normal, Alternative, and Exception flows.
 
 ### B. Test Specification Document (TSD) Protocol
-**Template**: `resources/templates/ISO-29119-TSD.md`
+**Template**: `resources/templates/ISO-29119-TSD.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_TSD.md`
 Every TSD must include:
 1. **Traceability Matrix (RTM)**: Mapping Requirements to Tests.
 2. **Technical Verification Criteria**: Success definition at the database/system state level.
 3. **Data Evidence Requirement**: Mandatory attachment of real logs or data snapshots.
 
 ### C. Software Architecture Document (SAD) Protocol
-**Template**: `resources/templates/ISO-42010-SAD.md`
+**Template**: `resources/templates/ISO-42010-SAD.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SAD.md`
 Describes the software architecture from multiple viewpoints.
 
 ### D. Software Verification and Validation Plan (SVVP) Protocol
-**Template**: `resources/templates/IEEE-1012-SVVP.md` (Plan)
-**Template**: `resources/templates/IEEE-1012-SVVR.md` (Report/Results)
+**Template**: `resources/templates/IEEE-1012-SVVP.md` (Plan)  
+**Template**: `resources/templates/IEEE-1012-SVVR.md` (Report/Results)  
+**Filename (Report)**: `[YYYY-MM-DD]_[TASK_ID]_[BRANCH_SLUG]_TestReport.md`
 Defines the scope, tasks, and final reporting for V&V activities.
+- **Mandatory Metadata**: Task ID, Project, Branch, Date, Status.
+- **Optional Metadata**: Verifier (assigned human engineer), Reviewer, Environment Details.
+- **Zero Improvisation Rule**: Do NOT add extra metadata fields (like agent names) unless explicitly commanded by the user. "Ngide" (improvisation) in documentation is strictly forbidden.
 
 ### E. Software Configuration Management Plan (SCMP) Protocol
-**Template**: `resources/templates/IEEE-828-SCMP.md`
+**Template**: `resources/templates/IEEE-828-SCMP.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SCMP.md`
 Establishes rules for version control and change management.
 
 ### F. Software Design Description (SDD) Protocol
-**Template**: `resources/templates/IEEE-1016-SDD.md`
+**Template**: `resources/templates/IEEE-1016-SDD.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SDD.md`
 Details the system design, data structures, and component interfaces.
 
 ### G. Software Requirements Specification (SRS) Protocol
-**Template**: `resources/templates/IEEE-830-SRS.md`
+**Template**: `resources/templates/IEEE-830-SRS.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SRS.md`
 Defines the functional and non-functional requirements.
 
 ### H. Software Project Management Plan (SPMP) Protocol
-**Template**: `resources/templates/IEEE-1058-SPMP.md`
+**Template**: `resources/templates/IEEE-1058-SPMP.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SPMP.md`
 Outlines the project plan, schedule, and resources.
 
 ### I. Software Quality Assurance Plan (SQAP) Protocol
-**Template**: `resources/templates/IEEE-730-SQAP.md`
+**Template**: `resources/templates/IEEE-730-SQAP.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_SQAP.md`
 Defines the SQA activities, reviews, and audits.
 
 ### J. User Documentation Protocol
-**Template**: `resources/templates/ISO-26514-USER-DOC.md`
+**Template**: `resources/templates/ISO-26514-USER-DOC.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_USER-DOC.md`
 Standard structure for user manuals and guides.
+
+### K. Impact Analysis Report (IAR) Protocol
+**Template**: `resources/templates/ISO-14764-IAR.md`  
+**Filename**: `[YYYY-MM-DD]_[TASK_ID]_IAR.md`
+Standard structure for analyzing the impact of upgrades or significant changes.
 
 ### 🚀 Integration Rules
 - Always include the standard version used at the beginning of the document.
+- **Naming Rule**: Documentation filenames MUST start with the current date in `YYYY-MM-DD` format to prevent overwrites and ensure chronological sorting.
 - Use precise technical language (avoid ambiguous words like "fast", "easy", "some").
 - Every verification result must have a direct link to the original *Requirement ID*.
 
@@ -109,3 +135,12 @@ Standard structure for user manuals and guides.
 ---
 *Maintained by **Sovereign OS** Integrated Engineering System.*
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

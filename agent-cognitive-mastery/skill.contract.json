@@ -1,0 +1,25 @@
+{
+  "id": "agent-cognitive-mastery",
+  "version": "1.0.0",
+  "description": "Agent-agnostic contract for semantic recall, routing, and memory diagnostics (OpenViking + Qdrant).",
+  "inputs": {
+    "query": "string",
+    "target_uri": "string",
+    "limit": "number",
+    "context": "string"
+  },
+  "outputs": {
+    "health": "object",
+    "recall_summary": "string",
+    "recommended_actions": "string[]"
+  },
+  "endpoints": {
+    "openviking_health": "http://localhost:1933/health",
+    "qdrant_collections": "http://localhost:6333/collections"
+  },
+  "entrypoint": "scripts/run.sh",
+  "fallbacks": [
+    "If ov/openviking CLI is unavailable, use HTTP health checks.",
+    "If context retrieval is empty, run memory-vortex ingestion."
+  ]
+}

@@ -67,3 +67,12 @@ if ($user->hasBalance($amount)) {
 - **Safe Probing**: Always remove temporary trace logs before pushing to production.
 - **Log Levels**: Use `debug` for traces, `info` for milestones, `error` for failures.
 - **Audit Reports**: For critical bugs, document the "Trace Path" in the Jira comment.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

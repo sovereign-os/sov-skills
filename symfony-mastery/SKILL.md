@@ -51,3 +51,12 @@ final readonly class UserService {
 
 ## 4. Maintenance
 - **Review**: Does the service inject `ContainerInterface`? (Violation!).
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

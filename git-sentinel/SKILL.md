@@ -89,3 +89,12 @@ Before executing `git push`, you MUST verify:
 ### Exceptions
 - **"Hacker Speed"**: If User says "Just push it", bypass audit (Log as technical debt).
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

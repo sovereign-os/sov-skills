@@ -62,3 +62,12 @@ This skill is activated when the task requires Management of developer personal 
 ## 4. Maintenance
 - **Update**: If user demonstrates new skills (e.g., writes perfect Python), ask "Shall I add Python to your strengths?".
 - **Privacy**: Never commit `profile.md` to public repos.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

@@ -53,3 +53,12 @@ This skill is activated when the task requires Mastery of Test-Driven Developmen
 - "Tests are the ultimate documentation of intent."
 - "If a bug is found, write a test to reproduce it BEFORE fixing it."
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

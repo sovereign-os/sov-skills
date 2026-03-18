@@ -60,3 +60,12 @@ This skill is activated when the task requires Expertise in strict data separati
 ## 4. Maintenance
 - **Audit**: Scan migrations for missing `tenant_id` columns.
 - **Leak Check**: Periodically attempt cross-tenant access in Staging.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

@@ -43,3 +43,12 @@ if (!$rateLimiter->attempt($userId, 100)) {
 
 ## 4. Maintenance
 - **Monitor**: Track 429 responses. High rate = adjust limits.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

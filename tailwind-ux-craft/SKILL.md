@@ -81,3 +81,12 @@ Cards should not be flat.
 4.  **Animate**: Apply Transitions (`transition-all`, `hover:scale-105`, `active:scale-95`).
 5.  **Audit**: Switch system between Light/Dark mode. If a component becomes invisible or "funny", the token mapping is wrong.
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

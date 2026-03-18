@@ -180,3 +180,23 @@ A user will not convert if their "Trust Battery" is empty. Charge it with:
 
 - **Performance**: LCP must be < 2.5s. Speed is a feature.
 - **Conversion Rate (CR)**: Target > 2%. If lower, A/B test Headlines first, then CTAs.
+
+## 5. Agent-Agnostic Execution Layer
+
+To keep this skill portable across multiple agents (Antigravity, Codex, and others), execution is split into three layers:
+
+- **Core Rules**: `SKILL.md` + `resources/*.json`
+- **Contract**: `skill.contract.json`
+- **Adapters**: `adapters/antigravity.md`, `adapters/codex.md`
+
+### Canonical Entrypoint
+
+```bash
+scripts/run.sh --task "<task>" --context "<context>" --targets "<comma-separated-files>"
+```
+
+### Portability Rules
+
+- Do not embed agent-specific trigger syntax in core rule sections.
+- Keep runtime-specific behavior inside `adapters/`.
+- Keep outputs predictable (`Decision Summary`, `Applied Resources`, `Quality Checks`, `Next Actions`).

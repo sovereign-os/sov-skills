@@ -47,3 +47,12 @@ This skill is activated when the task requires Guarantees transaction safety and
 ## 4. Maintenance
 - **TTL**: Idempotency keys should expire (e.g., 24 hours).
 - **Audit**: Monitor Dead Letter Queues (DLQ) for failed async jobs.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

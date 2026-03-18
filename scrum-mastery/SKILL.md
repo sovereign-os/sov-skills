@@ -77,3 +77,12 @@ When generating/updating `YYYY-MM-DD.md`, follow this EXACT structure:
 - **Sprint Backlog**: Tasks `IN PROGRESS` or `TODO`.
 - **Product Backlog**: All Jira issues mapped.
 - **Increment**: Cumulative value of `DONE` tasks.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

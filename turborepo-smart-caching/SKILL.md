@@ -65,3 +65,12 @@ turbo run build --filter="...[origin/main]"
 ## 4. Maintenance
 - **Hash Debugging**: If cache HIT fails unexpectedly, run `turbo run build --dry=json` to inspect inputs.
 - **Prune**: Use `turbo prune --scope=<target>` to generate a Docker-ready slice of the monorepo.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

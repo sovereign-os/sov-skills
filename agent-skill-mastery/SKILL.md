@@ -121,3 +121,12 @@ Failure to provide this signature means the audit was skipped, and the task is N
 ## 4. Maintenance
 How do we know if this skill is broken?
 ```
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

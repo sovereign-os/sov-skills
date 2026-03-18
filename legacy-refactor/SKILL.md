@@ -50,3 +50,12 @@ This skill is activated when the task requires Passive, safe, and progressive re
 ## 4. Maintenance
 - **Review**: Did the refactor break the build? Revert immediately.
 - **Value**: Is it worth it? Don't polish a turd that's about to be deleted.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

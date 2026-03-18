@@ -62,3 +62,12 @@ When a new ticket is received, generate a report with this structure:
 ## 4. Maintenance
 - Save Blueprints to `[current_workspace]/documents/planning/[JIRA_ID].md`.
 - Reference the Blueprint in the Daily Scrum report.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

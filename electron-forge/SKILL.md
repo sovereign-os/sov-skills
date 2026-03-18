@@ -44,3 +44,12 @@ This skill is activated when the task requires Best practices for secure, perfor
 ## 4. Maintenance
 - **Audit**: Scan `package.json` for vulnerable dependencies.
 - **Update**: Electron versions deprecate fast. Keep up.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

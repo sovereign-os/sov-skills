@@ -47,3 +47,12 @@ This skill is activated when the task requires Enterprise-grade security experti
 - **Dependency Scanning**: Regularly check `composer.json` and `package.json` for known vulnerabilities.
 - **Security Headers**: Implement `Content-Security-Policy` (CSP), `X-Frame-Options`, and `HSTS`.
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

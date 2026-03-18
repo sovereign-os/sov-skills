@@ -302,3 +302,12 @@ When creating UML artifacts, save them in:
 4. **Annotations**: Add notes for non-obvious logic or business rules.
 5. **Layering**: Separate concerns (don't mix Use Case with Class diagrams).
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

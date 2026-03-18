@@ -61,7 +61,48 @@ Return standardized JSON errors:
 3.  **Implement**: Write Controller/Service code.
 4.  **Document**: Update Swagger UI description.
 
-## 4. Maintenance
+## 4. API Testing & Automation (The Sovereign Automation Framework)
+For standardized end-to-end API testing across Sovereign OS workspaces, projects utilize a central Orchestrator (TypeScript + Newman).
+
+### Runner Architecture (Ports & Adapters)
+- **CliPort**: Defines the interface for CLI options (`-e env`, `-c collection`, `-f folder`).
+- **CommanderAdapter**: Implements `CliPort` using Commander.js.
+- **Orchestrator**: The core business logic, decoupled and injected via **InversifyJS**.
+
+### Standard Directory Structure (Testing)
+Any project implementing the testing framework MUST follow:
+```text
+tests/Api/
+├── collections/      # Raw Postman Collections
+├── data/             # Temp JSON for Newman
+├── datasets/         # Parameter Data Files (e.g., datasets/staging/data.xlsx)
+└── reports/          # Output for Newman HTML Reports
+```
+
+### Advanced Data Strategy (DataResolver)
+The system automatically resolves variables based on environment prioritization:
+1. Environment Dataset: `datasets/[env]/*.xlsx`
+2. Fallback Env Dataset: `datasets/[env]/data.xlsx`
+3. Generic Root Dataset: `datasets/data.xlsx`
+4. Postman Cloud Sync: Fetches collection dynamically if `POSTMAN_API_KEY` is present.
+
+### Execution Target
+- Run specific environment: `npm run test:staging` (or `npx tsx tests/Api/runner.ts --env staging`)
+- Run isolated endpoint/folder: `npx tsx tests/Api/runner.ts --env staging -f "Auth"`
+
+### Resources & Templates
+Standard API templates, stub responses, and mock architectures are stored inside the `resources/templates/` directory of this skill. Whenever the agent is scaffolding a new endpoint or writing Postman tests, they must consult this directory first to ensure enterprise consistency.
+
+## 5. Maintenance
 - **No Spec, No Code**: Endpoint logic requires spec first.
 - **Versioning**: Breaking changes require `/v2/`.
 - **Definition of Done**: Swagger UI must work perfectly.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

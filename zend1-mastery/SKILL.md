@@ -60,3 +60,12 @@ Always check `Zend_Application_Resource` for built-in initializers (DB, Log, Cac
 - **Audit**: Are we using `$this->_getParam()` instead of `$_POST`?
 - **Audit**: Are we following the `Zend_` naming convention (Underscore as folder separator)?
 - **Audit**: Is `Zend_Log` used for tracking failures?
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

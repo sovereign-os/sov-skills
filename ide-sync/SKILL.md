@@ -44,3 +44,12 @@ This skill is activated when the task requires Enforce global coding standards a
 
 ## 4. Maintenance
 - **Update**: If a new file type is added (e.g., `.yml`), update `.editorconfig` indent rules (usually 2 spaces).
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

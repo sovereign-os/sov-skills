@@ -53,3 +53,12 @@ $counter->inc(['endpoint' => '/api/users', 'status' => '200']);
 ## 4. Maintenance
 - **Retention**: Logs 30 days, Metrics 1 year.
 - **Review**: Weekly dashboard review for anomalies.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

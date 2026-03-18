@@ -54,3 +54,12 @@ Example: `2048MB / 64MB = 32 Workers`.
 ## 4. Maintenance
 - **Review**: Check `docker stats` during load tests.
 - **Prune**: Regular `docker system prune` to free disk space.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

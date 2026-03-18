@@ -40,3 +40,12 @@ This skill is activated when the task requires Continuous improvement protocol f
 
 - During `/refactor-sweep`, check the `kaizen-log` for pending hygiene tasks.
 - When starting a task, read the most recent entries to avoid known pitfalls.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

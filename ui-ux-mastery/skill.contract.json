@@ -1,0 +1,31 @@
+{
+  "id": "ui-ux-mastery",
+  "version": "1.0.0",
+  "description": "Agent-agnostic execution contract for UI/UX design-engineering decisions.",
+  "inputs": {
+    "task_type": "string",
+    "project_context": "string",
+    "target_files": "string[]",
+    "constraints": "string[]"
+  },
+  "outputs": {
+    "decision_summary": "string",
+    "applied_resources": "string[]",
+    "quality_checks": "string[]",
+    "next_actions": "string[]"
+  },
+  "resources": [
+    "resources/design-intelligence.json",
+    "resources/typography-intelligence.json",
+    "resources/motion-tokens.json",
+    "resources/ux-intelligence.json",
+    "resources/ux-rules.json",
+    "resources/patterns.json",
+    "resources/theme-bank.json"
+  ],
+  "entrypoint": "scripts/run.sh",
+  "fallbacks": [
+    "If no agent adapter exists, run scripts/run.sh directly.",
+    "If JSON output cannot be parsed, consume plain-text summary section."
+  ]
+}

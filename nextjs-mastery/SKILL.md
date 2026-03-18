@@ -48,3 +48,12 @@ export async function getStaticProps() {
 ## 4. Maintenance
 - **Audit**: Run Lighthouse. Target: Performance > 90.
 - **Bundle**: Analyze with `@next/bundle-analyzer`.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

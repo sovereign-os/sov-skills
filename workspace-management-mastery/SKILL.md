@@ -30,3 +30,12 @@ Every new workspace MUST contain:
 - Always use the `/init-workspace` workflow to invoke this skill.
 - Never manually create root-level folders in a workspace.
 - The `workspaces/` folder in the project root is the developer's primary interactive gate.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

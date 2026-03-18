@@ -84,3 +84,12 @@ This skill is activated when the task requires Dependency Rule enforcement, Sepa
 - **Strict Separation**: If you find yourself importing a Framework (Laravel/Symfony) class inside an Entity, you have failed.
 - **Testability**: The Core MUST be testable without starting a web server or connecting to a database.
 - **Refactor Early**: If the "details" (outer circles) start influencing the "policy" (inner circles), refactor immediately.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

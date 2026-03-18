@@ -44,3 +44,12 @@ Every major delivery MUST have three levels of documentation (as sections in the
 ## 4. Maintenance
 - **Review**: Does the report answer "What, Why, and Proof"?
 - **Audit**: Verify isolation of artifact folders.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

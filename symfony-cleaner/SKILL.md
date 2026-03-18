@@ -35,3 +35,12 @@ This skill is activated when the task requires Automated suite for Symfony maint
 
 ## 4. Maintenance
 Automated suite for Symfony maintenance and cache management.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

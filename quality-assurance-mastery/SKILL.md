@@ -162,3 +162,12 @@ When assigned a Feature or Bug Fix:
 6.  **CREATE** the TSD and **EXECUTE** verification.
 7.  **GENERATE** the Verification Report (`REPORT.md`).
 
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

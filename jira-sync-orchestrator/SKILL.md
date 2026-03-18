@@ -48,3 +48,12 @@ This skill is activated when the task requires Synchronize task status between A
 
 ## 4. Maintenance
 - **Sync**: Ensure comments are mirrored in local history (`history/tasks/...`).
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

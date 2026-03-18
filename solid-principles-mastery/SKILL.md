@@ -58,3 +58,12 @@ class OrderService {
 ## 4. Maintenance
 - **Review**: Reject PRs with God Classes.
 - **Refactor**: Apply Boy Scout Rule to legacy violations.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

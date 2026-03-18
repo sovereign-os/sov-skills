@@ -45,3 +45,12 @@ This skill is activated when the task requires Prevents infinite error loops and
 
 ## 4. Maintenance
 - **Review**: Prune `wisdom.md` if solutions become obsolete.
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh

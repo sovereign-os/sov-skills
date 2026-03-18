@@ -48,3 +48,12 @@ git secrets --register-aws
 ## 4. Maintenance
 - **Review**: Rotate secrets quarterly.
 - **Monitor**: Alert on `.env` file commits (should never happen).
+
+## Agent-Agnostic Execution Layer
+
+This skill supports multi-agent execution through:
+
+- Core guidance in SKILL.md
+- Machine contract in skill.contract.json
+- Agent adapters in adapters/
+- Canonical script entrypoint in scripts/run.sh
